@@ -26,7 +26,7 @@ import edu.wpi.first.wpilibj.DriverStation;
  */
 public final class Constants
 {
-	public static String		PROGRAM_NAME = "ORF25-01.30.25VR";
+	public static String		PROGRAM_NAME = "ORF25-02.06.25VR-TESTBOT";
 
 	public static Robot			robot;
 
@@ -40,13 +40,13 @@ public final class Constants
 	    
     public static String                     functionMarker = "-".repeat(30);
 
-	// Non-drive base motor controller port assignments
-    public static final int     CORAL_MANIPULATOR = 9;
-    public static final int     ALGAE_MANIPULATOR = 10;
+	// // Non-drive base motor controller port assignments
+    // public static final int     CORAL_MANIPULATOR = 9;
+    // public static final int     ALGAE_MANIPULATOR = 10;
 
-    //ELEVATOR:
-    public static final int     ELEVATOR_LEFT = 11;
-    public static final int     ELEVATOR_RIGHT = 12;
+    // //ELEVATOR:
+    // public static final int     ELEVATOR_LEFT = 11;
+    // public static final int     ELEVATOR_RIGHT = 12;
 
     //(NOTES) ELEVATOR_WINCH_FACTOR is a conversion factor from motor rotations to meters of height change.
     //ELEVATOR_WINCH_FACTOR is multiplied by native rotations of motor shaft 
@@ -56,16 +56,16 @@ public final class Constants
     // * 2pi for radians traveled/angular displacement * spool radius in meters to get linear displacement
     // 1.25 inch radius is 0.03175 meters (source: looked it up)
     // idk why it has to be negative, probably the gears swap rotation, not a big deal tho
-    public static final double  ELEVATOR_WINCH_FACTOR = (-1.0 / (1014.0 / 55.0)) * (2 * Math.PI) * 0.03175; //NEEDS TO BE CHANGED TO ACTUAL VALUE
+    // public static final double  ELEVATOR_WINCH_FACTOR = (-1.0 / (1014.0 / 55.0)) * (2 * Math.PI) * 0.03175; //NEEDS TO BE CHANGED TO ACTUAL VALUE
 
-    // Pneumatic valve controller port assignments.
-	public static final int		COMPRESSOR = 0;
-	public static final int		CORAL_PIVOT = 0;		
-	public static final int		ALGAE_EXTEND = 2;		
-	public static final int		ALGAE_PIVOT = 4;    
+    // // // Pneumatic valve controller port assignments.
+	// public static final int		COMPRESSOR = 0;
+	// public static final int		CORAL_PIVOT = 0;		
+	// public static final int		ALGAE_EXTEND = 2;		
+	// public static final int		ALGAE_PIVOT = 4;    
 
 
-    public static final double INTAKE_SPEED = 0.90;
+    // public static final double INTAKE_SPEED = 0.90;
     
     // CAMERAS 
 
@@ -89,7 +89,7 @@ public final class Constants
 
 	  
 	// Analog Input port assignments.
-	public static final int PRESSURE_SENSOR = 1;
+	// public static final int PRESSURE_SENSOR = 1;
 	// LCD display line number constants showing class where the line is set.
 	public static final int		LCD_1 = 1;	    // Robot, Auto Commands.
 	public static final int		LCD_2 = 2;	    // Swerve Drive command.

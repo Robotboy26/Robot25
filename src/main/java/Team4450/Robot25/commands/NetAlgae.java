@@ -6,14 +6,14 @@
 // import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 // import edu.wpi.first.wpilibj2.command.Command;
 
-// public class RemoveAlgae extends Command {
+// public class NetAlgae extends Command {
 //     private final AlgaeManipulator algaeManipulator;
 
 //     private static enum State{REMOVE, RETURN, STOP};
 //     private State state = State.REMOVE;
 //     double startTime;
 
-//     public RemoveAlgae(AlgaeManipulator algaeManipulator){
+//     public NetAlgae(AlgaeManipulator algaeManipulator){
 //         this.algaeManipulator = algaeManipulator;
 
 //         addRequirements(algaeManipulator);
@@ -31,14 +31,15 @@
 //         switch(state){
 
 //             case REMOVE:
-//                 algaeManipulator.startIntaking();
+//                 algaeManipulator.startOuttaking();
 //                 if(Util.timeStamp() - startTime > 3.0)
 //                     state = State.RETURN;
 //                 break;
 
 //             case RETURN:
 //                 algaeManipulator.retractIn();
-//                 if(algaeManipulator.algaeExtendStatus == false)
+//                 algaeManipulator.pivotUp();
+//                 if(algaeManipulator.algaeExtendStatus && algaeManipulator.algaePivotStatus== false)
 //                     state = State.STOP;
 //                 break;
 
