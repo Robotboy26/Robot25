@@ -41,8 +41,8 @@ public final class Constants
     public static String                     functionMarker = "-".repeat(30);
 
 	// // Non-drive base motor controller port assignments
-    // public static final int     CORAL_MANIPULATOR = 9;
-    // public static final int     ALGAE_MANIPULATOR = 10;
+    public static final int     CORAL_MANIPULATOR = 9;
+    public static final int     ALGAE_MANIPULATOR = 10;
 
     // //ELEVATOR:
     // public static final int     ELEVATOR_LEFT = 11;

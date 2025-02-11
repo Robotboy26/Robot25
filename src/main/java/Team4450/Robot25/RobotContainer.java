@@ -12,24 +12,24 @@ import Team4450.Robot25.commands.DriveToTag;
 import Team4450.Robot25.commands.DriveToLeft;
 import Team4450.Robot25.commands.DriveToRight;
 import Team4450.Robot25.commands.GetPoseEsimate;
-// import Team4450.Robot25.commands.IntakeCoral;
-// import Team4450.Robot25.commands.OuttakeCoral;
+import Team4450.Robot25.commands.IntakeCoral;
+import Team4450.Robot25.commands.OuttakeCoral;
 import Team4450.Robot25.commands.PointToYaw;
 import Team4450.Robot25.commands.SetTargetPose;
 import Team4450.Robot25.commands.UpdateCandle;
 import Team4450.Robot25.commands.UpdateVisionPose;
 import Team4450.Robot25.commands.GoToPose;
 // import Team4450.Robot25.commands.Preset;
-// import Team4450.Robot25.commands.RemoveAlgae;
-
-// import Team4450.Robot25.subsystems.AlgaeManipulator;
+import Team4450.Robot25.commands.RemoveAlgae;
+import Team4450.Robot25.commands.NetAlgae;
+import Team4450.Robot25.subsystems.AlgaeManipulator;
 import Team4450.Robot25.subsystems.Candle;
+import Team4450.Robot25.subsystems.CoralManipulator;
 import Team4450.Robot25.subsystems.DriveBase;
 import Team4450.Robot25.subsystems.PhotonVision;
 import Team4450.Robot25.subsystems.ShuffleBoard;
 // import Team4450.Robot25.subsystems.ElevatedManipulator.PresetPosition;
 import Team4450.Robot25.subsystems.PhotonVision.PipelineType;
-// import Team4450.Robot25.subsystems.CoralManipulator;
 // import Team4450.Robot25.subsystems.ElevatedManipulator;
 
 import Team4450.Lib.MonitorPDP;
@@ -76,9 +76,9 @@ public class RobotContainer
 	public static DriveBase 	driveBase;
 	public static PhotonVision	pvTagCamera;
 	private Candle        		candle = null;
-	// private CoralManipulator    coralManipulator;
+	private CoralManipulator    coralManipulator;
 	// private ElevatedManipulator elevatedManipulator;
-	// private AlgaeManipulator    algaeManipulator;
+	private AlgaeManipulator    algaeManipulator;
 	
 	// Subsystem Default Commands.
 
@@ -194,6 +194,8 @@ public class RobotContainer
 		shuffleBoard = new ShuffleBoard();
 		driveBase = new DriveBase();
 		pvTagCamera = new PhotonVision(CAMERA_TAG, PipelineType.POSE_ESTIMATION, CAMERA_TAG_TRANSFORM);
+		coralManipulator = new CoralManipulator();
+		algaeManipulator = new AlgaeManipulator();
 
 		// if (RobotBase.isReal()) 
 		// {
@@ -452,8 +454,24 @@ public class RobotContainer
 		// new Trigger(() -> utilityController.getPOV() == 180)
 		// 	.toggleOnTrue(new Preset(elevatedManipulator, PresetPosition.ALGAE_NET_SCORING)
 		// 			.andThen(new RemoveAlgae(algaeManipulator)));
-			
-	
+		
+		new Trigger(() -> utilityController.getRightBumperButton())
+			.whileTrue(new InstantCommand(coralManipulator::startOuttaking, coralManipulator));
+
+		new Trigger(() -> utilityController.getLeftTrigger())
+			.whileTrue(new IntakeCoral(coralManipulator));
+		
+		new Trigger(()-> utilityController.getRightTrigger())
+			.whileTrue(new OuttakeCoral(coralManipulator));
+
+		new Trigger(() -> utilityController.getLeftBumperButton())
+			.whileTrue(new InstantCommand(coralManipulator::startIntaking, coralManipulator));
+		
+		// new Trigger(() -> utilityController.getLeftBumperButton())
+		// 	.whileTrue(new RemoveAlgae(algaeManipulator));	
+		
+		// new Trigger(() -> utilityController.getLeftTrigger())
+		// 	.whileTrue(new NetAlgae(algaeManipulator));
 	}
 		
 

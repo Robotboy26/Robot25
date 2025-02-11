@@ -22,14 +22,15 @@
 //         /* No Position */ NONE,
 //     };
 
-//     public boolean intakeDoesTheAlgaeInsteadOfCoral = true;
-//     private double endGoalElevatorHeight;
+//     public boolean scoreCoralInsteadOfAlgae = true;
 
-//     private boolean endGoalCoralPivotStatus;
+//     private double endGoalElevatorHeight; //in units of meters
 
-//     private boolean endGoalAlgaeExtendStatus;
+//     private boolean endGoalCoralPivotStatus; //Pivot Piston Status on Coral Manipulator
 
-//     private boolean endGoalAlgaePivotStatus;
+//     private boolean endGoalAlgaeExtendStatus; //Extending Piston Status on Algae Manipulator
+
+//     private boolean endGoalAlgaePivotStatus; //Pivot Piston Status on Algae Manipulator
 
 //     private PresetPosition position = PresetPosition.NONE;
 
@@ -44,64 +45,64 @@
 //         this.position = position;
         
 //         switch(position){
-//             case RESET:
+//             case RESET: //At RESET, we want the elevator to be at 0 position, and all manipulators to be retracted and in their resting position.
 //                 endGoalElevatorHeight = 0.0;
 //                 endGoalCoralPivotStatus = false;
 //                 endGoalAlgaeExtendStatus = false;
 //                 endGoalAlgaePivotStatus = false;
 
-//             case CORAL_STATION_INTAKE:
+//             case CORAL_STATION_INTAKE: //at CORAL_STATION_INTAKE, we want the elevator to be at intake position, and the coral manipulator to be pivoted up.
 //                 endGoalElevatorHeight = 0.0;
 //                 endGoalCoralPivotStatus = true;
 //                 endGoalAlgaeExtendStatus = false;
 //                 endGoalAlgaePivotStatus = false;
 //                 break;
-//             case CORAL_SCORING_L1:
+//             case CORAL_SCORING_L1: //at CORAL_SCORING_L1, we want the elevator to be at L1 scoring position, and the coral manipulator to be pivoted down.
 //                 endGoalElevatorHeight = 0.0;
 //                 endGoalCoralPivotStatus = false;
 //                 endGoalAlgaeExtendStatus = false;
 //                 endGoalAlgaePivotStatus = false;
 //                 break;
 
-//             case CORAL_SCORING_L2:
+//             case CORAL_SCORING_L2: //at CORAL_SCORING_L2, we want the elevator to be at L2 scoring position, and the coral manipulator to be pivoted down.
 //                 endGoalElevatorHeight = 0.0;
 //                 endGoalCoralPivotStatus = false;
 //                 endGoalAlgaeExtendStatus = false;
 //                 endGoalAlgaePivotStatus = false;
 //                 break;
             
-//             case CORAL_SCORING_L3:
+//             case CORAL_SCORING_L3: //at CORAL_SCORING_L3, we want the elevator to be at L3 scoring position, and the coral manipulator to be pivoted down.
 //                 endGoalElevatorHeight = 0.0;
 //                 endGoalCoralPivotStatus = false;
 //                 endGoalAlgaeExtendStatus = false;
 //                 endGoalAlgaePivotStatus = false;
 //                 break;
 
-//             case CORAL_SCORING_L4:
+//             case CORAL_SCORING_L4: //at CORAL_SCORING_L4, we want the elevator to be at L4 scoring position, and the coral manipulator to be pivoted down.
 //                 endGoalElevatorHeight = 0.0;
 //                 endGoalCoralPivotStatus = false;
 //                 endGoalAlgaeExtendStatus = false;
 //                 endGoalAlgaePivotStatus = false;
 //                 break;
 
-//             case ALGAE_REMOVE_L2:
+//             case ALGAE_REMOVE_L2: //at ALGAE_REMOVE_L2, we want the elevator to be at L2 algae removing position, and the algae manipulator to be extended.
 //                 endGoalElevatorHeight = 0.0;
 //                 endGoalCoralPivotStatus = false;
 //                 endGoalAlgaeExtendStatus = true;
 //                 endGoalAlgaePivotStatus = false;
 //                 break;
             
-//             case ALGAE_REMOVE_L3:
+//             case ALGAE_REMOVE_L3: //at ALGAE_REMOVE_L3, we want the elevator to be at L3 algae removing position, and the algae manipulator to be extended.
 //                 endGoalElevatorHeight = 0.0;
 //                 endGoalCoralPivotStatus = false;
 //                 endGoalAlgaeExtendStatus = true;
 //                 endGoalAlgaePivotStatus = false;
 //                 break;
             
-//             case ALGAE_NET_SCORING:
+//             case ALGAE_NET_SCORING: //at ALGAE_NET_SCORING, we want the elevator to be at algae net scoring position, and the algae manipulator to be extended and pivoted up.
 //                 endGoalElevatorHeight = 0.0;
 //                 endGoalCoralPivotStatus = false;
-//                 endGoalAlgaeExtendStatus = false;
+//                 endGoalAlgaeExtendStatus = true;
 //                 endGoalAlgaePivotStatus = true;
 //                 break;
             
