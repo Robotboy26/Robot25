@@ -19,26 +19,26 @@ import Team4450.Robot25.commands.SetTargetPose;
 import Team4450.Robot25.commands.UpdateCandle;
 import Team4450.Robot25.commands.UpdateVisionPose;
 import Team4450.Robot25.commands.GoToPose;
-import Team4450.Robot25.commands.Preset;
-import Team4450.Robot25.commands.RemoveAlgae;
-import Team4450.Robot25.commands.NetAlgae;
+// import Team4450.Robot25.commands.Preset;
+// import Team4450.Robot25.commands.RemoveAlgae;
+// import Team4450.Robot25.commands.NetAlgae;
 
-import Team4450.Robot25.subsystems.AlgaeManipulator;
+// import Team4450.Robot25.subsystems.AlgaeManipulator;
 import Team4450.Robot25.subsystems.Candle;
 import Team4450.Robot25.subsystems.DriveBase;
 import Team4450.Robot25.subsystems.PhotonVision;
 import Team4450.Robot25.subsystems.ShuffleBoard;
-import Team4450.Robot25.subsystems.ElevatedManipulator.PresetPosition;
+// import Team4450.Robot25.subsystems.ElevatedManipulator.PresetPosition;
 import Team4450.Robot25.subsystems.PhotonVision.PipelineType;
 import Team4450.Robot25.subsystems.CoralManipulator;
-import Team4450.Robot25.subsystems.ElevatedManipulator;
-import Team4450.Robot25.subsystems.Elevator;
+// import Team4450.Robot25.subsystems.ElevatedManipulator;
+// import Team4450.Robot25.subsystems.Elevator;
 import Team4450.Lib.MonitorPDP;
 import Team4450.Lib.NavX;
 import Team4450.Lib.Util;
 import Team4450.Lib.CameraFeed;
 import Team4450.Lib.XboxController;
-import Team4450.Lib.MonitorCompressor;
+// import Team4450.Lib.MonitorCompressor;
 
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.AnalogInput;
@@ -52,7 +52,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.math.MathUtil;
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.geometry.Rotation2d;
-import edu.wpi.first.wpilibj.PneumaticHub;
+// import edu.wpi.first.wpilibj.PneumaticHub;
 import edu.wpi.first.util.sendable.SendableRegistry;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.InstantCommand;
@@ -78,9 +78,9 @@ public class RobotContainer
 	public static PhotonVision	pvTagCamera;
 	private Candle        		candle = null;
 	private CoralManipulator    coralManipulator;
-	private ElevatedManipulator elevatedManipulator;
-	private AlgaeManipulator    algaeManipulator;
-	private Elevator			elevator;
+	// private ElevatedManipulator elevatedManipulator;
+	// private AlgaeManipulator    algaeManipulator;
+	// private Elevator			elevator;
 	// Subsystem Default Commands.
 
     // Persistent Commands.
@@ -106,19 +106,19 @@ public class RobotContainer
 	private XboxController			driverController =  new XboxController(DRIVER_PAD);
 	public static XboxController	utilityController = new XboxController(UTILITY_PAD);
 
-	private AnalogInput			pressureSensor = new AnalogInput(PRESSURE_SENSOR);
+	// private AnalogInput			pressureSensor = new AnalogInput(PRESSURE_SENSOR);
 	  
 	// private PowerDistribution	pdp = new PowerDistribution(REV_PDB, PowerDistribution.ModuleType.kCTRE);
 	private PowerDistribution	pdp = new PowerDistribution(REV_PDB, PowerDistribution.ModuleType.kRev);
 
 	// PneumaticHub class controls the REV Pneumatics Hub Module. New for 2025.
-	private PneumaticHub	pneumaticHub = new PneumaticHub(COMPRESSOR);
+	// private PneumaticHub	pneumaticHub = new PneumaticHub(COMPRESSOR);
 
 	// Navigation board.
 	public static NavX			navx;
 
 	private MonitorPDP     		monitorPDPThread;
-	private MonitorCompressor	monitorCompressorThread;
+	// private MonitorCompressor	monitorCompressorThread;
     private CameraFeed			cameraFeed;
     
 	// Trajectories we load manually.
@@ -195,10 +195,10 @@ public class RobotContainer
 		shuffleBoard = new ShuffleBoard();
 		driveBase = new DriveBase();
 		pvTagCamera = new PhotonVision(CAMERA_TAG, PipelineType.POSE_ESTIMATION, CAMERA_TAG_TRANSFORM);
-		elevator = new Elevator();
+		// elevator = new Elevator();
 		coralManipulator = new CoralManipulator();
-		elevatedManipulator = new ElevatedManipulator();
-		algaeManipulator = new AlgaeManipulator();
+		// elevatedManipulator = new ElevatedManipulator();
+		// algaeManipulator = new AlgaeManipulator();
 
 		// if (RobotBase.isReal()) 
 		// {
@@ -254,16 +254,16 @@ public class RobotContainer
 									driverController.getRightXDS(),
 									driverController));
 		
-		elevator.setDefaultCommand(new RunCommand(
-			()->{elevator.move(-MathUtil.applyDeadband(utilityController.getRightY() * 0.1, DRIVE_DEADBAND));
-			}));
+		// elevator.setDefaultCommand(new RunCommand(
+		// 	()->{elevator.move(-MathUtil.applyDeadband(utilityController.getRightY() * 0.1, DRIVE_DEADBAND));
+		// 	}));
 
 		//Start the compressor, PDP and camera feed monitoring Tasks.
 
-   		monitorCompressorThread = MonitorCompressor.getInstance(pressureSensor);
-   		monitorCompressorThread.setDelay(1.0);
-   		monitorCompressorThread.SetLowPressureAlarm(50);
-   		monitorCompressorThread.start();
+   		// monitorCompressorThread = MonitorCompressor.getInstance(pressureSensor);
+   		// monitorCompressorThread.setDelay(1.0);
+   		// monitorCompressorThread.SetLowPressureAlarm(50);
+   		// monitorCompressorThread.start();
 		
    		monitorPDPThread = MonitorPDP.getInstance(pdp);
    		monitorPDPThread.start();
@@ -466,7 +466,7 @@ public class RobotContainer
 			.toggleOnTrue(new IntakeCoral(coralManipulator));
 		
 		new Trigger(() -> utilityController.getRightTrigger())
-			.toggleOnTrue(new OuttakeCoral(coralManipulator));
+			.whileTrue(new OuttakeCoral(coralManipulator));
 
 			
 		
@@ -518,15 +518,15 @@ public class RobotContainer
 		
 		// Register commands called from PathPlanner Autos.
 
-		NamedCommands.registerCommand("Intake Coral", new IntakeCoral(coralManipulator));
-		NamedCommands.registerCommand("Outtake Coral", new OuttakeCoral(coralManipulator));
-		NamedCommands.registerCommand("Raise to L1", new Preset(elevatedManipulator, PresetPosition.CORAL_SCORING_L1));
-		NamedCommands.registerCommand("Raise to L2", new Preset(elevatedManipulator, PresetPosition.CORAL_SCORING_L2));
-		NamedCommands.registerCommand("Raise to L3", new Preset(elevatedManipulator, PresetPosition.CORAL_SCORING_L3));
-		NamedCommands.registerCommand("Raise to L4", new Preset(elevatedManipulator, PresetPosition.CORAL_SCORING_L4));
-		NamedCommands.registerCommand("Remove Algae L2", new Preset(elevatedManipulator, PresetPosition.ALGAE_REMOVE_L2));
-		NamedCommands.registerCommand("Remove Algae L3", new Preset(elevatedManipulator, PresetPosition.ALGAE_REMOVE_L3));
-		NamedCommands.registerCommand("Algae Net Scoring", new Preset(elevatedManipulator, PresetPosition.ALGAE_NET_SCORING));
+		// NamedCommands.registerCommand("Intake Coral", new IntakeCoral(coralManipulator));
+		// NamedCommands.registerCommand("Outtake Coral", new OuttakeCoral(coralManipulator));
+		// NamedCommands.registerCommand("Raise to L1", new Preset(elevatedManipulator, PresetPosition.CORAL_SCORING_L1));
+		// NamedCommands.registerCommand("Raise to L2", new Preset(elevatedManipulator, PresetPosition.CORAL_SCORING_L2));
+		// NamedCommands.registerCommand("Raise to L3", new Preset(elevatedManipulator, PresetPosition.CORAL_SCORING_L3));
+		// NamedCommands.registerCommand("Raise to L4", new Preset(elevatedManipulator, PresetPosition.CORAL_SCORING_L4));
+		// NamedCommands.registerCommand("Remove Algae L2", new Preset(elevatedManipulator, PresetPosition.ALGAE_REMOVE_L2));
+		// NamedCommands.registerCommand("Remove Algae L3", new Preset(elevatedManipulator, PresetPosition.ALGAE_REMOVE_L3));
+		// NamedCommands.registerCommand("Algae Net Scoring", new Preset(elevatedManipulator, PresetPosition.ALGAE_NET_SCORING));
 	
 
 		// Create a chooser with the PathPlanner Autos located in the PP
@@ -561,10 +561,10 @@ public class RobotContainer
 	{
 		// This code turns on/off the automatic compressor management if requested by DS. Putting this
 		// here is a convenience since this function is called at each mode change.
-		if (SmartDashboard.getBoolean("CompressorEnabled", true)) 
-			pneumaticHub.enableCompressorDigital();
-		else
-			pneumaticHub.disableCompressor();
+		// if (SmartDashboard.getBoolean("CompressorEnabled", true)) 
+		// 	pneumaticHub.enableCompressorDigital();
+		// else
+		// 	pneumaticHub.disableCompressor();
 		
 		pdp.clearStickyFaults();
 		//pcm.clearAllStickyFaults(); // Add back if we use a commpressor.

@@ -43,11 +43,11 @@ public final class Constants
 
 	// Non-drive base motor controller port assignments
     public static final int     CORAL_MANIPULATOR = 9;
-    public static final int     ALGAE_MANIPULATOR = 10;
+    // public static final int     ALGAE_MANIPULATOR = 10;
 
-    //ELEVATOR:
-    public static final int     ELEVATOR_LEFT = 11;
-    public static final int     ELEVATOR_RIGHT = 12;
+    // //ELEVATOR:
+    // public static final int     ELEVATOR_LEFT = 11;
+    // public static final int     ELEVATOR_RIGHT = 12;
 
     //(NOTES) ELEVATOR_WINCH_FACTOR is a conversion factor from motor rotations to meters of height change.
     //ELEVATOR_WINCH_FACTOR is multiplied by native rotations of motor shaft 
@@ -60,13 +60,10 @@ public final class Constants
     public static final double  ELEVATOR_WINCH_FACTOR = (-1.0 / (1014.0 / 55.0)) * (2 * Math.PI) * 0.03175; //NEEDS TO BE CHANGED TO ACTUAL VALUE
 
     // Pneumatic valve controller port assignments.
-	public static final int		COMPRESSOR = 0;
-	public static final int		CORAL_PIVOT = 0;		
-	public static final int		ALGAE_EXTEND = 2;		
-	public static final int		ALGAE_PIVOT = 4;    
-
-
-    public static final double INTAKE_SPEED = 0.90;
+	// public static final int		COMPRESSOR = 0;
+	// public static final int		CORAL_PIVOT = 0;		
+	// public static final int		ALGAE_EXTEND = 2;		
+	// public static final int		ALGAE_PIVOT = 4;    
     
     // CAMERAS 
 

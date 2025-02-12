@@ -34,9 +34,9 @@ public class OuttakeCoral extends Command {
         switch(state){          
             case OUTTAKE:
                 coralManipulator.startOuttaking();
-                // if(!elevatedManipulator.hasCoral())
-                //     state = State.STOP;
-                //     SmartDashboard.putString("Outtake Coral Status", state.name());
+                if(!coralManipulator.hasCoral())
+                    state = State.STOP;
+                SmartDashboard.putString("Outtake Coral Status", state.name());
                 break;
                 
             case STOP:
