@@ -1,6 +1,7 @@
 
 package Team4450.Robot25;
 
+import java.util.HashMap;
 import java.util.Properties;
 
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
@@ -26,7 +27,7 @@ import edu.wpi.first.wpilibj.DriverStation;
  */
 public final class Constants
 {
-	public static String		PROGRAM_NAME = "ORF25-02.06.25VR-TESTBOT";
+	public static String		PROGRAM_NAME = "ORF25-02.11.25VR";
 
 	public static Robot			robot;
 
@@ -40,13 +41,13 @@ public final class Constants
 	    
     public static String                     functionMarker = "-".repeat(30);
 
-	// // Non-drive base motor controller port assignments
+	// Non-drive base motor controller port assignments
     public static final int     CORAL_MANIPULATOR = 9;
     public static final int     ALGAE_MANIPULATOR = 10;
 
-    // //ELEVATOR:
-    // public static final int     ELEVATOR_LEFT = 11;
-    // public static final int     ELEVATOR_RIGHT = 12;
+    //ELEVATOR:
+    public static final int     ELEVATOR_LEFT = 11;
+    public static final int     ELEVATOR_RIGHT = 12;
 
     //(NOTES) ELEVATOR_WINCH_FACTOR is a conversion factor from motor rotations to meters of height change.
     //ELEVATOR_WINCH_FACTOR is multiplied by native rotations of motor shaft 
@@ -56,16 +57,16 @@ public final class Constants
     // * 2pi for radians traveled/angular displacement * spool radius in meters to get linear displacement
     // 1.25 inch radius is 0.03175 meters (source: looked it up)
     // idk why it has to be negative, probably the gears swap rotation, not a big deal tho
-    // public static final double  ELEVATOR_WINCH_FACTOR = (-1.0 / (1014.0 / 55.0)) * (2 * Math.PI) * 0.03175; //NEEDS TO BE CHANGED TO ACTUAL VALUE
+    public static final double  ELEVATOR_WINCH_FACTOR = (-1.0 / (1014.0 / 55.0)) * (2 * Math.PI) * 0.03175; //NEEDS TO BE CHANGED TO ACTUAL VALUE
 
-    // // // Pneumatic valve controller port assignments.
-	// public static final int		COMPRESSOR = 0;
-	// public static final int		CORAL_PIVOT = 0;		
-	// public static final int		ALGAE_EXTEND = 2;		
-	// public static final int		ALGAE_PIVOT = 4;    
+    // Pneumatic valve controller port assignments.
+	public static final int		COMPRESSOR = 0;
+	public static final int		CORAL_PIVOT = 0;		
+	public static final int		ALGAE_EXTEND = 2;		
+	public static final int		ALGAE_PIVOT = 4;    
 
 
-    // public static final double INTAKE_SPEED = 0.90;
+    public static final double INTAKE_SPEED = 0.90;
     
     // CAMERAS 
 
@@ -73,6 +74,9 @@ public final class Constants
         new Translation3d(0, 0.32, 0.28), // change last value to height in METERS of lens
         new Rotation3d(0, 0, Math.toRadians(180)) // keep the 180, the -10 is the camera angle (negative!)
     );
+
+    public static double robotCoralLongitudinalScoringDistance = 0.3; // 0.3 meters distance from the tag for scoring coral.
+    public static double robotCoralLateralScoringOffset = 0.2; // Added to the target position if scoring left and subtracted if scoring right.
 
     public static double xCameraOffset = 0;
     public static double yCameraOffset = 0;
@@ -89,7 +93,7 @@ public final class Constants
 
 	  
 	// Analog Input port assignments.
-	// public static final int PRESSURE_SENSOR = 1;
+	public static final int PRESSURE_SENSOR = 1;
 	// LCD display line number constants showing class where the line is set.
 	public static final int		LCD_1 = 1;	    // Robot, Auto Commands.
 	public static final int		LCD_2 = 2;	    // Swerve Drive command.
@@ -113,7 +117,7 @@ public final class Constants
         public static final double kRotSlowModeFactor = .20; // 20% of normal.
         
         //TrackingMode Speed:
-        public static final double kTrackingModeFactor = 0.40;
+        public static final double kTrackingModeFactor = 0.01;
         public static final double kRotTrackingModeFactor = 0.20;
 
         // these were 1.2, 1.8, 2.0 in REV base code. Controls drivebase slew limiting.

@@ -37,7 +37,7 @@ public class RemoveAlgae extends Command {
                 break;
 
             case RETURN:
-                // algaeManipulator.retractIn();
+                algaeManipulator.retractIn();
                 if(algaeManipulator.algaeExtendStatus == false)
                     state = State.STOP;
                 break;
