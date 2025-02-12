@@ -63,13 +63,13 @@ public class CoralManipulator extends SubsystemBase {
 
     public void startIntaking(){
 
-        coralMotor.set(-0.5);
+        coralMotor.set(1);
         isRunning = true;
         updateDS();
     }
 
     public void startOuttaking(){
-        coralMotor.set(0.5);
+        coralMotor.set(-1);
         isRunning = true;
         updateDS();
     }
@@ -90,7 +90,9 @@ public class CoralManipulator extends SubsystemBase {
         coralPivotStatus = false;
         updateDS();
     }
-
+    public double getCurrent(){
+        return coralMotor.getOutputCurrent();
+    }
     // public void pivotUp(){
     //     Util.consoleLog();
 

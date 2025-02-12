@@ -42,8 +42,8 @@ public class IntakeCoral extends Command {
                 // if(coralManipulator.hasCoral())
                 //     state = State.STOP;
                 //     SmartDashboard.putString("Intake Coral Status", state.name());
-                SmartDashboard.putNumber("current", coralManipulator.getCurrent());
-                SmartDashboard.putString("Intake Coral Status", state.name());
+                if(coralManipulator.getCurrent() > 70.0)
+                    state = State.STOP;
                 break;
 
             case STOP:
