@@ -305,7 +305,6 @@ public class DriveBase extends SubsystemBase {
    * @param targetPose
    */
   public void setTargetPose(Pose2d targetPose) {
-    Util.consoleLog(targetPose.toString());
     this.targetPose = targetPose;
   }
 

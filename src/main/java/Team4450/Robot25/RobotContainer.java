@@ -13,6 +13,7 @@ import Team4450.Robot25.commands.DriveCommand;
 import Team4450.Robot25.commands.SetTagBasedPostion;
 import Team4450.Robot25.commands.GetPoseEsimate;
 import Team4450.Robot25.commands.PointToYaw;
+import Team4450.Robot25.commands.RotateToPose;
 import Team4450.Robot25.commands.SetTargetPose;
 import Team4450.Robot25.commands.UpdateCandle;
 import Team4450.Robot25.commands.UpdateVisionPose;
@@ -370,7 +371,7 @@ public class RobotContainer
 		// 	.whileTrue(new GetPoseEsimate(driveBase, pvTagCamera, true, true));
 		
 		new Trigger(()-> driverController.getBButton())
-			.whileTrue(new GoToPose(driveBase, true, true));
+			.whileTrue(new RotateToPose(driveBase, true, true).andThen(new GoToPose(driveBase, true, true)));
 
 		new Trigger(()-> driverController.getXButton())
 			.whileTrue(new SetTagBasedPostion(driveBase, pvTagCamera, true));

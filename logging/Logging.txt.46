@@ -1,0 +1,1462 @@
+<17>09:24:02:596: Robot25.Robot.robotInit(Robot.java:88): Simulated Robot
+<17>09:24:02:604: Robot25.Robot.robotInit(Robot.java:97): ORF25-01.30.25VR compiled by jitpack at 2025-01-12 00:47:57 (branch=HEAD, commit=3454bcf)
+<17>09:24:02:604: Robot25.Robot.robotInit(Robot.java:108): Robot WPILib=2025.2.1  Java=17.0.12
+<17>09:24:02:605: Robot25.Robot.robotInit(Robot.java:109): RobotLib=4.9.0 (01.11.2025) WPILib=2025.2.1
+<17>09:24:02:614: Robot25.RobotContainer.<init>(RobotContainer.java:116)
+<17>09:24:02:614: Robot25.RobotContainer.getMatchInformation(RobotContainer.java:448): Alliance=Blue, Location=0, FMS=false event= match=0 msg=
+<17>09:24:02:615: Lib.Util.readProperties(Util.java:80)
+<17>09:24:02:615: -- listing properties --
+<17>09:24:02:616: CompressorEnabledByDefault=true
+<17>09:24:02:616: RobotId=comp
+<17>09:24:02:618: Lib.NavX.getInstance(NavX.java:142)
+<17>09:24:02:622: Lib.NavX.<init>(NavX.java:85): portType=0, rate=7
+<17>09:24:03:634: Robot25.commands.Utility.NotifierCommand.<init>(NotifierCommand.java:43)
+<17>09:24:03:635: Robot25.commands.Utility.NotifierCommand.<init>(NotifierCommand.java:66): Notifier-SB created!
+<17>09:24:03:636: Robot25.subsystems.ShuffleBoard.<init>(ShuffleBoard.java:45): ShuffleBoard created!
+<17>09:24:03:649: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): FL
+<17>09:24:03:666: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): FR
+<17>09:24:03:667: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): RL
+<17>09:24:03:667: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): RR
+<17>09:24:03:704: Robot25.subsystems.DriveBase.<init>(DriveBase.java:159): max vel=4.92 m/s
+<17>09:24:03:708: Robot25.subsystems.DriveBase.resetOdometry(DriveBase.java:340): Pose2d(Translation2d(X: 7.47, Y: 0.56), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:03:709: Robot25.subsystems.DriveBase.configureAutoBuilder(DriveBase.java:917)
+<26>09:24:03:716: Robot25.subsystems.DriveBase.zeroGyro(DriveBase.java:755)
+<17>09:24:04:060: Robot25.subsystems.PhotonVision.setLedMode(PhotonVision.java:421): 0
+<17>09:24:04:060: Robot25.subsystems.PhotonVision.<init>(PhotonVision.java:124): PhotonVision (HD_USB_Camera) created!
+<17>09:24:04:062: Robot25.commands.DriveCommand.<init>(DriveCommand.java:30)
+<17>09:24:04:063: Lib.MonitorPDP.getInstance(MonitorPDP.java:65)
+<17>09:24:04:064: Lib.MonitorPDP.<init>(MonitorPDP.java:85)
+<29>09:24:04:064: Lib.MonitorPDP.run(MonitorPDP.java:174)
+<17>09:24:04:066: Robot25.RobotContainer.<init>(RobotContainer.java:269): NavX connected version=4.1.500
+<17>09:24:04:066: Robot25.RobotContainer.setAutoChoices(RobotContainer.java:425)
+<17>09:24:04:073: Robot25.RobotContainer.configureButtonBindings(RobotContainer.java:312)
+<17>09:24:04:078: Robot25.commands.PointToYaw.<init>(PointToYaw.java:32)
+<17>09:24:04:088: Robot25.RobotContainer.<init>(RobotContainer.java:301): ------------------------------
+<17>09:24:04:089: Robot25.Robot.robotInit(Robot.java:135): ------------------------------
+<17>09:24:04:089: Robot25.Robot.disabledInit(Robot.java:182)
+<17>09:24:04:090: Robot25.Robot.disabledInit(Robot.java:190): ------------------------------
+<31>09:24:04:091: Robot25.subsystems.ShuffleBoard.resetLEDIndicators(ShuffleBoard.java:97)
+<17>09:24:04:100: Robot25.commands.UpdateVisionPose.initialize(UpdateVisionPose.java:47): HD_USB_Camera
+<17>09:24:14:117: Robot25.Robot.teleopInit(Robot.java:253): ------------------------------
+<17>09:24:14:118: Robot25.RobotContainer.getMatchInformation(RobotContainer.java:448): Alliance=Red, Location=1, FMS=false event= match=0 msg=
+<17>09:24:14:119: Robot25.Robot.teleopInit(Robot.java:273): ------------------------------
+<17>09:24:14:122: Robot25.commands.Utility.NotifierCommand.initialize(NotifierCommand.java:106): Notifier-SB period=0.025
+<17>09:24:14:122: Robot25.commands.DriveCommand.initialize(DriveCommand.java:44)
+<17>09:24:18:977: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>09:24:18:977: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:817)
+<17>09:24:18:978: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:867): 0.55 0.20
+<17>09:24:18:981: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 5.82, Y: 3.63), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:000: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 5.82, Y: 3.63), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:021: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 5.82, Y: 3.63), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:040: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 5.82, Y: 3.63), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:060: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 5.82, Y: 3.63), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:081: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 5.82, Y: 3.63), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:100: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 5.82, Y: 3.63), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:117: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:92): interrupted=true
+<17>09:24:19:118: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93)
+<17>09:24:19:118: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>09:24:19:119: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>09:24:19:437: Robot25.commands.DriveCommand.end(DriveCommand.java:94): interrupted=true
+<17>09:24:19:437: Robot25.commands.GoToPose.initialize(GoToPose.java:50): Init
+<17>09:24:19:438: Robot25.commands.GoToPose.initialize(GoToPose.java:52)
+<17>09:24:19:438: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>09:24:19:438: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:817)
+<17>09:24:19:439: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:867): 0.55 0.20
+<17>09:24:19:443: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:443: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.47, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:445: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:460: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:460: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.46, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:460: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:479: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:480: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.45, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:480: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:499: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:499: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.44, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:500: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:520: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:520: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.43, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:520: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:540: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:541: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.42, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:541: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:560: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:560: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.41, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:560: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:579: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:580: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.40, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:580: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:599: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:600: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.39, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:600: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:621: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:621: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.38, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:621: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:640: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:640: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.37, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:640: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:660: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:660: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.36, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:660: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:679: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:680: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.35, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:680: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:699: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:699: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.34, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:700: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:721: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:721: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.33, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:721: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:740: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:740: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.32, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:741: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:760: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:760: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.31, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:760: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:779: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:780: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.30, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:780: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:799: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:800: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.28, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:800: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:820: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:821: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.27, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:821: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:840: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:840: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.26, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:840: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:859: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:860: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.25, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:860: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:880: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:880: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.24, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:880: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:899: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:900: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.23, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:900: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:920: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:920: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.22, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:920: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:940: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:940: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.20, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:941: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:960: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:960: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.19, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:960: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:19:979: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:19:980: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.18, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:19:980: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:000: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:000: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.17, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:000: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:020: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:021: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.16, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:021: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:040: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:040: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.15, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:040: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:059: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:060: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.13, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:060: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:079: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:080: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.12, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:080: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:099: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:099: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.11, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:099: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:120: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:120: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.10, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:120: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:140: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:140: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.08, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:141: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:160: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:160: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.07, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:160: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:179: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:180: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.06, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:180: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:199: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:199: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.05, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:199: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:220: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:220: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.03, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:221: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:240: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:240: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.02, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:241: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:261: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:262: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 7.01, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:262: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:280: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:280: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.99, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:280: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:299: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:300: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.98, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:300: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:321: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:321: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.97, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:321: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:340: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:340: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.96, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:340: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:360: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:360: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.94, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:361: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:380: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:380: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.93, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:380: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:399: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:399: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.92, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:399: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:420: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:420: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.90, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:421: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:440: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:440: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.89, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:440: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:460: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:460: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.88, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:460: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:480: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:480: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:480: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:499: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:500: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.85, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:500: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:520: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:520: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.84, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:520: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:541: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:541: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.82, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:541: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:560: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:560: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.81, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:560: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:580: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:580: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.79, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:580: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:599: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:600: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.78, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:600: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:620: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:621: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.77, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:621: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:640: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:640: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.75, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:640: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:660: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:660: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.74, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:660: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:679: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:680: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.73, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:680: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:699: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:699: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.71, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:699: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:720: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:720: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.70, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:720: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:740: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:740: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.68, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:740: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:761: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:761: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.67, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:761: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:780: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:781: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.66, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:781: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:800: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:800: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.64, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:800: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:820: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:821: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.63, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:821: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:840: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:840: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.62, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:840: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:859: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:860: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.60, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:860: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:880: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:880: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.59, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:880: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:899: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:899: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.57, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:899: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:920: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:921: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.56, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:921: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:940: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:940: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.55, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:940: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:960: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:960: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.53, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:960: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:20:979: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:20:980: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.52, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:20:980: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:000: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:000: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.50, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:000: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:020: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:020: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.49, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:021: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:040: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:040: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.48, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:040: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:060: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:061: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.46, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:061: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:080: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:080: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.45, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:080: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:099: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:099: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.43, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:099: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:120: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:121: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.42, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:121: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:140: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:140: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.41, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:140: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:160: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:160: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.39, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:160: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:180: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:180: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.38, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:180: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:200: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:200: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.36, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:200: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:220: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:220: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.35, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:220: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:241: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:241: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.34, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:242: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:260: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:260: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.32, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:260: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:280: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:280: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.31, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:280: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:299: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:299: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.30, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:299: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:321: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:321: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.28, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:321: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:342: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:342: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.27, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:342: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:360: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:360: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.25, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:360: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:379: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:380: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.24, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:380: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:399: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:399: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.23, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:399: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:421: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:421: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.21, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:422: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:440: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:440: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.20, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:440: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:460: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:460: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.19, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:460: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:479: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:479: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.17, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:480: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:499: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:499: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.16, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:499: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:520: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:520: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.15, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:520: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:539: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:540: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.13, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:540: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:559: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:560: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.12, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:560: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:579: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:579: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.11, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:579: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:599: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:599: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.09, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:599: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:620: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:620: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.08, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:621: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:639: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:640: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.07, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:640: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:659: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:659: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.05, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:660: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:679: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:679: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.04, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:679: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:699: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:699: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.03, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:699: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:720: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:721: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.01, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:721: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:739: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:740: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 6.00, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:740: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:759: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:760: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.99, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:760: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:779: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:780: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.98, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:780: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:799: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:799: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.96, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:799: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:820: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:821: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.95, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:821: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:840: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:840: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.94, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:840: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:860: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:860: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.92, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:860: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:880: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:880: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.91, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:880: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:899: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:899: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.90, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:899: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:920: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:920: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.89, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:920: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:940: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:940: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.87, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:940: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:960: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:960: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:960: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:979: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:21:980: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:21:980: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:21:999: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:000: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:000: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:020: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:021: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:021: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:040: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:040: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:040: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:060: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:060: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:060: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:079: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:080: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:080: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:099: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:099: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:099: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:121: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:121: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:121: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:140: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:140: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:140: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:160: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:160: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:160: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:179: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:179: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:179: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:199: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:199: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:199: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:220: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:221: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:221: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:240: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:240: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:240: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:259: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:260: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:260: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:279: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:279: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:279: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:299: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:299: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:299: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:320: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:320: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:321: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:339: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:340: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:340: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:360: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:360: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:360: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:379: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:379: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:379: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:399: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:399: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:399: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:420: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:421: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:421: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:440: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:441: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:441: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:460: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:460: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:460: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:479: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:479: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:479: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:499: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:499: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:499: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:520: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:520: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:520: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:540: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:540: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:540: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:559: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:560: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:560: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:579: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:579: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:579: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:599: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:599: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:599: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:620: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:620: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:620: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:639: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:640: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:640: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:660: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:660: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:660: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:681: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:681: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:682: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:699: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:699: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:699: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:720: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:720: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:720: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:739: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:740: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:740: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:759: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:760: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:760: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:779: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:779: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:779: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:799: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:799: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:799: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:820: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:820: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:820: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:840: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:840: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:840: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:859: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:860: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:860: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:879: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:879: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:879: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:899: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:899: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:899: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:920: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:920: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:920: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:939: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:940: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:940: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:959: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:959: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:960: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:979: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:980: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:22:980: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:22:999: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:22:999: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:23:000: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:23:021: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:23:021: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:23:021: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:23:040: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:23:041: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:23:041: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:23:060: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:23:061: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:23:061: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:23:080: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:23:080: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:23:080: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:23:099: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:23:099: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:23:099: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:23:120: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:23:121: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:23:121: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:23:139: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:23:140: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:23:140: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:23:159: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:23:160: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:23:160: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:23:179: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:23:179: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:23:179: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:23:202: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here5.82
+<17>09:24:23:203: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 5.86, Y: 4.01), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:23:203: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:23:217: Robot25.commands.GoToPose.end(GoToPose.java:145): interrupted=true
+<17>09:24:23:217: Robot25.commands.GoToPose.end(GoToPose.java:146)
+<17>09:24:23:218: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:23:218: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>09:24:23:218: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>09:24:23:218: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>09:24:23:221: Robot25.commands.DriveCommand.initialize(DriveCommand.java:44)
+<17>09:24:30:417: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>09:24:30:418: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:817)
+<17>09:24:30:418: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:867): 0.55 0.20
+<17>09:24:30:422: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 3.16, Y: 4.43), Rotation2d(Rads: 3.14, Deg: 180.00))
+<17>09:24:30:441: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 3.16, Y: 4.43), Rotation2d(Rads: 3.14, Deg: 180.00))
+<17>09:24:30:460: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 3.16, Y: 4.43), Rotation2d(Rads: 3.14, Deg: 180.00))
+<17>09:24:30:480: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 3.16, Y: 4.43), Rotation2d(Rads: 3.14, Deg: 180.00))
+<17>09:24:30:500: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 3.16, Y: 4.43), Rotation2d(Rads: 3.14, Deg: 180.00))
+<17>09:24:30:521: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 3.16, Y: 4.43), Rotation2d(Rads: 3.14, Deg: 180.00))
+<17>09:24:30:537: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:92): interrupted=true
+<17>09:24:30:537: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93)
+<17>09:24:30:537: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>09:24:30:537: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>09:24:31:877: Robot25.commands.DriveCommand.end(DriveCommand.java:94): interrupted=true
+<17>09:24:31:877: Robot25.commands.GoToPose.initialize(GoToPose.java:50): Init
+<17>09:24:31:877: Robot25.commands.GoToPose.initialize(GoToPose.java:52)
+<17>09:24:31:877: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>09:24:31:877: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:817)
+<17>09:24:31:877: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:867): 0.55 0.20
+<17>09:24:31:881: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:31:881: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.13, Y: 3.63), Rotation2d(Rads: -3.09, Deg: -176.95))
+<17>09:24:31:881: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.18
+<17>09:24:31:900: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:31:900: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.13, Y: 3.63), Rotation2d(Rads: -3.09, Deg: -176.95))
+<17>09:24:31:900: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.135
+<17>09:24:31:922: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:31:922: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.14, Y: 3.63), Rotation2d(Rads: -3.10, Deg: -177.34))
+<17>09:24:31:923: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.135
+<17>09:24:31:940: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:31:940: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.14, Y: 3.63), Rotation2d(Rads: -3.10, Deg: -177.63))
+<17>09:24:31:940: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.135
+<17>09:24:31:960: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:31:960: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.15, Y: 3.63), Rotation2d(Rads: -3.11, Deg: -177.92))
+<17>09:24:31:960: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.09
+<17>09:24:31:980: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:31:980: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.16, Y: 3.63), Rotation2d(Rads: -3.11, Deg: -178.21))
+<17>09:24:31:980: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.09
+<17>09:24:32:000: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:000: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.16, Y: 3.63), Rotation2d(Rads: -3.11, Deg: -178.41))
+<17>09:24:32:000: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.09
+<17>09:24:32:022: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:022: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.17, Y: 3.63), Rotation2d(Rads: -3.12, Deg: -178.60))
+<17>09:24:32:022: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.09
+<17>09:24:32:040: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:041: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.17, Y: 3.63), Rotation2d(Rads: -3.12, Deg: -178.80))
+<17>09:24:32:041: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.09
+<17>09:24:32:060: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:061: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.18, Y: 3.63), Rotation2d(Rads: -3.12, Deg: -178.99))
+<17>09:24:32:061: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.045
+<17>09:24:32:080: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:080: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.19, Y: 3.63), Rotation2d(Rads: -3.13, Deg: -179.19))
+<17>09:24:32:080: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.045
+<17>09:24:32:099: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:099: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.19, Y: 3.63), Rotation2d(Rads: -3.13, Deg: -179.28))
+<17>09:24:32:099: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.045
+<17>09:24:32:121: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:121: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.20, Y: 3.63), Rotation2d(Rads: -3.13, Deg: -179.38))
+<17>09:24:32:121: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.045
+<17>09:24:32:140: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:140: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.20, Y: 3.63), Rotation2d(Rads: -3.13, Deg: -179.48))
+<17>09:24:32:140: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.045
+<17>09:24:32:160: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:160: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.21, Y: 3.63), Rotation2d(Rads: -3.13, Deg: -179.57))
+<17>09:24:32:160: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.045
+<17>09:24:32:180: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:180: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.21, Y: 3.63), Rotation2d(Rads: -3.14, Deg: -179.67))
+<17>09:24:32:180: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.045
+<17>09:24:32:200: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:200: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.22, Y: 3.63), Rotation2d(Rads: -3.14, Deg: -179.77))
+<17>09:24:32:200: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.045
+<17>09:24:32:221: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:221: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.22, Y: 3.63), Rotation2d(Rads: -3.14, Deg: -179.87))
+<17>09:24:32:221: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.045
+<17>09:24:32:240: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:240: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.23, Y: 3.63), Rotation2d(Rads: -3.14, Deg: -179.96))
+<17>09:24:32:240: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.045
+<17>09:24:32:260: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:260: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.23, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.94))
+<17>09:24:32:260: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:280: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:280: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.24, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:280: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:300: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:300: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.24, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:300: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:321: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:321: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.25, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:321: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:340: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:341: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.25, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:341: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:360: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:360: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.26, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:360: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:380: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:381: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.26, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:381: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:399: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:400: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.27, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:400: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:421: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:421: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.27, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:421: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:442: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:442: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.27, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:442: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:460: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:460: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.28, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:460: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:480: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:480: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.28, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:480: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:499: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:500: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.29, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:500: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:521: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:521: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.29, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:521: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:540: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:540: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.29, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:540: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:560: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:560: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.30, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:560: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:580: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:580: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.30, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:580: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:599: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:600: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.31, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:600: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:621: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:621: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.31, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:621: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:640: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:640: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.31, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:640: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:660: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:660: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.32, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:660: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:680: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:680: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.32, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:680: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:699: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:699: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.32, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:699: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:721: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:721: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.33, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:721: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:740: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:740: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.33, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:740: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:760: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:760: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.33, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:760: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:780: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:780: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.34, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:780: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:800: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:800: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.34, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:800: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:821: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:821: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.34, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:822: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:840: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:840: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.35, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:840: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:860: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:860: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.35, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:860: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:880: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:880: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.35, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:880: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:900: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:900: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.35, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:900: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:921: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:921: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.36, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:921: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:940: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:940: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.36, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:940: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:960: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:960: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.36, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:960: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:32:980: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:32:981: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.36, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:32:981: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:000: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:000: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.37, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:000: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:021: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:021: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.37, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:021: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:040: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:040: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.37, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:040: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:060: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:060: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.37, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:060: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:080: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:080: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.37, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:080: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:099: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:099: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.38, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:100: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:121: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:121: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.38, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:121: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:140: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:140: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.38, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:140: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:160: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:160: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.38, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:160: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:180: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:180: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.38, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:180: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:200: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:200: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.38, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:200: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:221: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:222: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:222: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:240: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:241: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:241: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:260: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:260: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:260: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:280: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:280: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:280: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:299: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:299: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:300: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:321: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:321: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:321: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:340: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:340: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:340: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:360: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:360: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:360: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:380: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:380: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:380: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:399: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:400: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:400: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:421: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:421: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:421: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:440: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:440: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:440: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:460: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:460: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:460: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:480: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:480: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:480: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:499: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:499: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:499: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:521: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:521: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:521: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:540: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:540: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:540: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:560: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:560: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:560: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:580: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:580: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:580: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:599: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:599: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:600: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:621: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:621: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:621: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:640: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:640: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:640: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:660: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:660: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:660: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:680: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:680: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:680: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:699: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:699: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:700: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:720: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:721: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:721: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:740: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:740: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:740: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:760: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:760: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:760: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:780: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:780: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.40, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:780: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:800: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:800: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:800: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:822: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:822: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:822: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:840: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:840: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:840: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:860: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:860: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:860: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:880: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:880: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:880: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:899: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:899: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:899: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:921: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:921: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:921: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:940: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:940: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.39, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:940: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:960: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:960: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.38, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:960: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:33:979: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:33:980: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.38, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:33:980: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:000: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:000: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.38, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:000: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:021: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:021: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.38, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:021: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:040: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:040: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.38, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:040: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:060: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:060: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.38, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:061: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:081: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:081: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.37, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:081: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:100: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:100: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.37, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:101: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:121: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:121: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.37, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:121: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:140: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:140: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.37, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:140: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:160: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:160: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.36, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:160: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:180: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:180: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.36, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:180: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:199: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:200: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.36, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:200: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:221: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:221: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.36, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:221: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:240: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:240: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.35, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:240: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:260: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:261: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.35, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:261: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:280: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:280: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.35, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:280: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:299: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:300: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.34, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:300: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:321: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:321: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.34, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:321: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:340: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:340: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.34, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:341: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:360: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:361: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.33, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:361: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:380: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:380: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.33, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:380: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:399: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:400: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.33, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:400: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:421: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:422: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.32, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:422: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:440: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:440: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.32, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:440: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:460: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:460: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.31, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:461: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:480: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:480: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.31, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:480: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:499: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:499: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.30, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:499: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:521: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:521: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.30, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:521: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:540: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:540: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.30, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:540: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:560: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:560: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.29, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:560: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:580: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:580: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.29, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:580: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:600: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:600: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.28, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:600: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:621: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:621: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.28, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:621: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:640: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:640: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.27, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:640: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:660: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:660: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.27, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:660: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:680: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:680: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.26, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:680: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:699: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:700: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.25, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:700: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:721: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:721: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.25, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:721: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:740: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:740: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.24, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:740: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:760: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:760: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.24, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:760: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:780: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:780: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.23, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:780: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:800: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:800: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.22, Y: 3.63), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:800: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:821: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:821: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.22, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:821: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:840: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:840: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.21, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:840: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:860: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:860: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.21, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:860: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:880: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:880: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.20, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:880: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:899: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:899: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.19, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:900: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:921: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:921: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.18, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:921: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:940: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:940: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.18, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:940: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:960: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:960: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.17, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:960: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:34:980: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:34:980: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.16, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:34:980: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:000: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:000: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.16, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:000: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:021: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:021: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.15, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:021: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:040: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:040: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.14, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:040: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:060: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:060: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.13, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:060: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:080: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:080: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.12, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:080: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:099: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:099: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.11, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:099: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:121: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:121: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.11, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:121: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:140: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:140: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.10, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:140: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:161: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:161: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.09, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:161: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:180: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:180: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.08, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:180: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:200: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:200: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.07, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:200: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:221: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:221: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.06, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:221: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:240: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:240: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.05, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:240: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:261: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:261: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.04, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:261: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:280: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:280: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.03, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:280: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:299: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:299: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.02, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:299: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:321: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:322: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.01, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:322: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:340: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:340: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 2.00, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:341: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:360: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:360: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.99, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:360: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:380: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:380: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.98, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:380: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:400: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:400: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.97, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:400: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:422: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:422: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.96, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:422: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:440: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:441: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.95, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:441: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:460: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:460: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.93, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:460: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:480: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:480: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.92, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:480: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:499: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:499: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.91, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:500: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:521: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:521: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.90, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:521: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:540: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:540: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.89, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:540: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:560: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:560: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.87, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:560: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:580: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:580: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.86, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:580: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:599: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:600: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.85, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:600: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:621: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:621: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.83, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:621: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:640: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:640: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.82, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:640: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:660: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:660: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.81, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:660: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:680: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:680: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.79, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:680: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:700: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:700: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.78, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:700: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:721: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:721: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.77, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:721: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:740: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:740: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.75, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:740: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:760: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:760: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.74, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:760: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:780: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:780: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.72, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:780: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:799: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:799: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.71, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:799: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:821: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:821: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.69, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:821: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:840: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:840: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.67, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:840: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:860: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:860: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.66, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:860: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:880: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:880: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.64, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:880: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:899: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:899: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.63, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:900: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:921: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:921: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.61, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:921: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:940: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:940: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.59, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:940: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:960: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:960: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.58, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:961: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:35:979: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:35:979: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.56, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:35:979: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:000: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:000: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.54, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:000: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:021: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:021: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.52, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:021: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:040: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:040: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.50, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:040: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:060: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:060: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.49, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:060: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:080: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:080: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.47, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:080: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:099: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:100: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.45, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:100: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:121: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:121: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.43, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:121: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:140: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:140: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.41, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:140: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:160: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:160: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.39, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:160: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:179: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:180: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.37, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:180: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:199: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:199: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.35, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:199: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:222: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:222: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.33, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:222: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:240: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:241: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.30, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:241: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:260: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:260: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.28, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:260: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:280: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:280: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.26, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:280: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:299: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:299: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.24, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:299: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:321: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:321: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.22, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:321: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:340: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:340: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.19, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:340: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:360: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:360: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.17, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:360: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:380: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:380: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.15, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:380: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:622: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:623: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.12, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:623: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:626: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:626: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.10, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:627: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:631: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:631: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.07, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:631: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:636: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:636: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.05, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:636: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:640: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:640: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.02, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:640: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:644: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:645: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 1.00, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:645: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:648: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:648: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.97, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:648: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:651: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:652: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.95, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:652: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:656: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:656: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.92, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:656: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:661: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:661: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.89, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:661: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:665: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:665: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.86, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:665: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:669: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:669: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.84, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:669: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:674: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:675: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.81, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:675: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:678: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:678: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.78, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:678: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:681: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:681: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.75, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:681: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:700: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:700: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.72, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:700: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:726: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:726: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.69, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:726: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:743: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:743: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.66, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:743: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:764: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:764: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.63, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:764: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:783: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:783: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.60, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:783: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:803: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:803: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.57, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:804: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:825: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:825: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.53, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:825: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:844: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:844: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.50, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:845: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:864: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:865: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.47, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:865: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:886: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:887: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.43, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:887: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:902: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:902: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.40, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:902: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:921: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:921: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.36, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:921: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:940: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:940: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.33, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:940: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:960: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:960: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.29, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:960: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:36:979: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:36:979: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.26, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:36:979: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:37:000: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:37:000: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.22, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:37:000: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:37:020: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:37:021: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.18, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:37:021: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:37:040: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:37:040: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.15, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:37:040: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:37:059: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:37:060: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.11, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:37:060: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:37:079: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:37:080: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.07, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:37:080: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:37:099: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:37:099: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: 0.03, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:37:099: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:37:120: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:37:120: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: -0.01, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:37:121: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:37:141: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:37:141: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: -0.05, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:37:142: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:37:161: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:37:161: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: -0.09, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:37:161: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:37:179: Robot25.commands.GoToPose.execute(GoToPose.java:74): Look here3.16
+<17>09:24:37:180: Robot25.commands.GoToPose.execute(GoToPose.java:103): Pose2d(Translation2d(X: -0.13, Y: 3.64), Rotation2d(Rads: 3.14, Deg: 179.84))
+<17>09:24:37:180: Robot25.commands.GoToPose.execute(GoToPose.java:128): Rotation: 0.0
+<17>09:24:37:197: Robot25.commands.GoToPose.end(GoToPose.java:145): interrupted=true
+<17>09:24:37:197: Robot25.commands.GoToPose.end(GoToPose.java:146)
+<17>09:24:37:197: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>09:24:37:197: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>09:24:37:197: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>09:24:37:197: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>09:24:37:200: Robot25.commands.DriveCommand.initialize(DriveCommand.java:44)

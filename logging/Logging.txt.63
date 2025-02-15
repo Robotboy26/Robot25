@@ -1,0 +1,951 @@
+<17>08:21:57:783: Robot25.Robot.robotInit(Robot.java:88): Simulated Robot
+<17>08:21:57:790: Robot25.Robot.robotInit(Robot.java:97): ORF25-01.30.25VR compiled by jitpack at 2025-01-12 00:47:57 (branch=HEAD, commit=3454bcf)
+<17>08:21:57:790: Robot25.Robot.robotInit(Robot.java:108): Robot WPILib=2025.2.1  Java=17.0.12
+<17>08:21:57:790: Robot25.Robot.robotInit(Robot.java:109): RobotLib=4.9.0 (01.11.2025) WPILib=2025.2.1
+<17>08:21:57:801: Robot25.RobotContainer.<init>(RobotContainer.java:116)
+<17>08:21:57:802: Robot25.RobotContainer.getMatchInformation(RobotContainer.java:448): Alliance=Blue, Location=0, FMS=false event= match=0 msg=
+<17>08:21:57:803: Lib.Util.readProperties(Util.java:80)
+<17>08:21:57:803: -- listing properties --
+<17>08:21:57:803: CompressorEnabledByDefault=true
+<17>08:21:57:804: RobotId=comp
+<17>08:21:57:805: Lib.NavX.getInstance(NavX.java:142)
+<17>08:21:57:808: Lib.NavX.<init>(NavX.java:85): portType=0, rate=7
+<17>08:21:58:821: Robot25.commands.Utility.NotifierCommand.<init>(NotifierCommand.java:43)
+<17>08:21:58:822: Robot25.commands.Utility.NotifierCommand.<init>(NotifierCommand.java:66): Notifier-SB created!
+<17>08:21:58:823: Robot25.subsystems.ShuffleBoard.<init>(ShuffleBoard.java:45): ShuffleBoard created!
+<17>08:21:58:831: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): FL
+<17>08:21:58:844: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): FR
+<17>08:21:58:845: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): RL
+<17>08:21:58:846: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): RR
+<17>08:21:58:873: Robot25.subsystems.DriveBase.<init>(DriveBase.java:159): max vel=4.92 m/s
+<17>08:21:58:876: Robot25.subsystems.DriveBase.resetOdometry(DriveBase.java:340): Pose2d(Translation2d(X: 7.47, Y: 0.56), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:21:58:876: Robot25.subsystems.DriveBase.configureAutoBuilder(DriveBase.java:917)
+<26>08:21:58:884: Robot25.subsystems.DriveBase.zeroGyro(DriveBase.java:755)
+<17>08:21:59:182: Robot25.subsystems.PhotonVision.setLedMode(PhotonVision.java:421): 0
+<17>08:21:59:183: Robot25.subsystems.PhotonVision.<init>(PhotonVision.java:124): PhotonVision (HD_USB_Camera) created!
+<17>08:21:59:185: Robot25.commands.DriveCommand.<init>(DriveCommand.java:30)
+<17>08:21:59:186: Lib.MonitorPDP.getInstance(MonitorPDP.java:65)
+<17>08:21:59:186: Lib.MonitorPDP.<init>(MonitorPDP.java:85)
+<29>08:21:59:187: Lib.MonitorPDP.run(MonitorPDP.java:174)
+<17>08:21:59:188: Robot25.RobotContainer.<init>(RobotContainer.java:269): NavX connected version=4.1.500
+<17>08:21:59:189: Robot25.RobotContainer.setAutoChoices(RobotContainer.java:425)
+<17>08:21:59:194: Robot25.RobotContainer.configureButtonBindings(RobotContainer.java:312)
+<17>08:21:59:198: Robot25.commands.PointToYaw.<init>(PointToYaw.java:32)
+<17>08:21:59:206: Robot25.RobotContainer.<init>(RobotContainer.java:301): ------------------------------
+<17>08:21:59:206: Robot25.Robot.robotInit(Robot.java:135): ------------------------------
+<17>08:21:59:207: Robot25.Robot.disabledInit(Robot.java:182)
+<17>08:21:59:208: Robot25.Robot.disabledInit(Robot.java:190): ------------------------------
+<31>08:21:59:208: Robot25.subsystems.ShuffleBoard.resetLEDIndicators(ShuffleBoard.java:97)
+<17>08:21:59:218: Robot25.commands.UpdateVisionPose.initialize(UpdateVisionPose.java:47): HD_USB_Camera
+<17>08:22:30:830: Robot25.Robot.teleopInit(Robot.java:253): ------------------------------
+<17>08:22:30:831: Robot25.RobotContainer.getMatchInformation(RobotContainer.java:448): Alliance=Red, Location=1, FMS=false event= match=0 msg=
+<17>08:22:30:833: Robot25.Robot.teleopInit(Robot.java:273): ------------------------------
+<17>08:22:30:838: Robot25.commands.Utility.NotifierCommand.initialize(NotifierCommand.java:106): Notifier-SB period=0.025
+<17>08:22:30:839: Robot25.commands.DriveCommand.initialize(DriveCommand.java:44)
+<17>08:22:38:670: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>08:22:38:671: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:817)
+<17>08:22:38:671: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:867): 0.55 0.20
+<17>08:22:38:809: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:92): interrupted=true
+<17>08:22:38:810: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93)
+<17>08:22:38:810: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:38:810: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:030: Robot25.commands.DriveCommand.end(DriveCommand.java:94): interrupted=true
+<17>08:22:39:030: Robot25.commands.GoToPose.initialize(GoToPose.java:48): Init
+<17>08:22:39:030: Robot25.commands.GoToPose.initialize(GoToPose.java:50)
+<17>08:22:39:030: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:031: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:817)
+<17>08:22:39:031: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:867): 0.55 0.20
+<17>08:22:39:032: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:033: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:033: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:033: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:033: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:033: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:033: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:051: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:051: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:051: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:052: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:052: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:052: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:052: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:071: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:072: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:072: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:073: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:073: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:073: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:074: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:091: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:092: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:093: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:093: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:094: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:094: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:095: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:111: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:112: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:113: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:113: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:113: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:114: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:114: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:131: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:132: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:132: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:132: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:133: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:133: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:133: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:151: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:152: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:152: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:152: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:153: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:153: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:153: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:171: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:172: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:172: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:173: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:173: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:174: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:174: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:191: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:192: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:192: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:193: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:193: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:194: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:194: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:211: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:212: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:213: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:213: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:213: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:214: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:214: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:231: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:232: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:232: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:232: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:233: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:233: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:233: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:250: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:251: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:251: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:251: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:251: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:251: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:252: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:270: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:271: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:271: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:271: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:271: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:271: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:271: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:291: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:292: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:292: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:292: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:293: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:293: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:294: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:312: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:312: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:313: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:313: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:313: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:314: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:314: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:331: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:332: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:332: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:333: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:333: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:334: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:334: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:351: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:352: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:352: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:353: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:353: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:353: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:353: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:370: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:370: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:370: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:371: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:371: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:371: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:371: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:391: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:392: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:392: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:393: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:393: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:393: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:394: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:411: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:412: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:412: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:413: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:413: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:414: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:414: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:431: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:432: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:432: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:433: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:433: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:433: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:433: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:451: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:452: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:452: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:452: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:452: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:453: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:453: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:471: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:471: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:471: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:472: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:472: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:472: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:472: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:491: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:492: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:492: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:493: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:493: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:493: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:494: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:512: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:512: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:513: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:513: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:513: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:514: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:514: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:531: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:532: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:532: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:532: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:533: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:533: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:533: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:551: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:552: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:552: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:552: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:553: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:553: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:553: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:571: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:572: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:572: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:572: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:573: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:573: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:573: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:591: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:592: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:592: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:593: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:593: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:593: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:594: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:611: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:612: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:613: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:613: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:613: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:614: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:614: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:631: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:631: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:631: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:631: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:631: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:632: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:632: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:651: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:651: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:652: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:652: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:652: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:652: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:653: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:671: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:672: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:672: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:672: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:673: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:673: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:673: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:690: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:690: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:691: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:691: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:691: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:691: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:691: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:710: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:710: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:710: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:711: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:711: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:711: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:711: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:731: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:731: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:731: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:732: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:732: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:732: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:733: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:751: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:752: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:752: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:752: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:753: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:753: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:753: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:771: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:771: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:772: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:772: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:772: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:773: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:773: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:791: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:792: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:792: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:792: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:792: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:793: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:793: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:812: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:812: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:812: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:813: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:813: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:813: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:814: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:831: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:832: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:832: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:832: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:833: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:833: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:833: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:851: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:851: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:852: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:852: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:852: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:852: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:852: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:870: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:870: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:870: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:870: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:870: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:871: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:871: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:891: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:891: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:891: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:892: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:892: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:892: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:892: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:911: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:912: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:912: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:912: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:912: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:913: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:913: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:931: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:931: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:931: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:932: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:932: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:932: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:932: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:951: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:952: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:952: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:952: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:952: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:953: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:953: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:970: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:971: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:971: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:971: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:971: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:971: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:971: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:39:990: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:39:991: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:39:991: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:39:991: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:39:991: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:39:991: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:39:991: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:010: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:011: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:011: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:011: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:011: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:012: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:012: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:031: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:031: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:031: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:031: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:031: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:032: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:032: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:050: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:051: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:051: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:051: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:051: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:051: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:051: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:070: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:070: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:070: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:070: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:071: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:071: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:071: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:091: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:091: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:091: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:092: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:092: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:093: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:093: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:110: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:111: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:111: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:111: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:111: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:111: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:111: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:131: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:131: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:131: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:131: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:131: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:132: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:132: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:150: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:150: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:150: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:150: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:151: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:151: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:151: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:170: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:170: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:170: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:170: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:170: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:171: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:171: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:191: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:191: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:191: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:192: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:192: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:192: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:192: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:210: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:211: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:211: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:211: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:211: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:211: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:211: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:231: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:232: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:232: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:232: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:232: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:233: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:233: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:251: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:251: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:251: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:251: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:251: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:252: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:252: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:270: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:271: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:271: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:271: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:271: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:271: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:272: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:292: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:292: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:292: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:292: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:293: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:293: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:293: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:311: Robot25.commands.GoToPose.execute(GoToPose.java:83): NO TARGET ASSIGNED
+<17>08:22:40:311: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=false
+<17>08:22:40:312: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:312: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:313: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:313: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:313: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:329: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=true
+<17>08:22:40:330: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:40:330: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:40:331: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:669)
+<17>08:22:40:331: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:40:332: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:40:334: Robot25.commands.DriveCommand.initialize(DriveCommand.java:44)
+<17>08:22:42:329: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>08:22:42:330: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:817)
+<17>08:22:42:330: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:867): 0.55 0.20
+<17>08:22:42:332: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 4.17, Y: 3.94), Rotation2d(Rads: -2.09, Deg: -120.00))
+<17>08:22:42:354: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 4.17, Y: 3.94), Rotation2d(Rads: -2.09, Deg: -120.00))
+<17>08:22:42:374: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 4.17, Y: 3.94), Rotation2d(Rads: -2.09, Deg: -120.00))
+<17>08:22:42:394: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 4.17, Y: 3.94), Rotation2d(Rads: -2.09, Deg: -120.00))
+<17>08:22:42:415: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 4.17, Y: 3.94), Rotation2d(Rads: -2.09, Deg: -120.00))
+<17>08:22:42:434: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 4.17, Y: 3.94), Rotation2d(Rads: -2.09, Deg: -120.00))
+<17>08:22:42:454: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 4.17, Y: 3.94), Rotation2d(Rads: -2.09, Deg: -120.00))
+<17>08:22:42:474: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 4.17, Y: 3.94), Rotation2d(Rads: -2.09, Deg: -120.00))
+<17>08:22:42:494: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 4.17, Y: 3.94), Rotation2d(Rads: -2.09, Deg: -120.00))
+<17>08:22:42:515: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 4.17, Y: 3.94), Rotation2d(Rads: -2.09, Deg: -120.00))
+<17>08:22:42:529: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:92): interrupted=true
+<17>08:22:42:530: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93)
+<17>08:22:42:530: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:42:530: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:43:029: Robot25.commands.DriveCommand.end(DriveCommand.java:94): interrupted=true
+<17>08:22:43:030: Robot25.commands.GoToPose.initialize(GoToPose.java:48): Init
+<17>08:22:43:030: Robot25.commands.GoToPose.initialize(GoToPose.java:50)
+<17>08:22:43:030: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:817)
+<17>08:22:43:030: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:867): 0.55 0.20
+<17>08:22:43:032: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.54, Y: 1.24), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:033: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:054: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.55, Y: 1.24), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:054: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:073: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.57, Y: 1.23), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:073: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:092: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.58, Y: 1.23), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:093: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:112: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.60, Y: 1.23), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:112: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:132: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.61, Y: 1.23), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:132: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:151: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.63, Y: 1.22), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:151: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:173: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.65, Y: 1.22), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:173: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:194: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.67, Y: 1.22), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:195: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:215: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.68, Y: 1.22), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:215: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:233: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.70, Y: 1.22), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:234: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:254: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.72, Y: 1.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:254: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:273: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.74, Y: 1.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:274: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:292: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.76, Y: 1.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:292: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:314: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.77, Y: 1.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:314: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:334: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.79, Y: 1.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:334: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:354: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.81, Y: 1.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:354: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:374: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.83, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:374: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:394: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.85, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:395: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:414: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.87, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:415: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:435: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.90, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:435: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:454: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.92, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:454: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:474: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.94, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:474: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:495: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.96, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:495: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:514: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 3.98, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:514: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:534: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.00, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:534: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:553: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.03, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:554: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:573: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.05, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:574: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:595: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.07, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:595: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:614: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.10, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:615: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:634: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.12, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:634: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:653: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.14, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:654: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:673: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.17, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:674: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:694: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.19, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:694: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:714: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.22, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:714: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:734: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.24, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:734: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:753: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.27, Y: 1.20), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:754: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:771: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.29, Y: 1.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:771: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:792: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.32, Y: 1.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:793: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:811: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.35, Y: 1.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:812: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:832: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.37, Y: 1.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:832: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:851: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.40, Y: 1.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:851: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:873: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.43, Y: 1.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:874: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:894: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.45, Y: 1.22), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:894: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:912: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.48, Y: 1.22), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:912: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:932: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.51, Y: 1.22), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:932: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:954: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.54, Y: 1.22), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:954: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:974: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.57, Y: 1.23), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:974: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:43:994: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.60, Y: 1.23), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:43:995: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:014: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.62, Y: 1.23), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:015: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:032: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.65, Y: 1.24), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:032: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:053: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.68, Y: 1.24), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:053: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:074: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.71, Y: 1.25), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:074: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:094: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.74, Y: 1.25), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:095: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:112: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.77, Y: 1.26), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:112: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:134: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.80, Y: 1.26), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:134: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:154: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.84, Y: 1.27), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:154: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:174: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.87, Y: 1.27), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:174: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:195: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.90, Y: 1.28), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:195: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:214: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.93, Y: 1.28), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:214: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:235: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.96, Y: 1.29), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:235: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:254: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 4.99, Y: 1.30), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:255: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:274: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.02, Y: 1.30), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:274: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:296: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.06, Y: 1.31), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:297: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:311: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.09, Y: 1.32), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:312: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:332: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.12, Y: 1.32), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:333: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:351: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.16, Y: 1.33), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:351: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:371: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.19, Y: 1.34), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:372: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:392: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.22, Y: 1.35), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:392: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:413: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.26, Y: 1.36), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:413: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:434: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.29, Y: 1.37), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:434: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:454: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.32, Y: 1.38), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:455: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:474: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.36, Y: 1.39), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:475: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:495: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.39, Y: 1.40), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:495: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:515: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.43, Y: 1.41), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:515: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:532: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.46, Y: 1.42), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:532: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:552: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.50, Y: 1.43), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:552: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:571: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.53, Y: 1.44), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:572: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:592: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.57, Y: 1.45), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:593: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:612: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.60, Y: 1.46), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:612: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:632: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.64, Y: 1.48), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:632: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:652: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.68, Y: 1.49), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:652: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:672: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.71, Y: 1.50), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:672: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:693: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.75, Y: 1.52), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:693: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:712: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.79, Y: 1.53), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:712: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:732: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.82, Y: 1.55), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:732: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:751: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.86, Y: 1.56), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:751: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:771: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.90, Y: 1.58), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:771: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:792: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.93, Y: 1.59), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:792: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:813: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 5.97, Y: 1.61), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:813: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:834: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.01, Y: 1.62), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:834: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:854: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.05, Y: 1.64), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:854: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:875: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.08, Y: 1.66), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:875: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:894: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.12, Y: 1.68), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:895: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:912: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.16, Y: 1.69), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:913: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:934: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.20, Y: 1.71), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:934: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:954: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.24, Y: 1.73), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:954: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:974: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.27, Y: 1.75), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:974: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:44:994: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.31, Y: 1.77), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:44:994: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:013: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.35, Y: 1.79), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:014: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:033: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.39, Y: 1.81), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:033: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:053: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.43, Y: 1.83), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:053: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:073: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.47, Y: 1.86), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:073: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:095: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.51, Y: 1.88), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:095: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:111: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.54, Y: 1.90), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:111: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:133: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.58, Y: 1.92), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:133: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:153: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.62, Y: 1.95), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:153: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:173: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.66, Y: 1.97), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:173: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:193: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.70, Y: 2.00), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:194: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:213: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.74, Y: 2.02), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:213: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:232: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.78, Y: 2.05), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:232: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:252: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.82, Y: 2.07), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:252: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:271: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.86, Y: 2.10), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:271: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:295: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.90, Y: 2.13), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:295: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:312: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.94, Y: 2.15), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:313: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:332: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 6.98, Y: 2.18), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:333: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:351: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.02, Y: 2.21), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:351: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:372: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.05, Y: 2.24), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:373: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:392: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.09, Y: 2.27), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:393: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:412: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.13, Y: 2.30), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:413: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:432: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.17, Y: 2.33), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:433: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:450: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.21, Y: 2.36), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:451: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:472: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.25, Y: 2.39), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:472: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:493: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.29, Y: 2.43), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:493: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:513: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.33, Y: 2.46), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:513: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:533: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.37, Y: 2.49), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:533: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:552: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.41, Y: 2.53), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:553: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:572: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.45, Y: 2.56), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:573: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:593: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.48, Y: 2.60), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:593: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:612: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.52, Y: 2.63), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:613: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:633: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.56, Y: 2.67), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:633: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:653: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.60, Y: 2.70), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:653: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:672: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.64, Y: 2.74), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:672: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:693: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.68, Y: 2.78), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:693: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:713: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.72, Y: 2.82), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:713: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:731: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.75, Y: 2.86), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:731: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:751: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.79, Y: 2.90), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:752: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:772: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.83, Y: 2.94), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:773: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:793: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.87, Y: 2.98), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:793: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:813: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.90, Y: 3.02), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:813: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:832: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.94, Y: 3.06), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:833: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:852: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 7.98, Y: 3.11), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:853: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:872: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.02, Y: 3.15), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:873: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:893: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.05, Y: 3.19), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:893: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:912: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.09, Y: 3.24), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:912: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:932: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.13, Y: 3.28), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:933: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:953: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.16, Y: 3.33), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:953: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:971: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.20, Y: 3.37), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:971: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:45:992: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.23, Y: 3.42), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:45:993: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:013: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.27, Y: 3.47), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:013: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:033: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.30, Y: 3.52), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:033: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:052: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.34, Y: 3.57), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:053: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:072: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.37, Y: 3.62), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:073: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:094: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.41, Y: 3.67), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:094: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:111: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.44, Y: 3.72), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:111: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:132: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.48, Y: 3.77), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:132: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:152: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.51, Y: 3.82), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:152: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:172: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.54, Y: 3.87), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:172: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:192: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.58, Y: 3.93), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:193: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:212: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.57, Y: 3.98), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:212: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:231: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.57, Y: 4.03), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:232: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:251: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.60, Y: 4.08), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:251: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:493: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.63, Y: 4.14), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:494: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:495: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.66, Y: 4.19), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:496: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:497: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.69, Y: 4.25), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:497: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:498: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.73, Y: 4.31), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:499: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:500: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.76, Y: 4.37), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:500: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:501: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.78, Y: 4.42), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:501: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:503: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.81, Y: 4.48), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:503: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:504: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.84, Y: 4.54), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:504: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:505: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.87, Y: 4.60), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:505: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:506: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.90, Y: 4.67), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:506: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:508: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.93, Y: 4.73), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:508: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:510: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.95, Y: 4.79), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:510: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:511: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 8.98, Y: 4.85), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:511: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:531: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.01, Y: 4.92), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:531: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:550: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.03, Y: 4.98), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:550: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:570: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.06, Y: 5.04), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:571: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:591: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.08, Y: 5.11), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:591: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:611: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.11, Y: 5.18), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:612: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:633: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.13, Y: 5.24), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:633: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:651: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.15, Y: 5.31), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:652: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:670: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.17, Y: 5.38), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:671: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:693: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.20, Y: 5.45), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:693: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:712: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.22, Y: 5.52), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:712: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:731: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.24, Y: 5.59), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:731: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:751: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.26, Y: 5.66), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:751: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:770: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.28, Y: 5.73), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:770: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:792: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.30, Y: 5.80), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:792: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:811: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.31, Y: 5.87), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:812: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:832: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.33, Y: 5.95), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:833: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:850: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.35, Y: 6.02), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:850: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:870: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.37, Y: 6.09), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:870: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:890: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.38, Y: 6.17), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:891: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:910: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.40, Y: 6.24), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:910: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:931: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.41, Y: 6.32), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:931: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:950: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.42, Y: 6.40), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:950: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:970: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.44, Y: 6.47), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:970: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:46:991: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.45, Y: 6.55), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:46:991: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:47:010: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.46, Y: 6.63), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:47:010: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:47:030: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.47, Y: 6.71), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:47:031: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:47:050: Robot25.commands.GoToPose.execute(GoToPose.java:99): Pose2d(Translation2d(X: 9.48, Y: 6.79), Rotation2d(Rads: -1.50, Deg: -86.02))
+<17>08:22:47:051: Robot25.commands.GoToPose.execute(GoToPose.java:111): 86.0
+<17>08:22:47:069: Robot25.commands.GoToPose.end(GoToPose.java:140): interrupted=true
+<17>08:22:47:070: Robot25.commands.GoToPose.end(GoToPose.java:141)
+<17>08:22:47:070: Robot25.subsystems.DriveBase.setTargetPose(DriveBase.java:308): Pose2d(Translation2d(X: 0.00, Y: 0.00), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>08:22:47:070: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:828)
+<17>08:22:47:070: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:874)
+<17>08:22:47:072: Robot25.commands.DriveCommand.initialize(DriveCommand.java:44)

@@ -36,7 +36,6 @@ public class SetTargetPose extends Command {
     public void execute() {
         if (!finished) {
         robotDrive.setTargetPose(targetPose);
-        Util.consoleLog(targetPose.toString());
         finished = true;
         }
         return;

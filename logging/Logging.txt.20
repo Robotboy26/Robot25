@@ -1,0 +1,39 @@
+<17>06:34:10:283: Robot25.Robot.robotInit(Robot.java:88): Simulated Robot
+<17>06:34:10:294: Robot25.Robot.robotInit(Robot.java:97): ORF25-01.30.25VR compiled by jitpack at 2025-01-12 00:47:57 (branch=HEAD, commit=3454bcf)
+<17>06:34:10:295: Robot25.Robot.robotInit(Robot.java:108): Robot WPILib=2025.2.1  Java=17.0.12
+<17>06:34:10:295: Robot25.Robot.robotInit(Robot.java:109): RobotLib=4.9.0 (01.11.2025) WPILib=2025.2.1
+<17>06:34:10:304: Robot25.RobotContainer.<init>(RobotContainer.java:116)
+<17>06:34:10:305: Robot25.RobotContainer.getMatchInformation(RobotContainer.java:448): Alliance=Blue, Location=0, FMS=false event= match=0 msg=
+<17>06:34:10:305: Lib.Util.readProperties(Util.java:80)
+<17>06:34:10:306: -- listing properties --
+<17>06:34:10:307: CompressorEnabledByDefault=true
+<17>06:34:10:307: RobotId=comp
+<17>06:34:10:309: Lib.NavX.getInstance(NavX.java:142)
+<17>06:34:10:314: Lib.NavX.<init>(NavX.java:85): portType=0, rate=7
+<17>06:34:11:326: Robot25.commands.Utility.NotifierCommand.<init>(NotifierCommand.java:43)
+<17>06:34:11:327: Robot25.commands.Utility.NotifierCommand.<init>(NotifierCommand.java:66): Notifier-SB created!
+<17>06:34:11:327: Robot25.subsystems.ShuffleBoard.<init>(ShuffleBoard.java:45): ShuffleBoard created!
+<17>06:34:11:334: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): FL
+<17>06:34:11:348: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): FR
+<17>06:34:11:348: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): RL
+<17>06:34:11:349: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): RR
+<17>06:34:11:377: Robot25.subsystems.DriveBase.<init>(DriveBase.java:159): max vel=4.92 m/s
+<17>06:34:11:379: Robot25.subsystems.DriveBase.resetOdometry(DriveBase.java:340): Pose2d(Translation2d(X: 7.47, Y: 0.56), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>06:34:11:380: Robot25.subsystems.DriveBase.configureAutoBuilder(DriveBase.java:917)
+<26>06:34:11:388: Robot25.subsystems.DriveBase.zeroGyro(DriveBase.java:755)
+<17>06:34:11:702: Robot25.subsystems.PhotonVision.setLedMode(PhotonVision.java:421): 0
+<17>06:34:11:702: Robot25.subsystems.PhotonVision.<init>(PhotonVision.java:124): PhotonVision (HD_USB_Camera) created!
+<17>06:34:11:704: Robot25.commands.DriveCommand.<init>(DriveCommand.java:30)
+<17>06:34:11:705: Lib.MonitorPDP.getInstance(MonitorPDP.java:65)
+<17>06:34:11:706: Lib.MonitorPDP.<init>(MonitorPDP.java:85)
+<29>06:34:11:706: Lib.MonitorPDP.run(MonitorPDP.java:174)
+<17>06:34:11:708: Robot25.RobotContainer.<init>(RobotContainer.java:269): NavX connected version=4.1.500
+<17>06:34:11:709: Robot25.RobotContainer.setAutoChoices(RobotContainer.java:425)
+<17>06:34:11:714: Robot25.RobotContainer.configureButtonBindings(RobotContainer.java:312)
+<17>06:34:11:717: Robot25.commands.PointToYaw.<init>(PointToYaw.java:32)
+<17>06:34:11:728: Robot25.RobotContainer.<init>(RobotContainer.java:301): ------------------------------
+<17>06:34:11:728: Robot25.Robot.robotInit(Robot.java:135): ------------------------------
+<17>06:34:11:729: Robot25.Robot.disabledInit(Robot.java:182)
+<17>06:34:11:730: Robot25.Robot.disabledInit(Robot.java:190): ------------------------------
+<31>06:34:11:730: Robot25.subsystems.ShuffleBoard.resetLEDIndicators(ShuffleBoard.java:97)
+<17>06:34:11:737: Robot25.commands.UpdateVisionPose.initialize(UpdateVisionPose.java:47): HD_USB_Camera

@@ -54,7 +54,7 @@ public class SetTagBasedPostion extends Command {
             // Util.consoleLog("TARGET FOUND");
 
             Pose2d aprilTagPose = Constants.aprilTagToPoseMap.get(target.getFiducialId());
-            Util.consoleLog(String.valueOf(target.getFiducialId()));
+            // Util.consoleLog(String.valueOf(target.getFiducialId()));
             if (aprilTagPose != null) {
                 // Offset pose by robot dist
                 // Offset by left or right dist
@@ -65,7 +65,7 @@ public class SetTagBasedPostion extends Command {
                     robotOffset = new Translation2d(Constants.robotCoralLongitudinalScoringDistance, -Constants.robotCoralLateralScoringOffset);
                 }
                 Translation2d robotTargetPose = aprilTagPose.getTranslation().plus(robotOffset.rotateBy(aprilTagPose.getRotation().unaryMinus()));
-                robotDrive.setTargetPose(new Pose2d(robotTargetPose, aprilTagPose.getRotation()));
+                robotDrive.setTargetPose(new Pose2d(robotTargetPose, new Rotation2d(Math.toRadians(aprilTagPose.getRotation().getDegrees() - 180))));
                 // robotDrive.setTargetPose(new Pose2d(robotTargetPose, new Rotation2d(0)));
                 // Util.consoleLog("APRIL TAG POSE: " + String.valueOf(aprilTagPose));
                 // Util.consoleLog("ROBOT OFFSET: " + String.valueOf(robotOffset));

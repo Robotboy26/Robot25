@@ -1,0 +1,1035 @@
+<17>10:44:50:924: Robot25.Robot.robotInit(Robot.java:88): Simulated Robot
+<17>10:44:50:930: Robot25.Robot.robotInit(Robot.java:97): ORF25-01.30.25VR compiled by jitpack at 2025-01-12 00:47:57 (branch=HEAD, commit=3454bcf)
+<17>10:44:50:931: Robot25.Robot.robotInit(Robot.java:108): Robot WPILib=2025.2.1  Java=17.0.12
+<17>10:44:50:931: Robot25.Robot.robotInit(Robot.java:109): RobotLib=4.9.0 (01.11.2025) WPILib=2025.2.1
+<17>10:44:50:939: Robot25.RobotContainer.<init>(RobotContainer.java:116)
+<17>10:44:50:940: Robot25.RobotContainer.getMatchInformation(RobotContainer.java:448): Alliance=Blue, Location=0, FMS=false event= match=0 msg=
+<17>10:44:50:940: Lib.Util.readProperties(Util.java:80)
+<17>10:44:50:941: -- listing properties --
+<17>10:44:50:941: CompressorEnabledByDefault=true
+<17>10:44:50:942: RobotId=comp
+<17>10:44:50:944: Lib.NavX.getInstance(NavX.java:142)
+<17>10:44:50:947: Lib.NavX.<init>(NavX.java:85): portType=0, rate=7
+<17>10:44:51:960: Robot25.commands.Utility.NotifierCommand.<init>(NotifierCommand.java:43)
+<17>10:44:51:961: Robot25.commands.Utility.NotifierCommand.<init>(NotifierCommand.java:66): Notifier-SB created!
+<17>10:44:51:961: Robot25.subsystems.ShuffleBoard.<init>(ShuffleBoard.java:45): ShuffleBoard created!
+<17>10:44:51:969: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): FL
+<17>10:44:51:981: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): FR
+<17>10:44:51:981: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): RL
+<17>10:44:51:982: Robot25.subsystems.MAXSwerveModule.<init>(MAXSwerveModule.java:71): RR
+<17>10:44:52:009: Robot25.subsystems.DriveBase.<init>(DriveBase.java:159): max vel=4.92 m/s
+<17>10:44:52:012: Robot25.subsystems.DriveBase.resetOdometry(DriveBase.java:339): Pose2d(Translation2d(X: 7.47, Y: 0.56), Rotation2d(Rads: 0.00, Deg: 0.00))
+<17>10:44:52:013: Robot25.subsystems.DriveBase.configureAutoBuilder(DriveBase.java:932)
+<26>10:44:52:020: Robot25.subsystems.DriveBase.zeroGyro(DriveBase.java:770)
+<17>10:44:52:272: Robot25.subsystems.PhotonVision.setLedMode(PhotonVision.java:421): 0
+<17>10:44:52:272: Robot25.subsystems.PhotonVision.<init>(PhotonVision.java:124): PhotonVision (HD_USB_Camera) created!
+<17>10:44:52:273: Robot25.commands.DriveCommand.<init>(DriveCommand.java:30)
+<17>10:44:52:274: Lib.MonitorPDP.getInstance(MonitorPDP.java:65)
+<17>10:44:52:274: Lib.MonitorPDP.<init>(MonitorPDP.java:85)
+<29>10:44:52:275: Lib.MonitorPDP.run(MonitorPDP.java:174)
+<17>10:44:52:276: Robot25.RobotContainer.<init>(RobotContainer.java:269): NavX connected version=4.1.500
+<17>10:44:52:277: Robot25.RobotContainer.setAutoChoices(RobotContainer.java:425)
+<17>10:44:52:282: Robot25.RobotContainer.configureButtonBindings(RobotContainer.java:312)
+<17>10:44:52:284: Robot25.commands.PointToYaw.<init>(PointToYaw.java:32)
+<17>10:44:52:293: Robot25.RobotContainer.<init>(RobotContainer.java:301): ------------------------------
+<17>10:44:52:293: Robot25.Robot.robotInit(Robot.java:135): ------------------------------
+<17>10:44:52:294: Robot25.Robot.disabledInit(Robot.java:182)
+<17>10:44:52:295: Robot25.Robot.disabledInit(Robot.java:190): ------------------------------
+<31>10:44:52:295: Robot25.subsystems.ShuffleBoard.resetLEDIndicators(ShuffleBoard.java:97)
+<17>10:44:52:303: Robot25.commands.UpdateVisionPose.initialize(UpdateVisionPose.java:47): HD_USB_Camera
+<17>10:44:53:944: Robot25.Robot.teleopInit(Robot.java:253): ------------------------------
+<17>10:44:53:944: Robot25.RobotContainer.getMatchInformation(RobotContainer.java:448): Alliance=Red, Location=1, FMS=false event= match=0 msg=
+<17>10:44:53:945: Robot25.Robot.teleopInit(Robot.java:273): ------------------------------
+<17>10:44:53:947: Robot25.commands.Utility.NotifierCommand.initialize(NotifierCommand.java:106): Notifier-SB period=0.025
+<17>10:44:53:947: Robot25.commands.DriveCommand.initialize(DriveCommand.java:44)
+<17>10:45:02:684: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>10:45:02:684: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:832)
+<17>10:45:02:685: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:882): 0.10 0.20
+<17>10:45:02:984: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93): interrupted=true
+<17>10:45:02:984: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:94)
+<17>10:45:02:984: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:843)
+<17>10:45:02:985: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:889)
+<17>10:45:03:444: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>10:45:03:444: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:832)
+<17>10:45:03:444: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:882): 0.10 0.20
+<17>10:45:03:604: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93): interrupted=true
+<17>10:45:03:604: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:94)
+<17>10:45:03:604: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:843)
+<17>10:45:03:604: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:889)
+<17>10:45:03:744: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>10:45:03:744: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:832)
+<17>10:45:03:744: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:882): 0.10 0.20
+<17>10:45:03:904: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93): interrupted=true
+<17>10:45:03:904: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:94)
+<17>10:45:03:904: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:843)
+<17>10:45:03:905: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:889)
+<17>10:45:04:004: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>10:45:04:004: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:832)
+<17>10:45:04:004: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:882): 0.10 0.20
+<17>10:45:04:144: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93): interrupted=true
+<17>10:45:04:144: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:94)
+<17>10:45:04:144: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:843)
+<17>10:45:04:144: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:889)
+<17>10:45:04:244: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>10:45:04:244: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:832)
+<17>10:45:04:244: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:882): 0.10 0.20
+<17>10:45:04:384: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93): interrupted=true
+<17>10:45:04:384: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:94)
+<17>10:45:04:384: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:843)
+<17>10:45:04:384: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:889)
+<17>10:45:04:544: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>10:45:04:544: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:832)
+<17>10:45:04:544: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:882): 0.10 0.20
+<17>10:45:04:684: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93): interrupted=true
+<17>10:45:04:684: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:94)
+<17>10:45:04:684: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:843)
+<17>10:45:04:684: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:889)
+<17>10:45:04:804: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>10:45:04:804: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:832)
+<17>10:45:04:804: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:882): 0.10 0.20
+<17>10:45:04:904: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93): interrupted=true
+<17>10:45:04:904: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:94)
+<17>10:45:04:904: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:843)
+<17>10:45:04:904: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:889)
+<17>10:45:05:044: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>10:45:05:044: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:832)
+<17>10:45:05:044: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:882): 0.10 0.20
+<17>10:45:05:104: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93): interrupted=true
+<17>10:45:05:104: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:94)
+<17>10:45:05:104: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:843)
+<17>10:45:05:104: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:889)
+<17>10:45:05:244: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>10:45:05:244: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:832)
+<17>10:45:05:244: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:882): 0.10 0.20
+<17>10:45:05:284: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93): interrupted=true
+<17>10:45:05:284: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:94)
+<17>10:45:05:284: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:843)
+<17>10:45:05:284: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:889)
+<17>10:45:05:444: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>10:45:05:444: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:832)
+<17>10:45:05:444: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:882): 0.10 0.20
+<17>10:45:05:484: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93): interrupted=true
+<17>10:45:05:484: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:94)
+<17>10:45:05:484: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:843)
+<17>10:45:05:484: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:889)
+<17>10:45:05:604: Robot25.commands.SetTagBasedPostion.initialize(SetTagBasedPostion.java:40)
+<17>10:45:05:604: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:832)
+<17>10:45:05:604: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:882): 0.10 0.20
+<17>10:45:05:684: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:93): interrupted=true
+<17>10:45:05:684: Robot25.commands.SetTagBasedPostion.end(SetTagBasedPostion.java:94)
+<17>10:45:05:684: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:843)
+<17>10:45:05:684: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:889)
+<17>10:45:06:904: Robot25.commands.DriveCommand.end(DriveCommand.java:94): interrupted=true
+<17>10:45:06:904: Robot25.commands.GoToPose.initialize(GoToPose.java:48): Init
+<17>10:45:06:904: Robot25.commands.GoToPose.initialize(GoToPose.java:50)
+<17>10:45:06:904: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:684)
+<17>10:45:06:904: Robot25.subsystems.DriveBase.enableTracking(DriveBase.java:832)
+<17>10:45:06:904: Robot25.subsystems.DriveBase.enableTrackingSlowMode(DriveBase.java:882): 0.10 0.20
+<17>10:45:06:906: Robot25.commands.GoToPose.execute(GoToPose.java:125): 0.0
+<17>10:45:06:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 0.0
+<17>10:45:06:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 0.0
+<17>10:45:06:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 0.0
+<17>10:45:06:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 0.0
+<17>10:45:07:006: Robot25.commands.GoToPose.execute(GoToPose.java:125): 0.0
+<17>10:45:07:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 0.0
+<17>10:45:07:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 1.0
+<17>10:45:07:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 1.0
+<17>10:45:07:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 1.0
+<17>10:45:07:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 1.0
+<17>10:45:07:126: Robot25.commands.GoToPose.execute(GoToPose.java:125): 1.0
+<17>10:45:07:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 2.0
+<17>10:45:07:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 2.0
+<17>10:45:07:186: Robot25.commands.GoToPose.execute(GoToPose.java:125): 2.0
+<17>10:45:07:206: Robot25.commands.GoToPose.execute(GoToPose.java:125): 2.0
+<17>10:45:07:226: Robot25.commands.GoToPose.execute(GoToPose.java:125): 2.0
+<17>10:45:07:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 3.0
+<17>10:45:07:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 3.0
+<17>10:45:07:286: Robot25.commands.GoToPose.execute(GoToPose.java:125): 3.0
+<17>10:45:07:306: Robot25.commands.GoToPose.execute(GoToPose.java:125): 3.0
+<17>10:45:07:326: Robot25.commands.GoToPose.execute(GoToPose.java:125): 3.0
+<17>10:45:07:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 3.0
+<17>10:45:07:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 4.0
+<17>10:45:07:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 4.0
+<17>10:45:07:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 4.0
+<17>10:45:07:426: Robot25.commands.GoToPose.execute(GoToPose.java:125): 4.0
+<17>10:45:07:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 4.0
+<17>10:45:07:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 5.0
+<17>10:45:07:485: Robot25.commands.GoToPose.execute(GoToPose.java:125): 5.0
+<17>10:45:07:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 5.0
+<17>10:45:07:526: Robot25.commands.GoToPose.execute(GoToPose.java:125): 5.0
+<17>10:45:07:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 5.0
+<17>10:45:07:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 5.0
+<17>10:45:07:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 6.0
+<17>10:45:07:606: Robot25.commands.GoToPose.execute(GoToPose.java:125): 6.0
+<17>10:45:07:626: Robot25.commands.GoToPose.execute(GoToPose.java:125): 6.0
+<17>10:45:07:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 6.0
+<17>10:45:07:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 6.0
+<17>10:45:07:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 7.0
+<17>10:45:07:706: Robot25.commands.GoToPose.execute(GoToPose.java:125): 7.0
+<17>10:45:07:725: Robot25.commands.GoToPose.execute(GoToPose.java:125): 7.0
+<17>10:45:07:746: Robot25.commands.GoToPose.execute(GoToPose.java:125): 7.0
+<17>10:45:07:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 7.0
+<17>10:45:07:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 7.0
+<17>10:45:07:806: Robot25.commands.GoToPose.execute(GoToPose.java:125): 8.0
+<17>10:45:07:826: Robot25.commands.GoToPose.execute(GoToPose.java:125): 8.0
+<17>10:45:07:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 8.0
+<17>10:45:07:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 8.0
+<17>10:45:07:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 8.0
+<17>10:45:07:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 8.0
+<17>10:45:07:926: Robot25.commands.GoToPose.execute(GoToPose.java:125): 9.0
+<17>10:45:07:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 9.0
+<17>10:45:07:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 9.0
+<17>10:45:07:985: Robot25.commands.GoToPose.execute(GoToPose.java:125): 9.0
+<17>10:45:08:006: Robot25.commands.GoToPose.execute(GoToPose.java:125): 9.0
+<17>10:45:08:026: Robot25.commands.GoToPose.execute(GoToPose.java:125): 9.0
+<17>10:45:08:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 10.0
+<17>10:45:08:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 10.0
+<17>10:45:08:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 10.0
+<17>10:45:08:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 10.0
+<17>10:45:08:126: Robot25.commands.GoToPose.execute(GoToPose.java:125): 10.0
+<17>10:45:08:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 10.0
+<17>10:45:08:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 11.0
+<17>10:45:08:185: Robot25.commands.GoToPose.execute(GoToPose.java:125): 11.0
+<17>10:45:08:206: Robot25.commands.GoToPose.execute(GoToPose.java:125): 11.0
+<17>10:45:08:226: Robot25.commands.GoToPose.execute(GoToPose.java:125): 11.0
+<17>10:45:08:246: Robot25.commands.GoToPose.execute(GoToPose.java:125): 11.0
+<17>10:45:08:266: Robot25.commands.GoToPose.execute(GoToPose.java:125): 12.0
+<17>10:45:08:285: Robot25.commands.GoToPose.execute(GoToPose.java:125): 12.0
+<17>10:45:08:306: Robot25.commands.GoToPose.execute(GoToPose.java:125): 12.0
+<17>10:45:08:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 12.0
+<17>10:45:08:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 12.0
+<17>10:45:08:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 12.0
+<17>10:45:08:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 12.0
+<17>10:45:08:406: Robot25.commands.GoToPose.execute(GoToPose.java:125): 13.0
+<17>10:45:08:426: Robot25.commands.GoToPose.execute(GoToPose.java:125): 13.0
+<17>10:45:08:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 13.0
+<17>10:45:08:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 13.0
+<17>10:45:08:485: Robot25.commands.GoToPose.execute(GoToPose.java:125): 13.0
+<17>10:45:08:506: Robot25.commands.GoToPose.execute(GoToPose.java:125): 13.0
+<17>10:45:08:526: Robot25.commands.GoToPose.execute(GoToPose.java:125): 14.0
+<17>10:45:08:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 14.0
+<17>10:45:08:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 14.0
+<17>10:45:08:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 14.0
+<17>10:45:08:606: Robot25.commands.GoToPose.execute(GoToPose.java:125): 14.0
+<17>10:45:08:626: Robot25.commands.GoToPose.execute(GoToPose.java:125): 14.0
+<17>10:45:08:646: Robot25.commands.GoToPose.execute(GoToPose.java:125): 14.0
+<17>10:45:08:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 14.0
+<17>10:45:08:687: Robot25.commands.GoToPose.execute(GoToPose.java:125): 15.0
+<17>10:45:08:706: Robot25.commands.GoToPose.execute(GoToPose.java:125): 15.0
+<17>10:45:08:726: Robot25.commands.GoToPose.execute(GoToPose.java:125): 15.0
+<17>10:45:08:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 15.0
+<17>10:45:08:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 15.0
+<17>10:45:08:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 15.0
+<17>10:45:08:806: Robot25.commands.GoToPose.execute(GoToPose.java:125): 15.0
+<17>10:45:08:826: Robot25.commands.GoToPose.execute(GoToPose.java:125): 16.0
+<17>10:45:08:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 16.0
+<17>10:45:08:866: Robot25.commands.GoToPose.execute(GoToPose.java:125): 16.0
+<17>10:45:08:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 16.0
+<17>10:45:08:906: Robot25.commands.GoToPose.execute(GoToPose.java:125): 16.0
+<17>10:45:08:926: Robot25.commands.GoToPose.execute(GoToPose.java:125): 16.0
+<17>10:45:08:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 16.0
+<17>10:45:08:966: Robot25.commands.GoToPose.execute(GoToPose.java:125): 17.0
+<17>10:45:08:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 17.0
+<17>10:45:09:006: Robot25.commands.GoToPose.execute(GoToPose.java:125): 17.0
+<17>10:45:09:026: Robot25.commands.GoToPose.execute(GoToPose.java:125): 17.0
+<17>10:45:09:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 17.0
+<17>10:45:09:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 17.0
+<17>10:45:09:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 17.0
+<17>10:45:09:106: Robot25.commands.GoToPose.execute(GoToPose.java:125): 18.0
+<17>10:45:09:126: Robot25.commands.GoToPose.execute(GoToPose.java:125): 18.0
+<17>10:45:09:146: Robot25.commands.GoToPose.execute(GoToPose.java:125): 18.0
+<17>10:45:09:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 18.0
+<17>10:45:09:187: Robot25.commands.GoToPose.execute(GoToPose.java:125): 18.0
+<17>10:45:09:206: Robot25.commands.GoToPose.execute(GoToPose.java:125): 18.0
+<17>10:45:09:226: Robot25.commands.GoToPose.execute(GoToPose.java:125): 18.0
+<17>10:45:09:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 19.0
+<17>10:45:09:266: Robot25.commands.GoToPose.execute(GoToPose.java:125): 19.0
+<17>10:45:09:286: Robot25.commands.GoToPose.execute(GoToPose.java:125): 19.0
+<17>10:45:09:306: Robot25.commands.GoToPose.execute(GoToPose.java:125): 19.0
+<17>10:45:09:326: Robot25.commands.GoToPose.execute(GoToPose.java:125): 19.0
+<17>10:45:09:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 19.0
+<17>10:45:09:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 19.0
+<17>10:45:09:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 19.0
+<17>10:45:09:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 20.0
+<17>10:45:09:426: Robot25.commands.GoToPose.execute(GoToPose.java:125): 20.0
+<17>10:45:09:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 20.0
+<17>10:45:09:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 20.0
+<17>10:45:09:486: Robot25.commands.GoToPose.execute(GoToPose.java:125): 20.0
+<17>10:45:09:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 20.0
+<17>10:45:09:526: Robot25.commands.GoToPose.execute(GoToPose.java:125): 20.0
+<17>10:45:09:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 20.0
+<17>10:45:09:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 21.0
+<17>10:45:09:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 21.0
+<17>10:45:09:606: Robot25.commands.GoToPose.execute(GoToPose.java:125): 21.0
+<17>10:45:09:626: Robot25.commands.GoToPose.execute(GoToPose.java:125): 21.0
+<17>10:45:09:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 21.0
+<17>10:45:09:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 21.0
+<17>10:45:09:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 21.0
+<17>10:45:09:706: Robot25.commands.GoToPose.execute(GoToPose.java:125): 22.0
+<17>10:45:09:726: Robot25.commands.GoToPose.execute(GoToPose.java:125): 22.0
+<17>10:45:09:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 22.0
+<17>10:45:09:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 22.0
+<17>10:45:09:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 22.0
+<17>10:45:09:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 22.0
+<17>10:45:09:825: Robot25.commands.GoToPose.execute(GoToPose.java:125): 22.0
+<17>10:45:09:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 22.0
+<17>10:45:09:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 23.0
+<17>10:45:09:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 23.0
+<17>10:45:09:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 23.0
+<17>10:45:09:926: Robot25.commands.GoToPose.execute(GoToPose.java:125): 23.0
+<17>10:45:09:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 23.0
+<17>10:45:09:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 23.0
+<17>10:45:09:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 23.0
+<17>10:45:10:006: Robot25.commands.GoToPose.execute(GoToPose.java:125): 23.0
+<17>10:45:10:026: Robot25.commands.GoToPose.execute(GoToPose.java:125): 23.0
+<17>10:45:10:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 24.0
+<17>10:45:10:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 24.0
+<17>10:45:10:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 24.0
+<17>10:45:10:106: Robot25.commands.GoToPose.execute(GoToPose.java:125): 24.0
+<17>10:45:10:126: Robot25.commands.GoToPose.execute(GoToPose.java:125): 24.0
+<17>10:45:10:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 24.0
+<17>10:45:10:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 24.0
+<17>10:45:10:186: Robot25.commands.GoToPose.execute(GoToPose.java:125): 24.0
+<17>10:45:10:205: Robot25.commands.GoToPose.execute(GoToPose.java:125): 25.0
+<17>10:45:10:226: Robot25.commands.GoToPose.execute(GoToPose.java:125): 25.0
+<17>10:45:10:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 25.0
+<17>10:45:10:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 25.0
+<17>10:45:10:286: Robot25.commands.GoToPose.execute(GoToPose.java:125): 25.0
+<17>10:45:10:306: Robot25.commands.GoToPose.execute(GoToPose.java:125): 25.0
+<17>10:45:10:326: Robot25.commands.GoToPose.execute(GoToPose.java:125): 25.0
+<17>10:45:10:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 25.0
+<17>10:45:10:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 25.0
+<17>10:45:10:385: Robot25.commands.GoToPose.execute(GoToPose.java:125): 26.0
+<17>10:45:10:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 26.0
+<17>10:45:10:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 26.0
+<17>10:45:10:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 26.0
+<17>10:45:10:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 26.0
+<17>10:45:10:485: Robot25.commands.GoToPose.execute(GoToPose.java:125): 26.0
+<17>10:45:10:506: Robot25.commands.GoToPose.execute(GoToPose.java:125): 26.0
+<17>10:45:10:526: Robot25.commands.GoToPose.execute(GoToPose.java:125): 26.0
+<17>10:45:10:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 26.0
+<17>10:45:10:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 27.0
+<17>10:45:10:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 27.0
+<17>10:45:10:606: Robot25.commands.GoToPose.execute(GoToPose.java:125): 27.0
+<17>10:45:10:626: Robot25.commands.GoToPose.execute(GoToPose.java:125): 27.0
+<17>10:45:10:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 27.0
+<17>10:45:10:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 27.0
+<17>10:45:10:685: Robot25.commands.GoToPose.execute(GoToPose.java:125): 27.0
+<17>10:45:10:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 27.0
+<17>10:45:10:726: Robot25.commands.GoToPose.execute(GoToPose.java:125): 27.0
+<17>10:45:10:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 28.0
+<17>10:45:10:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 28.0
+<17>10:45:10:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 28.0
+<17>10:45:10:806: Robot25.commands.GoToPose.execute(GoToPose.java:125): 28.0
+<17>10:45:10:825: Robot25.commands.GoToPose.execute(GoToPose.java:125): 28.0
+<17>10:45:10:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 28.0
+<17>10:45:10:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 28.0
+<17>10:45:10:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 28.0
+<17>10:45:10:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 28.0
+<17>10:45:10:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 28.0
+<17>10:45:10:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 29.0
+<17>10:45:10:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 29.0
+<17>10:45:10:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 29.0
+<17>10:45:11:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 29.0
+<17>10:45:11:026: Robot25.commands.GoToPose.execute(GoToPose.java:125): 29.0
+<17>10:45:11:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 29.0
+<17>10:45:11:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 29.0
+<17>10:45:11:085: Robot25.commands.GoToPose.execute(GoToPose.java:125): 29.0
+<17>10:45:11:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 29.0
+<17>10:45:11:125: Robot25.commands.GoToPose.execute(GoToPose.java:125): 29.0
+<17>10:45:11:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 30.0
+<17>10:45:11:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 30.0
+<17>10:45:11:185: Robot25.commands.GoToPose.execute(GoToPose.java:125): 30.0
+<17>10:45:11:205: Robot25.commands.GoToPose.execute(GoToPose.java:125): 30.0
+<17>10:45:11:225: Robot25.commands.GoToPose.execute(GoToPose.java:125): 30.0
+<17>10:45:11:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 30.0
+<17>10:45:11:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 30.0
+<17>10:45:11:286: Robot25.commands.GoToPose.execute(GoToPose.java:125): 30.0
+<17>10:45:11:305: Robot25.commands.GoToPose.execute(GoToPose.java:125): 30.0
+<17>10:45:11:326: Robot25.commands.GoToPose.execute(GoToPose.java:125): 30.0
+<17>10:45:11:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 31.0
+<17>10:45:11:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 31.0
+<17>10:45:11:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 31.0
+<17>10:45:11:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 31.0
+<17>10:45:11:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 31.0
+<17>10:45:11:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 31.0
+<17>10:45:11:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 31.0
+<17>10:45:11:485: Robot25.commands.GoToPose.execute(GoToPose.java:125): 31.0
+<17>10:45:11:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 31.0
+<17>10:45:11:525: Robot25.commands.GoToPose.execute(GoToPose.java:125): 31.0
+<17>10:45:11:546: Robot25.commands.GoToPose.execute(GoToPose.java:125): 31.0
+<17>10:45:11:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 32.0
+<17>10:45:11:585: Robot25.commands.GoToPose.execute(GoToPose.java:125): 32.0
+<17>10:45:11:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 32.0
+<17>10:45:11:625: Robot25.commands.GoToPose.execute(GoToPose.java:125): 32.0
+<17>10:45:11:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 32.0
+<17>10:45:11:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 32.0
+<17>10:45:11:685: Robot25.commands.GoToPose.execute(GoToPose.java:125): 32.0
+<17>10:45:11:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 32.0
+<17>10:45:11:725: Robot25.commands.GoToPose.execute(GoToPose.java:125): 32.0
+<17>10:45:11:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 32.0
+<17>10:45:11:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 32.0
+<17>10:45:11:785: Robot25.commands.GoToPose.execute(GoToPose.java:125): 33.0
+<17>10:45:11:806: Robot25.commands.GoToPose.execute(GoToPose.java:125): 33.0
+<17>10:45:11:826: Robot25.commands.GoToPose.execute(GoToPose.java:125): 33.0
+<17>10:45:11:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 33.0
+<17>10:45:11:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 33.0
+<17>10:45:11:885: Robot25.commands.GoToPose.execute(GoToPose.java:125): 33.0
+<17>10:45:11:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 33.0
+<17>10:45:11:926: Robot25.commands.GoToPose.execute(GoToPose.java:125): 33.0
+<17>10:45:11:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 33.0
+<17>10:45:11:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 33.0
+<17>10:45:11:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 33.0
+<17>10:45:12:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 34.0
+<17>10:45:12:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 34.0
+<17>10:45:12:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 34.0
+<17>10:45:12:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 34.0
+<17>10:45:12:085: Robot25.commands.GoToPose.execute(GoToPose.java:125): 34.0
+<17>10:45:12:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 34.0
+<17>10:45:12:125: Robot25.commands.GoToPose.execute(GoToPose.java:125): 34.0
+<17>10:45:12:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 34.0
+<17>10:45:12:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 34.0
+<17>10:45:12:186: Robot25.commands.GoToPose.execute(GoToPose.java:125): 34.0
+<17>10:45:12:206: Robot25.commands.GoToPose.execute(GoToPose.java:125): 34.0
+<17>10:45:12:225: Robot25.commands.GoToPose.execute(GoToPose.java:125): 34.0
+<17>10:45:12:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 35.0
+<17>10:45:12:266: Robot25.commands.GoToPose.execute(GoToPose.java:125): 35.0
+<17>10:45:12:285: Robot25.commands.GoToPose.execute(GoToPose.java:125): 35.0
+<17>10:45:12:306: Robot25.commands.GoToPose.execute(GoToPose.java:125): 35.0
+<17>10:45:12:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 35.0
+<17>10:45:12:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 35.0
+<17>10:45:12:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 35.0
+<17>10:45:12:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 35.0
+<17>10:45:12:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 35.0
+<17>10:45:12:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 35.0
+<17>10:45:12:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 35.0
+<17>10:45:12:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 35.0
+<17>10:45:12:486: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:506: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:525: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:625: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:725: Robot25.commands.GoToPose.execute(GoToPose.java:125): 36.0
+<17>10:45:12:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:12:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:12:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:12:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:12:826: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:12:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:12:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:12:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:12:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:12:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:12:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:12:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:12:985: Robot25.commands.GoToPose.execute(GoToPose.java:125): 37.0
+<17>10:45:13:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:125: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:186: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:205: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:226: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 38.0
+<17>10:45:13:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:286: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:305: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:326: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:385: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:486: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:526: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 39.0
+<17>10:45:13:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:606: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:626: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:725: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:825: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 40.0
+<17>10:45:13:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:13:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:13:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:13:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:13:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:13:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:14:006: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:14:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:14:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:14:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:14:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:14:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:14:125: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:14:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:14:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:14:186: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:14:206: Robot25.commands.GoToPose.execute(GoToPose.java:125): 41.0
+<17>10:45:14:225: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:286: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:305: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:486: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:525: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 42.0
+<17>10:45:14:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:625: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:726: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:785: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:825: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:885: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 43.0
+<17>10:45:14:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:14:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:14:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:14:985: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:106: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:125: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:185: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:205: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:225: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:285: Robot25.commands.GoToPose.execute(GoToPose.java:125): 44.0
+<17>10:45:15:305: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:466: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:487: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:510: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:525: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:585: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:625: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 45.0
+<17>10:45:15:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:725: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:825: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:885: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:906: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:15:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:16:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:16:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:16:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:16:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:16:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:16:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:16:125: Robot25.commands.GoToPose.execute(GoToPose.java:125): 46.0
+<17>10:45:16:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:186: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:205: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:226: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:285: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:305: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:385: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:486: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:525: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 47.0
+<17>10:45:16:626: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:726: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:746: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:826: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:16:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:17:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:17:026: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:17:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:17:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:17:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:17:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:17:125: Robot25.commands.GoToPose.execute(GoToPose.java:125): 48.0
+<17>10:45:17:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:186: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:206: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:225: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:286: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:306: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:406: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:426: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:486: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:506: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:527: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:625: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 49.0
+<17>10:45:17:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:726: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:826: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:926: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:17:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:085: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:126: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:186: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:205: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:225: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 50.0
+<17>10:45:18:286: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:305: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:486: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:525: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:625: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:706: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:725: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:826: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:906: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 51.0
+<17>10:45:18:985: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:085: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:125: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:185: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:205: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:225: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:285: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:305: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:385: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:486: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:525: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:625: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:706: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:725: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 52.0
+<17>10:45:19:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:19:785: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:19:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:19:825: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:19:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:19:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:19:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:19:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:19:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:19:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:19:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:19:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:125: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:185: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:205: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:225: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:285: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:305: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:485: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:526: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:585: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:625: Robot25.commands.GoToPose.execute(GoToPose.java:125): 53.0
+<17>10:45:20:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:725: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:785: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:825: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:885: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:20:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:125: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:185: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:205: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:225: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:286: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:305: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:385: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:485: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:526: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:626: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 54.0
+<17>10:45:21:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:685: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:725: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:825: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:885: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:21:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:085: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:125: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:186: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:205: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:225: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:285: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:305: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:486: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:525: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:625: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:726: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:785: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:825: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 55.0
+<17>10:45:22:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:22:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:22:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:22:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:22:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:22:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:22:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:125: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:186: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:205: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:225: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:286: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:305: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:486: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:525: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:546: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:585: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:625: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:685: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:725: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:805: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:828: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:853: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:867: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:945: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:965: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:23:986: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:005: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:025: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:045: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:065: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:086: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:105: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:126: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:145: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:165: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:186: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:205: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:225: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:245: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:265: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:286: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:305: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:325: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:345: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:365: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:386: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:405: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:425: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:445: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:465: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:486: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:505: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:525: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:545: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:565: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:586: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:605: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:625: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:645: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:665: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:686: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:705: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:725: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:745: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:765: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:786: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:806: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:826: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:845: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:865: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:886: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:905: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:925: Robot25.commands.GoToPose.execute(GoToPose.java:125): 56.0
+<17>10:45:24:944: Robot25.commands.GoToPose.end(GoToPose.java:142): interrupted=true
+<17>10:45:24:944: Robot25.commands.GoToPose.end(GoToPose.java:143)
+<17>10:45:24:944: Robot25.subsystems.DriveBase.toggleFieldRelative(DriveBase.java:684)
+<17>10:45:24:944: Robot25.subsystems.DriveBase.disableTracking(DriveBase.java:843)
+<17>10:45:24:944: Robot25.subsystems.DriveBase.disableTrackingSlowMode(DriveBase.java:889)
+<17>10:45:24:946: Robot25.commands.DriveCommand.initialize(DriveCommand.java:44)

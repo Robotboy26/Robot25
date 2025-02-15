@@ -158,7 +158,7 @@ public final class Constants
         public static final double kRotSlowModeFactor = .20; // 20% of normal.
         
         //TrackingMode Speed:
-        public static final double kTrackingModeFactor = 0.55;
+        public static final double kTrackingModeFactor = 0.10;
         public static final double kRotTrackingModeFactor = 0.20;
 
         // these were 1.2, 1.8, 2.0 in REV base code. Controls drivebase slew limiting.
