@@ -19,8 +19,8 @@ import edu.wpi.first.wpilibj2.command.Command;
 
 public class GoToPose extends Command {
     // PIDController rotationController = new PIDController(0.0015, 0, 0); // for rotating drivebase
-    PIDController translationControllerX = new PIDController(0.2, 0, 0); // for moving drivebase in X,Y plane
-    PIDController translationControllerY = new PIDController(0.2, 0, 0); // for moving drivebase in X,Y plane
+    PIDController translationControllerX = new PIDController(0.35, 0, 0); // for moving drivebase in X,Y plane
+    PIDController translationControllerY = new PIDController(0.35, 0, 0); // for moving drivebase in X,Y plane
     DriveBase robotDrive;
     private boolean alsoDrive;
     private boolean initialFieldRel;
@@ -99,12 +99,12 @@ public class GoToPose extends Command {
         // Util.consoleLog(String.valueOf(robotDrive.getPose()));
 
         if (robotDrive.getPose().getX() < robotDrive.getTargetPose().getX() - toleranceX || robotDrive.getPose().getX() > robotDrive.getTargetPose().getX() + toleranceX) {
-            movementX = translationControllerX.calculate(robotDrive.getPose().getX());
+            movementX = translationControllerX.calculate(robotDrive.getPose().getX()) + 0.2;
         } else {
             movementX = 0;
         }
         if (robotDrive.getPose().getY() < robotDrive.getTargetPose().getY() - toleranceY || robotDrive.getPose().getY() > robotDrive.getTargetPose().getY() + toleranceY) {
-            movementY = translationControllerY.calculate(robotDrive.getPose().getY());
+            movementY = translationControllerY.calculate(robotDrive.getPose().getY()) + 0.2;
         } else {
             movementY = 0;
         }

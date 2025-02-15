@@ -372,9 +372,10 @@ public class RobotContainer
 		
 		new Trigger(()-> driverController.getBButton())
 			.whileTrue(new RotateToPose(driveBase, true, true).andThen(new GoToPose(driveBase, true, true)));
+			// .whileTrue(new GoToPose(driveBase, true, true));
 
 		new Trigger(()-> driverController.getXButton())
-			.whileTrue(new SetTagBasedPostion(driveBase, pvTagCamera, true));
+			.whileTrue(new SetTagBasedPostion(driveBase, pvTagCamera, false));
 			// .whileTrue(new SetTagBasedPostion(driveBase, pvTagCamera, true)); // True for scoring on left side
 		// -------- Utility pad buttons ----------
 		
