@@ -305,6 +305,7 @@ public class DriveBase extends SubsystemBase {
    * @param targetPose
    */
   public void setTargetPose(Pose2d targetPose) {
+    Util.consoleLog(targetPose.toString());
     this.targetPose = targetPose;
   }
 
@@ -529,6 +530,22 @@ public class DriveBase extends SubsystemBase {
 
     // drive using the robot relative speeds/joystick values
     drive(xSpeed, ySpeed, rot, false);
+
+    // restore previous state of field-relative.
+    fieldRelative = previousState;
+
+    updateDS();
+  }
+
+  public void driveFieldRelative(double xSpeed, double ySpeed, double rotSpeed) {
+    // store the current state of field-relative toggle to restore later
+    boolean previousState = fieldRelative;
+    fieldRelative = true;
+
+    updateDS();
+
+    // drive using the robot relative speeds/joystick values
+    drive(xSpeed, ySpeed, rotSpeed, false);
 
     // restore previous state of field-relative.
     fieldRelative = previousState;

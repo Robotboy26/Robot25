@@ -1,13 +1,13 @@
 package Team4450.Robot25.commands;
 
 import Team4450.Lib.Util;
+import Team4450.Robot25.subsystems.DriveBase;
 import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.util.sendable.SendableRegistry;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
-import Team4450.Robot25.subsystems.DriveBase;
 
 /**
    * This function uses the current robot position estimate that is build from odometry and apriltags to go to a location on the field.
@@ -18,7 +18,7 @@ import Team4450.Robot25.subsystems.DriveBase;
    */
 
 public class GoToPose extends Command {
-    PIDController rotationController = new PIDController(0.02, 0, 0); // for rotating drivebase
+    PIDController rotationController = new PIDController(0.045, 0, 0); // for rotating drivebase
     PIDController translationControllerX = new PIDController(0.1, 0.1, 0); // for moving drivebase in X,Y plane
     PIDController translationControllerY = new PIDController(0.1, 0.1, 0); // for moving drivebase in X,Y plane
     DriveBase robotDrive;
@@ -27,7 +27,7 @@ public class GoToPose extends Command {
     private boolean isFinished;
     private double toleranceX = 0.05;
     private double toleranceY = 0.05;
-    private double toleranceRot = 1;
+    private double toleranceRot = 2;
     /**
      * @param robotDrive the drive subsystem
      */
@@ -45,9 +45,9 @@ public class GoToPose extends Command {
     }
 
     public void initialize () {
+        Util.consoleLog("Init");
+        isFinished = false;
         Util.consoleLog();
-
-        
 
         // store the initial field relative state to reset it later.
         initialFieldRel = robotDrive.getFieldRelative();
@@ -57,21 +57,24 @@ public class GoToPose extends Command {
         robotDrive.enableTracking();
         robotDrive.enableTrackingSlowMode();
         
-        rotationController.setSetpoint(robotDrive.getTargetPose().getRotation().getRadians());
-        rotationController.setTolerance(toleranceRot);
-
-        // translationControllerX.setSetpoint(-15); // target should be at -15 pitch
-        translationControllerX.setSetpoint(robotDrive.getTargetPose().getX());
-        translationControllerX.setTolerance(toleranceX);
-
-        translationControllerY.setSetpoint(robotDrive.getTargetPose().getY());
-        translationControllerY.setTolerance(toleranceY);
-
+        // rotationController.setSetpoint(robotDrive.getTargetPose().getRotation().getRadians());
+        
         SmartDashboard.putString("GoToPose", "Tag Tracking Initialized");
     }
 
     @Override
     public void execute() {
+        rotationController.setSetpoint(robotDrive.getTargetPose().getRotation().getDegrees());
+        rotationController.setTolerance(toleranceRot);
+
+        // translationControllerX.setSetpoint(-15); // target should be at -15 pitch
+        translationControllerX.setSetpoint(robotDrive.getTargetPose().getX());
+        Util.consoleLog("Look here" + String.valueOf(robotDrive.getTargetPose().getX()));
+        translationControllerX.setTolerance(toleranceX);
+
+        translationControllerY.setSetpoint(robotDrive.getTargetPose().getY());
+        translationControllerY.setTolerance(toleranceY);
+
         if (isFinished()) {
             end(false);
             return;
@@ -80,6 +83,7 @@ public class GoToPose extends Command {
         if (robotDrive.getTargetPose().getX() == 0 || robotDrive.getTargetPose().getY() == 0) {
             // Smartdashboard warning on target assignment (Upgrade)
             Util.consoleLog("NO TARGET ASSIGNED");
+            end(false);
             return;
         }
         
@@ -93,8 +97,8 @@ public class GoToPose extends Command {
         double movementY;
         double rotation;
 
-        Util.consoleLog(robotDrive.getTargetPose().toString());
-        Util.consoleLog(String.valueOf(robotDrive.getPose().getX()));
+        // Util.consoleLog(robotDrive.getTargetPose().toString());
+        Util.consoleLog(String.valueOf(robotDrive.getPose()));
 
         if (robotDrive.getPose().getX() < robotDrive.getTargetPose().getX() - toleranceX || robotDrive.getPose().getX() > robotDrive.getTargetPose().getX() + toleranceX) {
             movementX = translationControllerX.calculate(robotDrive.getPose().getX());
@@ -106,20 +110,47 @@ public class GoToPose extends Command {
         } else {
             movementY = 0;
         }
-        if (robotDrive.getGyroYaw() < robotDrive.getTargetPose().getRotation().getRadians() - Math.toRadians(toleranceRot) || robotDrive.getGyroYaw() > robotDrive.getTargetPose().getRotation().getRadians() + Math.toRadians(toleranceRot)) {
-            rotation = rotationController.calculate(robotDrive.getGyroYaw());
-        } else {
-            rotation = 0;
-        }
+        rotation = rotationController.calculate(robotDrive.getHeading());
+        // if (robotDrive.getHeading() < robotDrive.getHeading() - toleranceRot || robotDrive.getHeading() > robotDrive.getHeading() + toleranceRot) {
+        //     rotation = rotationController.calculate(robotDrive.getHeading());
+        // } else {
+        //     rotation = 0;
+        // }
 
         if (movementX == 0 && movementY == 0 && rotation == 0) {
             isFinished = true;
-            end(false);
             return;
         }
 
         if (alsoDrive) {
-            robotDrive.driveRobotRelative(movementX, movementY, rotation);
+            double fakeJoystickAngle = Math.atan2(movementX, movementY);
+            double magnitude = Math.hypot(movementX, movementY);
+            double fakeCorrectedAngle = Math.toDegrees(fakeJoystickAngle) - robotDrive.getHeading();
+
+            fakeCorrectedAngle = Math.toRadians(fakeCorrectedAngle);
+
+            double newXStick = (magnitude * Math.sin(fakeCorrectedAngle));
+            double newYStick = (magnitude * Math.cos(fakeCorrectedAngle));
+            double newMovementX;
+            double newMovementY;
+            if (movementX != 0) {
+                // newMovementX = movementX * Math.cos(robotDrive.getHeading()) - movementY * Math.sin(robotDrive.getHeading());
+                newMovementX = (robotDrive.getTargetPose().getX() - robotDrive.getPose().getX()) * Math.sin(robotDrive.getHeading());
+            } else {
+                newMovementX = 0;
+            }
+            if (movementY != 0) {
+                // newMovementY = movementY * Math.sin(robotDrive.getHeading()) + movementY * Math.cos(robotDrive.getHeading());
+                newMovementY = robotDrive.getPose().getY() - robotDrive.getTargetPose().getY();
+            } else {
+                newMovementY = 0;
+            }
+            Util.consoleLog("MoveX: " + movementX);
+            Util.consoleLog("NewMoveX: " + newMovementX);
+            // Util.consoleLog(String.valueOf(robotDrive.getPose().getX() - robotDrive.getTargetPose().getX()));
+            // Util.consoleLog(String.valueOf(-(robotDrive.getPose().getY() - robotDrive.getTargetPose().getY())));
+            // robotDrive.driveRobotRelative(newXStick, newYStick, rotation);
+            robotDrive.driveFieldRelative(movementX, movementY, rotation);
         } else {
             robotDrive.setTrackingRotation(0);
         }
