@@ -1,7 +1,6 @@
 
 package Team4450.Robot25;
 
-import java.util.HashMap;
 import java.util.Properties;
 
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
@@ -27,7 +26,7 @@ import edu.wpi.first.wpilibj.DriverStation;
  */
 public final class Constants
 {
-	public static String		PROGRAM_NAME = "ORF25-02.11.25VR";
+	public static String		PROGRAM_NAME = "ORF25-01.30.25VR";
 
 	public static Robot			robot;
 
@@ -45,26 +44,28 @@ public final class Constants
     public static final int     CORAL_MANIPULATOR = 9;
     // public static final int     ALGAE_MANIPULATOR = 10;
 
-    // //ELEVATOR:
+    //ELEVATOR:
     // public static final int     ELEVATOR_LEFT = 11;
     // public static final int     ELEVATOR_RIGHT = 12;
 
-    //(NOTES) ELEVATOR_WINCH_FACTOR is a conversion factor from motor rotations to meters of height change.
-    //ELEVATOR_WINCH_FACTOR is multiplied by native rotations of motor shaft 
-    // to get height change in MAXSpline shaft since startup or last encoder reset.
-    // math explanation:
-    // ratio is (1.0 / (1014.0 / 55.0)) spool rots for every turn of shaft
-    // * 2pi for radians traveled/angular displacement * spool radius in meters to get linear displacement
-    // 1.25 inch radius is 0.03175 meters (source: looked it up)
-    // idk why it has to be negative, probably the gears swap rotation, not a big deal tho
-    public static final double  ELEVATOR_WINCH_FACTOR = (-1.0 / (1014.0 / 55.0)) * (2 * Math.PI) * 0.03175; //NEEDS TO BE CHANGED TO ACTUAL VALUE
+    // ELEVATOR_WINCH_FACTOR is a conversion factor from motor rotations to meters of height change.
+    // It is multiplied by the native rotations of the motor shaft to get the height change in the MAXSpline shaft since startup or the last encoder reset.
+    // MATH EXPLANATION (2025):
+    // Gear Reduction of Gearbox: 38:8 (38 rotations of the motor shaft rotate the spool 8 times).
+    // To solve for the winch factor, you need the ratio of winch rotations to motor rotations.
+    // So, 38 motor rotations / 8 winch rotations, and you need to take the reciprocal to get the winch factor.
+    // The ratio is (1.0 / (38.0 / 8.0)) spool rotations for every turn of the shaft.
+    // Multiply by 2π for radians traveled/angular displacement and by the spool radius in meters to get linear displacement.
+    // The spool radius is 0.875 inches, which is 0.022225 meters (source: looked it up).
+    // The factor is negative, likely because the gears swap rotation direction, but this is not a significant issue.
+    public static final double  ELEVATOR_WINCH_FACTOR = (-1.0 / (38.0 / 8.0)) * (2 * Math.PI) * 0.022225; //Changed to 2025 Value!
 
     // Pneumatic valve controller port assignments.
 	// public static final int		COMPRESSOR = 0;
 	// public static final int		CORAL_PIVOT = 0;		
 	// public static final int		ALGAE_EXTEND = 2;		
 	// public static final int		ALGAE_PIVOT = 4;    
-    
+
     // CAMERAS 
 
     public static Transform3d   CAMERA_TAG_TRANSFORM = new Transform3d(
@@ -76,7 +77,7 @@ public final class Constants
     public static double robotCoralLateralScoringOffset = 0.2; // Added to the target position if scoring left and subtracted if scoring right.
 
     public static double xCameraOffset = 0;
-    public static double yCameraOffset = 0;
+    public static double yCameraOffset = 0.32;
 
     // the names of the cameras in the PhotonVision software
     public static String        CAMERA_TAG = "HD_USB_Camera";

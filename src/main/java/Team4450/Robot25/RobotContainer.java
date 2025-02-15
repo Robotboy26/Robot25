@@ -38,7 +38,7 @@ import Team4450.Lib.NavX;
 import Team4450.Lib.Util;
 import Team4450.Lib.CameraFeed;
 import Team4450.Lib.XboxController;
-// import Team4450.Lib.MonitorCompressor;
+import Team4450.Lib.MonitorCompressor;
 
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.AnalogInput;
@@ -52,7 +52,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.math.MathUtil;
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.geometry.Rotation2d;
-// import edu.wpi.first.wpilibj.PneumaticHub;
+import edu.wpi.first.wpilibj.PneumaticHub;
 import edu.wpi.first.util.sendable.SendableRegistry;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.InstantCommand;
@@ -106,7 +106,7 @@ public class RobotContainer
 	private XboxController			driverController =  new XboxController(DRIVER_PAD);
 	public static XboxController	utilityController = new XboxController(UTILITY_PAD);
 
-	// private AnalogInput			pressureSensor = new AnalogInput(PRESSURE_SENSOR);
+	private AnalogInput			pressureSensor = new AnalogInput(PRESSURE_SENSOR);
 	  
 	// private PowerDistribution	pdp = new PowerDistribution(REV_PDB, PowerDistribution.ModuleType.kCTRE);
 	private PowerDistribution	pdp = new PowerDistribution(REV_PDB, PowerDistribution.ModuleType.kRev);
@@ -388,7 +388,7 @@ public class RobotContainer
 
 		// toggle brake mode
 		new Trigger(() -> driverController.getAButton())
-    		.onTrue(new InstantCommand(driveBase::toggleBrakeMode));
+			.onTrue(new InstantCommand(driveBase::toggleBrakeMode));
 
 
 // 		//Drive to the AprilTag
@@ -464,11 +464,9 @@ public class RobotContainer
 
 		new Trigger(() -> utilityController.getLeftTrigger())
 			.toggleOnTrue(new IntakeCoral(coralManipulator));
+		new Trigger(()-> utilityController.getRightTrigger())
+			.toggleOnTrue(new OuttakeCoral(coralManipulator));
 		
-		new Trigger(() -> utilityController.getRightTrigger())
-			.whileTrue(new OuttakeCoral(coralManipulator));
-
-			
 		
 	}
 	/**
@@ -518,7 +516,7 @@ public class RobotContainer
 		
 		// Register commands called from PathPlanner Autos.
 
-		// NamedCommands.registerCommand("Intake Coral", new IntakeCoral(coralManipulator));
+		// NamedCommands.registerCommand("Intake Coral", new IntakeCoral(coralManipulator, elevatedManipulator));
 		// NamedCommands.registerCommand("Outtake Coral", new OuttakeCoral(coralManipulator));
 		// NamedCommands.registerCommand("Raise to L1", new Preset(elevatedManipulator, PresetPosition.CORAL_SCORING_L1));
 		// NamedCommands.registerCommand("Raise to L2", new Preset(elevatedManipulator, PresetPosition.CORAL_SCORING_L2));
