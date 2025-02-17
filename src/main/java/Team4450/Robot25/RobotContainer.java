@@ -14,6 +14,7 @@ import Team4450.Robot25.commands.GetPoseEsimate;
 import Team4450.Robot25.commands.IntakeCoral;
 import Team4450.Robot25.commands.OuttakeCoral;
 import Team4450.Robot25.commands.PointToYaw;
+import Team4450.Robot25.commands.RotateToPose;
 import Team4450.Robot25.commands.SetTargetPose;
 import Team4450.Robot25.commands.UpdateCandle;
 import Team4450.Robot25.commands.UpdateVisionPose;
@@ -422,11 +423,10 @@ public class RobotContainer
 		new Trigger(()-> driverController.getBButton())
 			.whileTrue(new RotateToPose(driveBase, true, true).andThen(new GoToPose(driveBase, true, true)));
 
-
 		new Trigger(()-> driverController.getYButton())
 			.onTrue(new SetTagBasedPosition(driveBase, pvTagCamera, false));
 		// // -------- Utility pad buttons ----------
-		
+    
 		// //Moves the coral manipulator/elevator to the L1 Branch scoring position
 		// new Trigger(() -> utilityController.getXButton())
 		// 	.toggleOnTrue(new Preset(elevatedManipulator, PresetPosition.CORAL_SCORING_L1));

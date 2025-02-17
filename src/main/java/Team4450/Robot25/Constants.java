@@ -1,6 +1,7 @@
 
 package Team4450.Robot25;
 
+import java.util.HashMap;
 import java.util.Properties;
 
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
@@ -68,11 +69,16 @@ public final class Constants
 
     // CAMERAS 
 
+    // public static Transform3d   CAMERA_TAG_TRANSFORM = new Transform3d(
+    //     new Translation3d(0, 0.32, 0.28), // change last value to height in METERS of lens
+    //     new Rotation3d(0, 0, Math.toRadians(180)) // keep the 180, the -10 is the camera angle (negative!)
+    // );
+    
     public static Transform3d   CAMERA_TAG_TRANSFORM = new Transform3d(
-        new Translation3d(0, 0.32, 0.28), // change last value to height in METERS of lens
+        new Translation3d(0, 0, 0), // change last value to height in METERS of lens
         new Rotation3d(0, 0, Math.toRadians(180)) // keep the 180, the -10 is the camera angle (negative!)
     );
-
+  
     public static double robotCoralLongitudinalScoringDistance = 0.5; // 0.5 meters distance from the tag for scoring coral.
     public static double robotCoralLateralScoringOffset = -0.4; // Added to the target position if scoring left and subtracted if scoring right.
 
