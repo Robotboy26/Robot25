@@ -8,7 +8,6 @@ import com.pathplanner.lib.auto.NamedCommands;
 import com.pathplanner.lib.commands.PathPlannerAuto;
 
 import Team4450.Robot25.commands.DriveCommand;
-import Team4450.Robot25.commands.DriveToTag;
 import Team4450.Robot25.commands.DriveToLeft;
 import Team4450.Robot25.commands.DriveToRight;
 import Team4450.Robot25.commands.GetPoseEsimate;
@@ -19,6 +18,8 @@ import Team4450.Robot25.commands.SetTargetPose;
 import Team4450.Robot25.commands.UpdateCandle;
 import Team4450.Robot25.commands.UpdateVisionPose;
 import Team4450.Robot25.commands.GoToPose;
+import Team4450.Robot25.commands.RotateToPose;
+import Team4450.Robot25.commands.SetTagBasedPosition;
 // import Team4450.Robot25.commands.Preset;
 // import Team4450.Robot25.commands.RemoveAlgae;
 // import Team4450.Robot25.commands.NetAlgae;
@@ -28,11 +29,12 @@ import Team4450.Robot25.subsystems.Candle;
 import Team4450.Robot25.subsystems.DriveBase;
 import Team4450.Robot25.subsystems.PhotonVision;
 import Team4450.Robot25.subsystems.ShuffleBoard;
+// import Team4450.Robot25.subsystems.ElevatedManipulator;
+// import Team4450.Robot25.subsystems.Elevator;
 // import Team4450.Robot25.subsystems.ElevatedManipulator.PresetPosition;
 import Team4450.Robot25.subsystems.PhotonVision.PipelineType;
 import Team4450.Robot25.subsystems.CoralManipulator;
-// import Team4450.Robot25.subsystems.ElevatedManipulator;
-// import Team4450.Robot25.subsystems.Elevator;
+
 import Team4450.Lib.MonitorPDP;
 import Team4450.Lib.NavX;
 import Team4450.Lib.Util;
@@ -402,21 +404,27 @@ public class RobotContainer
 		// 	.whileTrue(new GetPoseEsimate(driveBase, pvTagCamera, true, true));
 		
 
-		//Drive to the Right Branch, offsetting from AprilTag (using Pitch/Yaw)
+		//Drive to the Right Branch, offsetting from AprilTag (using Pose information)
 		new Trigger(()-> driverController.getRightTrigger())
-			.whileTrue(new DriveToRight(driveBase, pvTagCamera, true, true));
+			.whileTrue(new SetTagBasedPosition(driveBase, pvTagCamera, false)
+			.andThen(new RotateToPose(driveBase, true, true))
+			.andThen(new GoToPose(driveBase, true, true))
+			);
 		
-		//Drive to the Left Branch, offsetting from AprilTag (using Pitch/Yaw
+		//Drive to the Left Branch, offsetting from AprilTag (using Pose information)
 		new Trigger(()-> driverController.getLeftTrigger())
-			.whileTrue(new DriveToLeft(driveBase, pvTagCamera, true, true));
+		.whileTrue(new SetTagBasedPosition(driveBase, pvTagCamera, true)
+		.andThen(new RotateToPose(driveBase, true, true))
+		.andThen(new GoToPose(driveBase, true, true))
+		);
 		
     	//Drive to the AprilTag using Pose information
 		new Trigger(()-> driverController.getBButton())
-			.whileTrue(new GoToPose(driveBase, pvTagCamera, true, true));
+			.whileTrue(new RotateToPose(driveBase, true, true).andThen(new GoToPose(driveBase, true, true)));
 
 
 		new Trigger(()-> driverController.getYButton())
-			.onTrue(new SetTargetPose(driveBase, new Pose2d(11.5, 4.3, new Rotation2d(0))));
+			.onTrue(new SetTagBasedPosition(driveBase, pvTagCamera, false));
 		// // -------- Utility pad buttons ----------
 		
 		// //Moves the coral manipulator/elevator to the L1 Branch scoring position
@@ -464,6 +472,7 @@ public class RobotContainer
 
 		new Trigger(() -> utilityController.getLeftTrigger())
 			.toggleOnTrue(new IntakeCoral(coralManipulator));
+			
 		new Trigger(()-> utilityController.getRightTrigger())
 			.toggleOnTrue(new OuttakeCoral(coralManipulator));
 		

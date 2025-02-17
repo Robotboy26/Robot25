@@ -313,7 +313,12 @@ public class DriveBase extends SubsystemBase {
    * @return targetPose
    */
   public Pose2d getTargetPose() {
-    return this.targetPose;
+    if (this.targetPose == null) {
+      return new Pose2d(0, 0, new Rotation2d(0));
+    } 
+    else {
+      return this.targetPose;
+    }
   }
 
   /**
@@ -532,6 +537,21 @@ public class DriveBase extends SubsystemBase {
     updateDS();
   }
 
+  public void driveFieldRelative(double xSpeed, double ySpeed, double rotSpeed) {
+    // store the current state of field-relative toggle to restore later
+    boolean previousState = fieldRelative;
+    fieldRelative = true;
+
+    updateDS();
+
+    // drive using the robot relative speeds/joystick values
+    drive(xSpeed, ySpeed, rotSpeed, false);
+
+    // restore previous state of field-relative.
+    fieldRelative = previousState;
+
+    updateDS();
+  }
   /**
    * Sets the wheels into an X formation to prevent movement.
    */
