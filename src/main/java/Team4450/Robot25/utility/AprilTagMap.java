@@ -6,6 +6,10 @@ import edu.wpi.first.math.geometry.Rotation2d;
 
 public class AprilTagMap {
 
+// Find positions
+// map of positions for the robot to go to based on which april tag it sees
+// The degrees have been changed, do not change.
+
 public static HashMap<Integer, Pose2d> aprilTagToPoseMap = new HashMap<>(); static {
 
     // april id, location to go to
