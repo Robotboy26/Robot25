@@ -43,31 +43,30 @@ public final class Constants
 
 	// Non-drive base motor controller port assignments
     public static final int     CORAL_MANIPULATOR = 9;
-    public static final int     ALGAE_MANIPULATOR = 10;
+    // public static final int     ALGAE_MANIPULATOR = 10;
 
     //ELEVATOR:
-    public static final int     ELEVATOR_LEFT = 11;
-    public static final int     ELEVATOR_RIGHT = 12;
+    // public static final int     ELEVATOR_LEFT = 11;
+    // public static final int     ELEVATOR_RIGHT = 12;
 
-    //(NOTES) ELEVATOR_WINCH_FACTOR is a conversion factor from motor rotations to meters of height change.
-    //ELEVATOR_WINCH_FACTOR is multiplied by native rotations of motor shaft 
-    // to get height change in MAXSpline shaft since startup or last encoder reset.
-    // math explanation:
-    // ratio is (1.0 / (1014.0 / 55.0)) spool rots for every turn of shaft
-    // * 2pi for radians traveled/angular displacement * spool radius in meters to get linear displacement
-    // 1.25 inch radius is 0.03175 meters (source: looked it up)
-    // idk why it has to be negative, probably the gears swap rotation, not a big deal tho
-    public static final double  ELEVATOR_WINCH_FACTOR = (-1.0 / (1014.0 / 55.0)) * (2 * Math.PI) * 0.03175; //NEEDS TO BE CHANGED TO ACTUAL VALUE
+    // ELEVATOR_WINCH_FACTOR is a conversion factor from motor rotations to meters of height change.
+    // It is multiplied by the native rotations of the motor shaft to get the height change in the MAXSpline shaft since startup or the last encoder reset.
+    // MATH EXPLANATION (2025):
+    // Gear Reduction of Gearbox: 38:8 (38 rotations of the motor shaft rotate the spool 8 times).
+    // To solve for the winch factor, you need the ratio of winch rotations to motor rotations.
+    // So, 38 motor rotations / 8 winch rotations, and you need to take the reciprocal to get the winch factor.
+    // The ratio is (1.0 / (38.0 / 8.0)) spool rotations for every turn of the shaft.
+    // Multiply by 2π for radians traveled/angular displacement and by the spool radius in meters to get linear displacement.
+    // The spool radius is 0.875 inches, which is 0.022225 meters (source: looked it up).
+    // The factor is negative, likely because the gears swap rotation direction, but this is not a significant issue.
+    public static final double  ELEVATOR_WINCH_FACTOR = (-1.0 / (38.0 / 8.0)) * (2 * Math.PI) * 0.022225; //Changed to 2025 Value!
 
     // Pneumatic valve controller port assignments.
-	public static final int		COMPRESSOR = 0;
-	public static final int		CORAL_PIVOT = 0;		
-	public static final int		ALGAE_EXTEND = 2;		
-	public static final int		ALGAE_PIVOT = 4;    
+	// public static final int		COMPRESSOR = 0;
+	// public static final int		CORAL_PIVOT = 0;		
+	// public static final int		ALGAE_EXTEND = 2;		
+	// public static final int		ALGAE_PIVOT = 4;    
 
-    
-    public static final double INTAKE_SPEED = 0.90;
-    
     // CAMERAS 
 
     // public static Transform3d   CAMERA_TAG_TRANSFORM = new Transform3d(
@@ -79,46 +78,12 @@ public final class Constants
         new Translation3d(0, 0, 0), // change last value to height in METERS of lens
         new Rotation3d(0, 0, Math.toRadians(180)) // keep the 180, the -10 is the camera angle (negative!)
     );
-
-    // Find positions
-    // map of positions for the robot to go to based on which april tag it sees
-
-    // The degrees have been changed, do not change.
-    public static HashMap<Integer, Pose2d> aprilTagToPoseMap = new HashMap<>(); static {
-        // april id, location to go to
-        // red side
-        // aprilTagToPoseMap.put(1, new Pose2d(16.7, 0.66, new Rotation2d(Math.toRadians(126))));
-        // aprilTagToPoseMap.put(2, new Pose2d(16.7, 7.40, new Rotation2d(Math.toRadians(-126))));
-        // aprilTagToPoseMap.put(3, new Pose2d(11.56, 8.06, new Rotation2d(Math.toRadians(-90))));
-        // aprilTagToPoseMap.put(4, new Pose2d(9.28, 6.14, new Rotation2d(Math.toRadians(0))));
-        // aprilTagToPoseMap.put(5, new Pose2d(9.28, 1.91, new Rotation2d(Math.toRadians(0))));
-        aprilTagToPoseMap.put(6, new Pose2d(13.47, 3.31, new Rotation2d(Math.toRadians(60))));
-        aprilTagToPoseMap.put(7, new Pose2d(13.89, 4.03, new Rotation2d(Math.toRadians(0))));
-        aprilTagToPoseMap.put(8, new Pose2d(13.43, 4.75, new Rotation2d(Math.toRadians(300))));
-        aprilTagToPoseMap.put(9, new Pose2d(12.64, 4.75, new Rotation2d(Math.toRadians(240))));
-        aprilTagToPoseMap.put(10, new Pose2d(12.23, 4.03, new Rotation2d(Math.toRadians(180))));
-        aprilTagToPoseMap.put(11, new Pose2d(12.64, 3.31, new Rotation2d(Math.toRadians(120))));
-        // blue side 
-        // aprilTagToPoseMap.put(12, new Pose2d(0.85, 0.66, new Rotation2d(Math.toRadians(54))));
-        // aprilTagToPoseMap.put(13, new Pose2d(0.85, 7.40, new Rotation2d(Math.toRadians(-54))));
-        // aprilTagToPoseMap.put(14, new Pose2d(8.27, 6.14, new Rotation2d(Math.toRadians(180))));
-        // aprilTagToPoseMap.put(15, new Pose2d(8.27, 1.91, new Rotation2d(Math.toRadians(180))));
-        // aprilTagToPoseMap.put(16, new Pose2d(5.99, 0.00, new Rotation2d(Math.toRadians(90))));
-        aprilTagToPoseMap.put(17, new Pose2d(4.07, 3.31, new Rotation2d(Math.toRadians(120))));
-        aprilTagToPoseMap.put(18, new Pose2d(3.66, 4.03, new Rotation2d(Math.toRadians(180))));
-        aprilTagToPoseMap.put(19, new Pose2d(4.07, 4.75, new Rotation2d(Math.toRadians(240))));
-        aprilTagToPoseMap.put(20, new Pose2d(4.90, 4.75, new Rotation2d(Math.toRadians(300))));
-        aprilTagToPoseMap.put(21, new Pose2d(5.32, 4.03, new Rotation2d(Math.toRadians(0))));
-        aprilTagToPoseMap.put(22, new Pose2d(4.90, 3.31, new Rotation2d(Math.toRadians(60))));
-    }
-
-    public static double robotCoralLongitudinalScoringDistance = 0.5; // 0.3 meters distance from the tag for scoring coral.
+  
+    public static double robotCoralLongitudinalScoringDistance = 0.5; // 0.5 meters distance from the tag for scoring coral.
     public static double robotCoralLateralScoringOffset = -0.4; // Added to the target position if scoring left and subtracted if scoring right.
 
-    // Find offsets
-
     public static double xCameraOffset = 0;
-    public static double yCameraOffset = 0;
+    public static double yCameraOffset = 0.32;
 
     // the names of the cameras in the PhotonVision software
     public static String        CAMERA_TAG = "HD_USB_Camera";
@@ -130,11 +95,9 @@ public final class Constants
 	public static final int		DRIVER_PAD = 0, UTILITY_PAD = 1;
     public static final double  DRIVE_DEADBAND = 0.1, ROTATION_DEADBAND = .1;
 
-	// Pneumatic valve controller port assignments.
-	//public static final int		COMPRESSOR = 0;
 	  
 	// Analog Input port assignments.
-	
+	public static final int PRESSURE_SENSOR = 1;
 	// LCD display line number constants showing class where the line is set.
 	public static final int		LCD_1 = 1;	    // Robot, Auto Commands.
 	public static final int		LCD_2 = 2;	    // Swerve Drive command.

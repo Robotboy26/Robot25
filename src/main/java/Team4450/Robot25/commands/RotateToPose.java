@@ -65,7 +65,7 @@ public class RotateToPose extends Command {
             sign = -1;
         }
                 
-        SmartDashboard.putString("GoToPose", "Tag Tracking Initialized");
+        SmartDashboard.putString("RotateToPose", "Tag Tracking Initialized");
     }
 
     @Override
@@ -118,7 +118,7 @@ public class RotateToPose extends Command {
         robotDrive.disableTrackingSlowMode();
         robotDrive.clearPPRotationOverride();
 
-        SmartDashboard.putString("GoToPose", "Tag Tracking Ended");
+        SmartDashboard.putString("RotateToPose", "Tag Tracking Ended");
 
     }
 }

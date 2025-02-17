@@ -1,18 +1,19 @@
 package Team4450.Robot25.subsystems;
 
 import Team4450.Lib.Util;
-import Team4450.Lib.ValveDA;
+// import Team4450.Lib.ValveDA;
 import static Team4450.Robot25.Constants.CORAL_MANIPULATOR;
-import static Team4450.Robot25.Constants.CORAL_PIVOT;
+// import static Team4450.Robot25.Constants.CORAL_PIVOT;
 
 import com.revrobotics.spark.SparkFlex;
+import com.revrobotics.spark.SparkLimitSwitch;
 import com.revrobotics.spark.SparkBase.PersistMode;
 import com.revrobotics.spark.SparkBase.ResetMode;
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
 import com.revrobotics.spark.config.SparkFlexConfig;
 import com.revrobotics.spark.SparkLowLevel.MotorType;
 
-
+// import edu.wpi.first.wpilibj.PneumaticsModuleType;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
@@ -20,86 +21,118 @@ public class CoralManipulator extends SubsystemBase {
     private SparkFlex coralMotor = new SparkFlex(CORAL_MANIPULATOR, MotorType.kBrushless);
     private SparkFlexConfig coralConfig = new SparkFlexConfig();
 
-    private ValveDA coralPivot = new ValveDA(CORAL_PIVOT);
+    private SparkLimitSwitch coralSensor;
+
+    // private ValveDA coralPivot = new ValveDA(CORAL_PIVOT, PneumaticsModuleType.REVPH);
 
     private boolean isRunning = false;
-    public boolean coralPivotStatus = false;
+    // public boolean coralPivotStatus = false;
 
     public CoralManipulator(){
         coralConfig.idleMode(IdleMode.kBrake);
 
         coralMotor.configure(coralConfig, ResetMode.kNoResetSafeParameters, PersistMode.kNoPersistParameters);
 
-        coralConfig.follow(coralMotor);
+        // coralSensor = coralMotor.getForwardLimitSwitch();
 
         Util.consoleLog("Coral Manipulator Initialized");
         }
     
+    public void intialize(){
+        // pivotDown();
+
+        // coralPivotStatus = false;
+
+        updateDS();
+    }
+    
+    public boolean hasCoral(){
+
+        return this.getCurrent() > 70.0;
+
+    }
 
     public void start(double speedfactor){
 
         isRunning = Math.abs(speedfactor) > 0.02;
+        
         updateDS();
 
-        SmartDashboard.putNumber("Coral_SpeedFactor", speedfactor);
         coralMotor.set(Util.clampValue(speedfactor, 1));
     }
 
     public void startIntaking(){
-        SmartDashboard.putBoolean("Intake Status", true);
-        coralMotor.set(-0.5);
 
+        coralMotor.set(-0.5);
+        isRunning = true;
+        updateDS();
     }
 
     public void startOuttaking(){
-        SmartDashboard.putBoolean("Intake Status", false);
         coralMotor.set(0.5);
+        isRunning = true;
+        updateDS();
     }
     public void start(){
        start(1);
+
+       isRunning = true;
+       updateDS();
     }
 
     public void stop(){
         Util.consoleLog();
 
         coralMotor.stopMotor();
-        pivotDown();
+        // pivotDown();
 
         isRunning = false;
-        coralPivotStatus = false;
+        // coralPivotStatus = false;
         updateDS();
     }
 
-    public void pivotUp(){
-        Util.consoleLog();
+    // public void pivotUp(){
+    //     Util.consoleLog();
 
-        coralPivot.SetA();
+    //     coralPivot.SetA();
     
-        coralPivotStatus = true;
-        updateDS();
+    //     coralPivotStatus = true;
+    //     updateDS();
 
-    }
+    // }
 
-    public void setCoralPivot(boolean status){
-        Util.consoleLog();
+    // public void setCoralPivot(boolean status){
+    //     Util.consoleLog();
 
-        if (status == true){
-            pivotUp();
-        } else if (status == false){
-            pivotDown();
-        }
-    }
-    public void pivotDown(){
-        Util.consoleLog();
+    //     if (status == true){
+    //         pivotUp();
+    //         coralPivotStatus = true;
+    //     } else{
+    //         pivotDown();
+    //         coralPivotStatus = false;
+    //     }
 
-        coralPivot.SetB();
+    //     updateDS();
+    // }
+    // public void pivotDown(){
+    //     Util.consoleLog();
 
-        coralPivotStatus = false;
-        updateDS();
+    //     coralPivot.SetB();
+
+    //     coralPivotStatus = false;
+    //     updateDS();
+    // }
+
+    public double getCurrent(){
+        double current = coralMotor.getOutputCurrent();
+        SmartDashboard.putNumber("Coral Manipulator Current", current);
+        return current;
     }
 
     private void updateDS() {
-        SmartDashboard.putBoolean("Coral Manipulator", isRunning);
-        SmartDashboard.putBoolean("Coral Pivot", coralPivotStatus);
+        SmartDashboard.putBoolean("Coral Manipulator Running", isRunning);
+
+        // SmartDashboard.putBoolean("Coral Pivot On", coralPivotStatus);
+        // SmartDashboard.putBoolean("Has Coral", hasCoral());
     }
 }

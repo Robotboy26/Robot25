@@ -1,13 +1,14 @@
 package Team4450.Robot25.commands;
 
 import Team4450.Lib.Util;
+import edu.wpi.first.math.controller.PIDController;
+import edu.wpi.first.util.sendable.SendableRegistry;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
 import Team4450.Robot25.subsystems.PhotonVision;
 
-import java.util.Optional;
+import org.photonvision.targeting.PhotonTrackedTarget;
 
-import org.photonvision.EstimatedRobotPose;
 import Team4450.Robot25.subsystems.DriveBase;
 
 
@@ -17,7 +18,9 @@ import Team4450.Robot25.subsystems.DriveBase;
  * rotation to be commanded seperately from translation.
  */
 
-public class GetPoseEsimate extends Command {
+public class DriveToRight extends Command {
+    PIDController rotationController = new PIDController(0.015, 0, 0); // for rotating drivebase
+    PIDController translationController = new PIDController(0.02, 0, 0); // for moving drivebase in X,Y plane
     DriveBase robotDrive;
     PhotonVision photonVision;
     private boolean alsoDrive;
@@ -25,13 +28,15 @@ public class GetPoseEsimate extends Command {
     /**
      * @param robotDrive the drive subsystem
      */
-
-    public GetPoseEsimate (DriveBase robotDrive, PhotonVision photonVision, boolean alsoDrive, boolean initialFieldRel) {
+    public DriveToRight (DriveBase robotDrive, PhotonVision photonVision, boolean alsoDrive, boolean initialFieldRel) {
         this.robotDrive = robotDrive;
         this.photonVision = photonVision;
         this.alsoDrive = alsoDrive;
 
         if (alsoDrive) addRequirements(robotDrive);
+
+        SendableRegistry.addLW(translationController, "DriveToRight Translation PID");
+        SendableRegistry.addLW(rotationController, "DriveToRight Rotation PID");
     }
 
     public void initialize (){
@@ -44,29 +49,39 @@ public class GetPoseEsimate extends Command {
             robotDrive.toggleFieldRelative();
         robotDrive.enableTracking();
         robotDrive.enableTrackingSlowMode();
+        
+        rotationController.setSetpoint(0);
+        rotationController.setTolerance(0.5);
 
-        SmartDashboard.putString("GetPoseEsimate", "Pose Estimator Ended");
+        translationController.setSetpoint(-15); // target should be at -15 pitch
+        translationController.setTolerance(0.5);
+
+        SmartDashboard.putString("DriveToRight", "Tag Tracking Initialized");
     }
 
     @Override
     public void execute() {
       // logic for chosing "closest" target in PV subsystem
-    
-        Optional<EstimatedRobotPose> target = photonVision.getEstimatedPose();
 
-        // PhotonTrackedTarget target = photonVision.getClosestTarget();
+        PhotonTrackedTarget target = photonVision.getClosestTarget();
         
-        if (target == null || !target.isPresent()) {
+        if (target == null) {
             robotDrive.setTrackingRotation(Double.NaN); // temporarily disable tracking
             robotDrive.clearPPRotationOverride();
             return;
         }
 
-        // What about being on the red or blue side
-        // Create a odometry function moveToFrom(robotx, roboty, robotrot, targetx, targety, targetrot)
+        double rotation = rotationController.calculate(target.getYaw() + 25); // attempt to minimize
+        double movement = translationController.calculate(target.getPitch()); // attempt to minimize
 
-        Util.consoleLog(String.valueOf(target.get().estimatedPose.getX()), String.valueOf(target.get().estimatedPose.getY()));
-        // Util.consoleLog(robotDrive.getPose().toString());
+        Util.consoleLog("in[yaw=%f, pitch=%f] out[rot=%f, mov=%f]", target.getYaw(), target.getPitch(), rotation, movement);
+
+        if (alsoDrive) {
+            robotDrive.driveRobotRelative(-movement, 0, rotation);
+        } else {
+            robotDrive.setTrackingRotation(rotation);
+        }
+        
     }
     @Override
     public void end(boolean interrupted) {
@@ -81,7 +96,7 @@ public class GetPoseEsimate extends Command {
         robotDrive.disableTrackingSlowMode();
         robotDrive.clearPPRotationOverride();
 
-        SmartDashboard.putString("GetPoseEsimate", "Pose Estimator Ended");
+        SmartDashboard.putString("DriveToRight", "Tag Tracking Ended");
 
     }
 }

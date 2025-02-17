@@ -315,7 +315,8 @@ public class DriveBase extends SubsystemBase {
   public Pose2d getTargetPose() {
     if (this.targetPose == null) {
       return new Pose2d(0, 0, new Rotation2d(0));
-    } else {
+    } 
+    else {
       return this.targetPose;
     }
   }
@@ -551,7 +552,7 @@ public class DriveBase extends SubsystemBase {
 
     updateDS();
   }
-
+  
   /**
    * Sets the wheels into an X formation to prevent movement.
    */
