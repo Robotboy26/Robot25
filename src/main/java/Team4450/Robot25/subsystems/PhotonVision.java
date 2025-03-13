@@ -114,8 +114,8 @@ public class PhotonVision extends SubsystemBase
             poseEstimator = new PhotonPoseEstimator(
                 fieldLayout, // feed in the current year's field layout
                 // Before reinstating this PoseStrategy camera setting will need to be checked as this PoseStrategy setting * likely * relies on a camera setting.
-                PoseStrategy.MULTI_TAG_PNP_ON_COPROCESSOR, // best one as far as we can tell
-                // PoseStrategy.AVERAGE_BEST_TARGETS,
+                //PoseStrategy.MULTI_TAG_PNP_ON_COPROCESSOR, // best one as far as we can tell
+                 PoseStrategy.AVERAGE_BEST_TARGETS,
                 // PoseStrategy.CLOSEST_TO_LAST_POSE,
                 // camera,
                 robotToCam

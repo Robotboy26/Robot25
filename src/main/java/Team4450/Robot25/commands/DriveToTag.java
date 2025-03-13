@@ -19,8 +19,8 @@ import Team4450.Robot25.subsystems.DriveBase;
  */
 
 public class DriveToTag extends Command {
-    PIDController rotationController = new PIDController(0.02, 0, 0); // for rotating drivebase
-    PIDController translationController = new PIDController(0.02, 0, 0); // for moving drivebase in X,Y plane
+    PIDController rotationController = new PIDController(0.07, 0, 0.000003); // for rotating drivebase
+    PIDController translationController = new PIDController(0.07, 0, 0.000003); // for moving drivebase in X,Y plane
     DriveBase robotDrive;
     PhotonVision photonVision;
     private boolean alsoDrive;
@@ -77,11 +77,11 @@ public class DriveToTag extends Command {
         Util.consoleLog("in[yaw=%f, pitch=%f] out[rot=%f, mov=%f]", target.getYaw(), target.getPitch(), rotation, movement);
 
         if (alsoDrive) {
-            robotDrive.driveRobotRelative(-movement, 0, rotation);
+            //robotDrive.driveRobotRelative(-movement, 0, rotation);
+            robotDrive.driveRobotRelative(movement, 0, rotation);
         } else {
             robotDrive.setTrackingRotation(rotation);
         }
-        
     }
     @Override
     public void end(boolean interrupted) {

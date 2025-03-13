@@ -238,7 +238,7 @@ public class RobotContainer
 		// This sets up the photonVision subsystem to constantly update the robotDrive odometry
 	    // with AprilTags (if it sees them). (As well as vision simulator)
 
-		pvCoralTagCamera.setDefaultCommand(new UpdateVisionPose(pvCoralTagCamera, driveBase));
+		//pvCoralTagCamera.setDefaultCommand(new UpdateVisionPose(pvCoralTagCamera, driveBase));
 		pvAlgaeTagCamera.setDefaultCommand(new UpdateVisionPose(pvAlgaeTagCamera, driveBase));
 
 		// Set the default drive command. This command will be scheduled automatically to run
@@ -440,7 +440,8 @@ public class RobotContainer
          
 		//COMMENTED OUT FOR BACKUP
 		 new Trigger(()-> driverController.getLeftTrigger())
-		          .onTrue(new SetTagBasedPosition(driveBase, pvCoralTagCamera, 0));
+		          //.onTrue(new SetTagBasedPosition(driveBase, pvCoralTagCamera, 0));
+		          .whileTrue(new DriveToTag(driveBase, pvAlgaeTagCamera, true, true));
 		 //                  .andThen(new RotateToPose(driveBase, true, true)));
 
         new Trigger(()-> driverController.getRightBumperButton())
