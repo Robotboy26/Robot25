@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 1.6809253246753246,
-        "y": 7.424837662337662
+        "x": 7.4292570891203695,
+        "y": 5.554756221064816
       },
       "prevControl": null,
       "nextControl": {
-        "x": 2.417318107928261,
-        "y": 5.609001097648124
+        "x": 6.998682050651081,
+        "y": 5.575359947696406
       },
       "isLocked": false,
-      "linkedName": "LeftPickup"
+      "linkedName": "Netspot 1"
     },
     {
       "anchor": {
-        "x": 3.658714788732394,
-        "y": 5.116285211267606
+        "x": 6.34159866898148,
+        "y": 5.529599971064815
       },
       "prevControl": {
-        "x": 1.924836488814016,
-        "y": 5.866793838887531
+        "x": 6.592417972674746,
+        "y": 5.518772904024224
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "F Right"
+      "linkedName": null
     }
   ],
   "rotationTargets": [],
@@ -41,14 +41,14 @@
     "unlimited": false
   },
   "goalEndState": {
-    "velocity": 0.0,
-    "rotation": 29.000000000000004
+    "velocity": 0,
+    "rotation": -90.0
   },
   "reversed": false,
-  "folder": "Pickups To Reefs (good)",
+  "folder": "Misc. (good)",
   "idealStartingState": {
-    "velocity": 1.0,
-    "rotation": -145.0
+    "velocity": 0,
+    "rotation": -90.0
   },
   "useDefaultConstraints": true
 }

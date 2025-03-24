@@ -19,8 +19,8 @@ import Team4450.Robot25.subsystems.DriveBase;
  */
 
 public class DriveToLeft extends Command {
-    PIDController rotationController = new PIDController(0.015, 0, 0); // for rotating drivebase
-    PIDController translationController = new PIDController(0.02, 0, 0); // for moving drivebase in X,Y plane
+    PIDController rotationController = new PIDController(0.03, 0, 0); // for rotating drivebase
+    PIDController translationController = new PIDController(0.08, 0.005, 0); // for moving drivebase in X,Y plane
     DriveBase robotDrive;
     PhotonVision photonVision;
     private boolean alsoDrive;
@@ -35,8 +35,8 @@ public class DriveToLeft extends Command {
 
         if (alsoDrive) addRequirements(robotDrive);
 
-        SendableRegistry.addLW(translationController, "DriveToLeft Translation PID");
-        SendableRegistry.addLW(rotationController, "DriveToLeft Rotation PID");
+        SendableRegistry.addLW(translationController, "DriveToTag Translation PID");
+        SendableRegistry.addLW(rotationController, "DriveToTag Rotation PID");
     }
 
     public void initialize (){
@@ -56,28 +56,32 @@ public class DriveToLeft extends Command {
         translationController.setSetpoint(-15); // target should be at -15 pitch
         translationController.setTolerance(0.5);
 
-        SmartDashboard.putString("DriveToLeft", "Tag Tracking Initialized");
+        SmartDashboard.putString("DriveToTag", "Tag Tracking Initialized");
     }
 
     @Override
     public void execute() {
       // logic for chosing "closest" target in PV subsystem
+      PhotonTrackedTarget target = photonVision.getClosestTarget();
 
-        PhotonTrackedTarget target = photonVision.getClosestTarget();
-        
-        if (target == null) {
-            robotDrive.setTrackingRotation(Double.NaN); // temporarily disable tracking
-            robotDrive.clearPPRotationOverride();
-            return;
-        }
+      if (target == null) {
+        robotDrive.setTrackingRotation(Double.NaN); // temporarily disable tracking
+        robotDrive.clearPPRotationOverride();
+        return;
+    }
 
-        double rotation = rotationController.calculate(target.getYaw() - 15); // attempt to minimize
-        double movement = translationController.calculate(target.getPitch()); // attempt to minimize
+        double targetYaw = target.getYaw();
+        double targetPitch = target.getPitch();
+
+        double rotation = rotationController.calculate(targetYaw -15); // attempt to minimize
+        double movement = translationController.calculate(targetPitch); // attempt to minimize
+
 
         Util.consoleLog("in[yaw=%f, pitch=%f] out[rot=%f, mov=%f]", target.getYaw(), target.getPitch(), rotation, movement);
 
         if (alsoDrive) {
-            robotDrive.driveRobotRelative(-movement, 0, rotation);
+            robotDrive.driveRobotRelative(0, movement, rotation);
+
         } else {
             robotDrive.setTrackingRotation(rotation);
         }
@@ -96,7 +100,7 @@ public class DriveToLeft extends Command {
         robotDrive.disableTrackingSlowMode();
         robotDrive.clearPPRotationOverride();
 
-        SmartDashboard.putString("DriveToLeft", "Tag Tracking Ended");
+        SmartDashboard.putString("DriveToTag", "Tag Tracking Ended");
 
     }
 }

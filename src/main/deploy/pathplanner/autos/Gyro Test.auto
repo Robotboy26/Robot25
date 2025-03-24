@@ -11,22 +11,10 @@
               {
                 "type": "path",
                 "data": {
-                  "pathName": null
-                }
-              },
-              {
-                "type": "named",
-                "data": {
-                  "name": "Raise to L1"
+                  "pathName": "Mid Start To D Right"
                 }
               }
             ]
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "Outtake Coral"
           }
         },
         {
@@ -36,13 +24,7 @@
               {
                 "type": "path",
                 "data": {
-                  "pathName": "E Right to High Start"
-                }
-              },
-              {
-                "type": "named",
-                "data": {
-                  "name": "Reset Elevator"
+                  "pathName": "D to Net"
                 }
               }
             ]
@@ -52,6 +34,6 @@
     }
   },
   "resetOdom": true,
-  "folder": "Glacier Peak",
+  "folder": null,
   "choreoAuto": false
 }

@@ -3,43 +3,38 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 5.76,
-        "y": 4.069999999999999
+        "x": 7.400264084507042,
+        "y": 6.122535211267604
       },
       "prevControl": null,
       "nextControl": {
-        "x": 7.71948224228099,
-        "y": 3.7214322339539896
+        "x": 5.277370943318822,
+        "y": 5.472165142237461
       },
       "isLocked": false,
-      "linkedName": "D Algae"
+      "linkedName": "HighStart"
     },
     {
       "anchor": {
-        "x": 7.413243272569443,
-        "y": 5.004
+        "x": 5.316901408450703,
+        "y": 5.14463028169014
       },
       "prevControl": {
-        "x": 7.067038593888408,
-        "y": 5.279566184896943
+        "x": 6.3881691947149495,
+        "y": 5.625751007288624
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "E Left"
     }
   ],
-  "rotationTargets": [
-    {
-      "waypointRelativePos": 0.24947574013157875,
-      "rotationDegrees": 90.0
-    }
-  ],
+  "rotationTargets": [],
   "constraintZones": [],
   "pointTowardsZones": [],
   "eventMarkers": [],
   "globalConstraints": {
-    "maxVelocity": 4.0,
-    "maxAcceleration": 2.8,
+    "maxVelocity": 2.0,
+    "maxAcceleration": 4.0,
     "maxAngularVelocity": 540.0,
     "maxAngularAcceleration": 720.0,
     "nominalVoltage": 12.0,
@@ -47,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0.0,
-    "rotation": -90.0
+    "rotation": -31.0
   },
   "reversed": false,
-  "folder": "Reefs to Net (good)",
+  "folder": "Starts to Reefs",
   "idealStartingState": {
     "velocity": 1.0,
-    "rotation": 90.0
+    "rotation": -90.0
   },
-  "useDefaultConstraints": false
+  "useDefaultConstraints": true
 }

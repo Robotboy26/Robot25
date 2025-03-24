@@ -11,7 +11,7 @@
               {
                 "type": "path",
                 "data": {
-                  "pathName": "HighStart to E"
+                  "pathName": "Mid Start To D Right"
                 }
               },
               {
@@ -28,56 +28,11 @@
           "data": {
             "commands": [
               {
-                "type": "named",
+                "type": "wait",
                 "data": {
-                  "name": "Outtake Coral"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "type": "parallel",
-          "data": {
-            "commands": [
-              {
-                "type": "path",
-                "data": {
-                  "pathName": "E Right to LeftPickup"
+                  "waitTime": 0.5
                 }
               },
-              {
-                "type": "named",
-                "data": {
-                  "name": "Intake Coral"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "type": "parallel",
-          "data": {
-            "commands": [
-              {
-                "type": "path",
-                "data": {
-                  "pathName": "LeftPickup to F Right"
-                }
-              },
-              {
-                "type": "named",
-                "data": {
-                  "name": "Raise to L4"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "type": "sequential",
-          "data": {
-            "commands": [
               {
                 "type": "named",
                 "data": {
@@ -94,16 +49,28 @@
               {
                 "type": "path",
                 "data": {
-                  "pathName": "F Right to LeftPickup"
+                  "pathName": "D-Right to D-Algae"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "Intake Coral"
+                  "name": "Remove Algae L2"
                 }
               }
             ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Remove Algae"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.25
           }
         },
         {
@@ -113,29 +80,22 @@
               {
                 "type": "path",
                 "data": {
-                  "pathName": "LeftPickup to F Left"
+                  "pathName": "D to Net"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "Raise to L4"
+                  "name": "Algae Net Scoring"
                 }
               }
             ]
           }
         },
         {
-          "type": "sequential",
+          "type": "named",
           "data": {
-            "commands": [
-              {
-                "type": "named",
-                "data": {
-                  "name": "Outtake Coral"
-                }
-              }
-            ]
+            "name": "Outtake Algae"
           }
         },
         {
@@ -145,13 +105,82 @@
               {
                 "type": "path",
                 "data": {
-                  "pathName": "F Left to LeftPickup"
+                  "pathName": "Net to E"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "Intake Coral"
+                  "name": "Remove Algae L3"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Remove Algae"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "E to Net"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "Algae Net Scoring"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Outtake Algae"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.25
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "Reset Elevator"
+                }
+              },
+              {
+                "type": "sequential",
+                "data": {
+                  "commands": [
+                    {
+                      "type": "wait",
+                      "data": {
+                        "waitTime": 0.15
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "Net To End"
+                      }
+                    }
+                  ]
                 }
               }
             ]
@@ -161,6 +190,6 @@
     }
   },
   "resetOdom": true,
-  "folder": "No Vision",
+  "folder": null,
   "choreoAuto": false
 }

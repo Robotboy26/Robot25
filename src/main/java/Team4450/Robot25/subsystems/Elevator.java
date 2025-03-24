@@ -21,22 +21,24 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 //Elevator Subsystem that shouldn't be used on it's own, but rather as a part of the ElevatedManipulator Subsystem
 public class Elevator extends SubsystemBase {
-    private SparkFlex motorMain = new SparkFlex(ELEVATOR_LEFT, MotorType.kBrushless);
-    private SparkFlex motorFollower = new SparkFlex(ELEVATOR_RIGHT, MotorType.kBrushless);
+    private SparkFlex motorFollower = new SparkFlex(ELEVATOR_LEFT, MotorType.kBrushless);
+    private SparkFlex motorMain = new SparkFlex(ELEVATOR_RIGHT, MotorType.kBrushless);
     private SparkFlexConfig mainConfig = new SparkFlexConfig();
     private SparkFlexConfig followerConfig = new SparkFlexConfig();
 
     //We use a ProfiledPIDController for acceleration and deceleration control
     private ProfiledPIDController mainPID;
+    // private ProfiledPIDController slowPID;
 
     private RelativeEncoder mainEncoder;
     private RelativeEncoder followerEncoder;
 
-    private final double TOLERANCE_ROTATIONS = 1.5;
+    private final double TOLERANCE_ROTATIONS = 1.0;
     private final double START_ROTATIONS = 0.00 / ELEVATOR_WINCH_FACTOR; //NEEDS TO BE CHANGED TO ACTUAL VALUE
 
     private double targetPosition = Double.NaN; //in units of Rotations
     private boolean isManualControl = false;
+    private boolean isSlow = false;
 
     private DriveBase driveBase;
 
@@ -58,13 +60,19 @@ public class Elevator extends SubsystemBase {
 
         resetEncoders();
 
-        // PID constants, but also the motion profiling constraints
-        // mainPID = new ProfiledPIDController(0.12, 0, 0, new Constraints(
-        //     (3.25 / -ELEVATOR_WINCH_FACTOR), 8 / -ELEVATOR_WINCH_FACTOR // velocity / acceleration
-        // ));
         mainPID = new ProfiledPIDController(0.12, 0, 0, new Constraints(
-            (1.625 / -ELEVATOR_WINCH_FACTOR), 8 / -ELEVATOR_WINCH_FACTOR // velocity / acceleration
-        ));
+                (3.25 / -ELEVATOR_WINCH_FACTOR), 8 / -ELEVATOR_WINCH_FACTOR // velocity / acceleration
+            ));
+
+        // slowPID = new ProfiledPIDController(0.12, 0, 0, new Constraints(
+        //         (2.5 / -ELEVATOR_WINCH_FACTOR), 8 / -ELEVATOR_WINCH_FACTOR // velocity / acceleration
+        //     ));
+
+        // PID constants, but also the motion profiling constraints
+    
+        // mainPID = new ProfiledPIDController(0.12, 0, 0, new Constraints(
+        //     (1.625 / -ELEVATOR_WINCH_FACTOR), 8 / -ELEVATOR_WINCH_FACTOR // velocity / acceleration
+        // ));
         
         SmartDashboard.putData("winch_pid", mainPID);
         mainPID.setTolerance(TOLERANCE_ROTATIONS);
@@ -84,10 +92,7 @@ public class Elevator extends SubsystemBase {
         if (targetPosition > 0) 
             targetPosition = 0; 
 
-        //Main PID/Profile Loop which is used to control the elevator, and uses targetPosition 
-        //which has units of rotations.  
-        mainPID.setGoal(targetPosition);
-        double nonclamped = mainPID.calculate(mainEncoder.getPosition());
+        
         
         // Calculate the distance to the target
         double distanceToTarget = Math.abs(targetPosition - mainEncoder.getPosition());
@@ -96,15 +101,35 @@ public class Elevator extends SubsystemBase {
         // Adjust motor output based on distance to target
         double motorOutput;
         
+        //Main PID/Profile Loop which is used to control the elevator, and uses targetPosition 
+        //which has units of rotations. 
+        // double nonclamped = 0.0; // Initialize nonclamped with a default value
+
+
+        // if (targetPosition > this.getElevatorPosition()) {
+        //     mainPID.setGoal(targetPosition);
+        //     nonclamped = mainPID.calculate(mainEncoder.getPosition());
+        // } else if (targetPosition < this.getElevatorPosition()) {
+        //     slowPID.setGoal(targetPosition);
+        //     nonclamped = slowPID.calculate(mainEncoder.getPosition());
+        // }
+        mainPID.setGoal(targetPosition);
+        double nonclamped = mainPID.calculate(mainEncoder.getPosition());
+
+        if(isSlow == true){
+            motorOutput = Util.clampValue(nonclamped, 0.30);
+        }
+
         if (distanceToTarget <= slowDownThreshold && isManualControl == false) {
             double slowDownFactor = 0.1; // Adjust this factor as needed
             motorOutput = Util.clampValue(nonclamped * slowDownFactor, 0.15);
             SmartDashboard.putString("Elevator Position Phase", "Slowing Down Elevator");
         } else {
-            // motorOutput = Util.clampValue(nonclamped, 0.80);
-            motorOutput = Util.clampValue(nonclamped, 0.40);
+            motorOutput = Util.clampValue(nonclamped, 0.60);
+            // motorOutput = Util.clampValue(nonclamped, 0.40);
 
         }
+        
 
         SmartDashboard.putNumber("Elevator Speed", motorOutput);
         motorMain.set(motorOutput);
@@ -118,6 +143,12 @@ public class Elevator extends SubsystemBase {
     public void unlockPosition(){
         targetPosition = Double.NaN;
     }
+    
+    public double getElevatorPosition(){
+        double position = mainEncoder.getPosition();
+        SmartDashboard.putNumber("Elevator Position", position);
+        return position;
+    }
 
     /**
      * Increase/Decrease the target position by a certain amount
@@ -129,6 +160,10 @@ public class Elevator extends SubsystemBase {
         targetPosition -= change;
     }
 
+    public void moveSlowToHeight(double height){
+        isSlow = true;
+        targetPosition = height/ELEVATOR_WINCH_FACTOR;
+    }
     /**
      * Bypass all setpoint generation and just run direct motor power. This
      * also bypasses all soft limits, so use EXTREME CAUTION! Remember, the elevator

@@ -1,10 +1,10 @@
 // package Team4450.Robot25.commands;
 
 // import Team4450.Lib.Util;
-// import edu.wpi.first.math.geometry.Pose2d;
 // import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 // import edu.wpi.first.wpilibj2.command.Command;
 // import Team4450.Robot25.subsystems.DriveBase;
+// import Team4450.Robot25.subsystems.PhotonVision;
 
 
 // /**
@@ -13,17 +13,17 @@
 //  * rotation to be commanded seperately from translation.
 //  */
 
-// public class SetTargetPose extends Command {
+// public class SetTarget extends Command {
 //     DriveBase robotDrive;
-//     private Pose2d targetPose;
+//     private PhotonVision photonVision;
 //     private boolean finished;
 //     /**
 //      * @param robotDrive the drive subsystem
 //      */
 
-//     public SetTargetPose (DriveBase robotDrive, Pose2d targetPose) {
+//     public SetTarget (DriveBase robotDrive, PhotonVision photonVision) {
 //         this.robotDrive = robotDrive;
-//         this.targetPose = targetPose;
+//         this.photonVision = photonVision;
 
 //     }
 
@@ -34,7 +34,8 @@
 //     @Override
 //     public void execute() {
 //         if (!finished) {
-//         robotDrive.setTargetPose(targetPose);
+//         robotDrive.setTargetPitch(photonVision.getClosestTarget().getPitch());
+//         robotDrive.setTargetYaw(photonVision.getClosestTarget().getYaw());
 //         finished = true;
 //         }
 //         return;
@@ -52,7 +53,7 @@
 //         finished = false;
 //         Util.consoleLog("interrupted=%b", interrupted);
 
-//         SmartDashboard.putString("SetTargetPose", "Ended");
+//         SmartDashboard.putString("Set Target", "Ended");
 
 //     }
 // }

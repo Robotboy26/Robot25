@@ -5,14 +5,14 @@ import Team4450.Robot25.subsystems.ElevatedManipulator;
 import edu.wpi.first.wpilibj.RobotBase;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
-public class OuttakeAlgae extends Command {
+public class OuttakeProcessor extends Command {
     
     private final ElevatedManipulator elevatedManipulator;
     private static enum State{OUTTAKE, STOP};
     private State state = State.OUTTAKE;
     double startTime;
 
-    public OuttakeAlgae(ElevatedManipulator elevatedManipulator){
+    public OuttakeProcessor(ElevatedManipulator elevatedManipulator){
        this.elevatedManipulator = elevatedManipulator;
 
        SmartDashboard.putString("Algae Manipulator Status", state.name());
@@ -26,7 +26,7 @@ public class OuttakeAlgae extends Command {
     public void execute(){
         switch(state){
             case OUTTAKE:
-                elevatedManipulator.algaeManipulator.startOuttaking();
+                elevatedManipulator.algaeManipulator.processAlgae();
                 if(Util.timeStamp() - startTime > 0.5)
                     state = State.STOP;
                 break;
@@ -46,5 +46,6 @@ public class OuttakeAlgae extends Command {
         Util.consoleLog("interrupted=%b", interrupted);
         elevatedManipulator.algaeManipulator.stop();   
         elevatedManipulator.scoreCoralInsteadOfAlgae = true; // Change to true to score coral instead of algae.
+        elevatedManipulator.outtakeProcessor = false;
     }
 }
