@@ -112,16 +112,8 @@ public class PhotonVision extends SubsystemBase
             // setup the AprilTag pose etimator.
             poseEstimator = new PhotonPoseEstimator(
                 fieldLayout, // feed in the current year's field layout
-<<<<<<< HEAD
-                // Before reinstating this PoseStrategy camera setting will need to be checked as this PoseStrategy setting * likely * relies on a camera setting.
-                //PoseStrategy.MULTI_TAG_PNP_ON_COPROCESSOR, // best one as far as we can tell
-                 PoseStrategy.AVERAGE_BEST_TARGETS,
-                // PoseStrategy.CLOSEST_TO_LAST_POSE,
-                // camera,
-=======
                 PoseStrategy.MULTI_TAG_PNP_ON_COPROCESSOR, // best one as far as we can tell
                 //camera,
->>>>>>> bcf92ebe780786a0ba28cc993afced4f9485522a
                 robotToCam
             );
         }
