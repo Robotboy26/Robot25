@@ -81,11 +81,9 @@ public class DriveToAlgaeTag extends Command {
 
         if (alsoDrive) {
             robotDrive.driveRobotRelative(0, -movement, rotation);
-
         } else {
             robotDrive.setTrackingRotation(rotation);
         }
-        
     }
     @Override
     public void end(boolean interrupted) {

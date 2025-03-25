@@ -215,4 +215,9 @@ public class PhotonVision extends SubsystemBase
             return Optional.empty();
         }
     }
+
+    public PhotonCamera getCamera()
+    {
+        return camera;
+    }
 }

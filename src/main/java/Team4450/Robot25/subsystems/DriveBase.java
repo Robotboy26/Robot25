@@ -149,7 +149,7 @@ public class DriveBase extends SubsystemBase {
         // see bottom of: https://docs.wpilib.org/en/stable/docs/software/advanced-controls/state-space/state-space-pose-estimators.html
         //   format is:  X    Y         Theta
         VecBuilder.fill(0.1, 0.1, Math.toRadians(1)), // std deviations of encoder states (higher = less encoders more vision)
-        VecBuilder.fill(1.2, 1.2, Math.toRadians(10)) // std deviations of vision inputs (higher = less vision more enoders)
+        VecBuilder.fill(10, 10, Math.toRadians(100)) // std deviations of vision inputs (higher = less vision more enoders)
       );
 
   //public Talon_FX talon_FX = new Talon_FX(50, DCMotor.getFalcon500(1), 1.0);
