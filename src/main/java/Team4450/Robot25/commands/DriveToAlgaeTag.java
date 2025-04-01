@@ -63,7 +63,7 @@ public class DriveToAlgaeTag extends Command {
 
     @Override
     public void execute() {
-        if (nullTagCounter > 5) {
+        if (nullTagCounter > 20) {
             robotDrive.drive(0, 0, 0, false);
         }
       // logic for chosing "closest" target in PV subsystem
