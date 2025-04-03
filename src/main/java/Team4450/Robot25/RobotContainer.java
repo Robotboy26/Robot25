@@ -331,22 +331,24 @@ public class RobotContainer
 		  }).start();
 
 		// Log info about NavX.
-        // ! How often does this happen?
+        // ! How often does this happen? Only once? It seems to send a lot of data to the log.
 		navx.dumpValuesToNetworkTables();
  		
 		if (navx.isConnected())
 			Util.consoleLog("NavX connected version=%s", navx.getAHRS().getFirmwareVersion());
 		else
 		{
-            // ! Update on shuffleboard.
+            // ! Update on shuffleboard (Feature).
 			Exception e = new Exception("NavX is NOT connected!");
 			Util.logException(e);
 		}
         
         // Configure autonomous routines and send to dashboard.
+        // ! If this is only ran once (which it is) and defined in the same file do not make it a function and just write it out here.
 		setAutoChoices();
 
 		// Configure the button bindings.
+        // ! If this is only ran once (which it is) and defined in the same file do not make it a function and just write it out here.
         configureButtonBindings();
         
         // ! What are these so called trajectory files?
@@ -367,9 +369,11 @@ public class RobotContainer
 
 		//PathPlannerTrajectory ppTestTrajectory = loadPPTrajectoryFile("richard");
 
+        // ! Why is this logged here?
 		Util.consoleLog(functionMarker);
 	}
 
+    // ! We don't use 3 sticks and the launchpad so the comment is wrong.
 	/**
 	 * Use this method to define your button->command mappings.
      * 
@@ -380,18 +384,24 @@ public class RobotContainer
 	{
 		Util.consoleLog();
 	  
-		// ------- Driver pad buttons -------------
+		// ------- Driver controller buttons -------------
 		
 		// For simple functions, instead of creating commands, we can call convenience functions on
 		// the target subsystem from an InstantCommand. It can be tricky deciding what functions
 		// should be an aspect of the subsystem and what functions should be in Commands...
+        //
+        // ! The answer the question above is none or all, going forward I do not want to mix, even if this is annoying.
 
 		// POV buttons do same as alternate driving mode but without any lateral
 		// movement and increments of 45deg.
 		// new Trigger(()-> driverController.getPOV() != -1)
 		// 	.onTrue(new PointToYaw(()->PointToYaw.yawFromPOV(driverController.getPOV()), driveBase, false))
+        //
+        //
+        // 	! Maybe some kind of order for registering commands.
+        // 	! Maybe instead of by controller do it by locality of behavior.
 
-		// vibrate between 30 and 25 sec left in match.
+		// Vibrate both controllers starting at 30 and until 25 sec left in match.
 		new Trigger(() -> Timer.getMatchTime() < 30 && Timer.getMatchTime() > 25).whileTrue(new StartEndCommand(
 			() -> {
 				driverController.setRumble(RumbleType.kBothRumble, 0.5);
@@ -400,17 +410,6 @@ public class RobotContainer
 				driverController.setRumble(RumbleType.kBothRumble, 0);
 				utilityController.setRumble(RumbleType.kBothRumble, 0);
 		}));
-
-		// holding top right bumper enables the alternate rotation mode in
-		// which the driver points stick to desired heading.
-
-		//new Trigger(() -> driverController.getRightBumperButton())
-		//	.whileTrue(new PointToYaw(
-		//		()->PointToYaw.yawFromAxes(
-		//			-MathUtil.applyDeadband(driverController.getRightX(), Constants.DRIVE_DEADBAND),
-		//			-MathUtil.applyDeadband(driverController.getRightY(), Constants.DRIVE_DEADBAND)
-		//		), driveBase, false
-		//));
 
 		// toggle slow-mode
 		new Trigger(() -> driverController.getLeftBumperButton())
@@ -519,7 +518,7 @@ public class RobotContainer
 			// new Trigger(() -> driverController.getYButton())
         //     .onTrue(new InstantCommand(() -> algaeGroundIntake.stop()));		
 			
-		// -------- Utility pad buttons ----------
+		// -------- Utility controller buttons ----------
 
 		//Use Preset Command for the following:
 
@@ -613,10 +612,9 @@ public class RobotContainer
 			.onTrue(new InstantCommand(() -> elevatedManipulator.algaeManipulator.pivotUp()))
 			.onFalse(new InstantCommand(() -> elevatedManipulator.algaeManipulator.pivotDown()));
 		
-		
-			
-		
 	}
+
+    // ! Again should not be a function because it is only called once.
 	/**
 	 * Use this to pass the autonomous command to the main {@link Robot} class.
 	 * Determines which auto command from the selection made by the operator on the
@@ -650,6 +648,7 @@ public class RobotContainer
 		return autoCommand;
   	}
 
+    // ! Do not use getters just make it public.
 	public static String getAutonomousCommandName()
 	{
 		return autonomousCommandName;
@@ -735,10 +734,12 @@ public class RobotContainer
 		if (monitorPDPThread != null) monitorPDPThread.reset();
     }
 
+    // ! Put this in the correct spot.
 	public void fixPathPlannerGyro() {
 		driveBase.fixPathPlannerGyro();
 	}
 
+    // ! This should not be there if it is used.
 	/**
      * Loads a PathPlanner path file into a path planner trajectory.
      * @param fileName Name of file. Will automatically look in deploy directory and add the .path ext.
