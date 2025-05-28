@@ -3,7 +3,6 @@ package Team4450.Robot25.commands;
 import Team4450.Lib.Util;
 import Team4450.Robot25.subsystems.ElevatedManipulator;
 import Team4450.Robot25.subsystems.ElevatedManipulator.PresetPosition;
-import edu.wpi.first.wpilibj.RobotBase;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
 

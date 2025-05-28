@@ -102,20 +102,20 @@ public final class Constants
     public static String        CORAL_CAMERA_TAG_LEFT = "HD_USB_Camera";
     public static String        CORAL_CAMERA_TAG_RIGHT = "CORAL_RIGHT_USB";
 
-    //Limelight Constants:
-    public static final double X_REEF_ALIGNMENT_P = 0.05;
-	public static final double Y_REEF_ALIGNMENT_P = 0.05;
-	public static final double ROT_REEF_ALIGNMENT_P = 0.03;
+    // //Limelight Constants:
+    // public static final double X_REEF_ALIGNMENT_P = 0.05;
+	// public static final double Y_REEF_ALIGNMENT_P = 0.05;
+	// public static final double ROT_REEF_ALIGNMENT_P = 0.03;
 
-	public static final double ROT_SETPOINT_REEF_ALIGNMENT = 0;  // Rotation (Needs to be changed to our value)
-	public static final double ROT_TOLERANCE_REEF_ALIGNMENT = 1;
-	public static final double X_SETPOINT_REEF_ALIGNMENT = -0.34;  // Vertical pose (Needs to be changed to our value)
-	public static final double X_TOLERANCE_REEF_ALIGNMENT = 0.02;
-	public static final double Y_SETPOINT_REEF_ALIGNMENT = 0.16;  // Horizontal pose (Needs to be changed to our value)
-	public static final double Y_TOLERANCE_REEF_ALIGNMENT = 0.02; 
+	// public static final double ROT_SETPOINT_REEF_ALIGNMENT = 0;  // Rotation (Needs to be changed to our value)
+	// public static final double ROT_TOLERANCE_REEF_ALIGNMENT = 1;
+	// public static final double X_SETPOINT_REEF_ALIGNMENT = -0.34;  // Vertical pose (Needs to be changed to our value)
+	// public static final double X_TOLERANCE_REEF_ALIGNMENT = 0.02;
+	// public static final double Y_SETPOINT_REEF_ALIGNMENT = 0.16;  // Horizontal pose (Needs to be changed to our value)
+	// public static final double Y_TOLERANCE_REEF_ALIGNMENT = 0.02; 
 
-	public static final double DONT_SEE_TAG_WAIT_TIME = 1;
-	public static final double POSE_VALIDATION_TIME = 0.3;
+	// public static final double DONT_SEE_TAG_WAIT_TIME = 1;
+	// public static final double POSE_VALIDATION_TIME = 0.3;
 
     public static final int     REV_PDB = 20;
     public static final int     CTRE_CANDLE = 21;
@@ -140,7 +140,7 @@ public final class Constants
         // Driving Parameters - These are the maximum capable speeds of
         // the robot.
 
-        public static final double kMaxSpeedMetersPerSecond = 4.92;  // 1.0; Speed limited for demos.
+        public static final double kMaxSpeedMetersPerSecond = 1.0;  // 4.92; Speed limited for demos.
         //public static final double kMaxSpeedMetersPerSecond = ModuleConstants.kDriveWheelFreeSpeedRps; // max speed
         public static final double kMaxAngularSpeed = 1.5 * (2 * Math.PI); // radians per second (1.5 rots / sec)
         public static final double kSlowModeFactor = .20; // 50% of normal.

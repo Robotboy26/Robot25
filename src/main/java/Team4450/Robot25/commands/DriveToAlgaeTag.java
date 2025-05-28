@@ -8,9 +8,6 @@ import edu.wpi.first.wpilibj2.command.Command;
 import Team4450.Robot25.subsystems.PhotonVision;
 
 import org.photonvision.targeting.PhotonTrackedTarget;
-import org.photonvision.targeting.PhotonPipelineResult;
-
-import java.util.Optional;
 
 import Team4450.Robot25.subsystems.DriveBase;
 

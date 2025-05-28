@@ -16,7 +16,6 @@ import com.revrobotics.spark.SparkLowLevel.MotorType;
 
 import edu.wpi.first.math.controller.ProfiledPIDController;
 import edu.wpi.first.math.trajectory.TrapezoidProfile.Constraints;
-import edu.wpi.first.wpilibj.RobotBase;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
@@ -62,9 +61,12 @@ public class Elevator extends SubsystemBase {
 
         resetEncoders();
 
+        // mainPID = new ProfiledPIDController(0.12, 0, 0, new Constraints(
+        //         (0.8125/ -ELEVATOR_WINCH_FACTOR), 2 / -ELEVATOR_WINCH_FACTOR // velocity / acceleration
+        //     ));
+        
         mainPID = new ProfiledPIDController(0.12, 0, 0, new Constraints(
-                (0.8125/ -ELEVATOR_WINCH_FACTOR), 2 / -ELEVATOR_WINCH_FACTOR // velocity / acceleration
-            ));
+            (0.25/-ELEVATOR_WINCH_FACTOR), 1/-ELEVATOR_WINCH_FACTOR)); //Demo Mode 0.25 m/s velocity, 1 m/s^2 acceleration
 
         // slowPID = new ProfiledPIDController(0.12, 0, 0, new Constraints(
         //         (2.5 / -ELEVATOR_WINCH_FACTOR), 8 / -ELEVATOR_WINCH_FACTOR // velocity / acceleration
