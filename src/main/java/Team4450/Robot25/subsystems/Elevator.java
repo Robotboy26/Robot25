@@ -91,8 +91,8 @@ public class Elevator extends SubsystemBase {
         if (Double.isNaN(targetPosition)) return;
 
         //SOFT LIMITS
-        if (targetPosition < -52) 
-            targetPosition = -52;
+        if (targetPosition < -40) //-52, shortened to -40 for demo mode
+            targetPosition = -40; //-52 shortened to -40 for demo mode
         if (targetPosition > 0) 
             targetPosition = 0; 
 
