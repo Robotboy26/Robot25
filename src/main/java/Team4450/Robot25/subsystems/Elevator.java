@@ -91,8 +91,8 @@ public class Elevator extends SubsystemBase {
         if (Double.isNaN(targetPosition)) return;
 
         //SOFT LIMITS
-        if (targetPosition < -40) //-52, shortened to -40 for demo mode
-            targetPosition = -40; //-52 shortened to -40 for demo mode
+        if (targetPosition < -24) //-52, shortened to -40 for demo mode
+            targetPosition = -24; //-52 shortened to -40 for demo mode
         if (targetPosition > 0) 
             targetPosition = 0; 
 
@@ -149,25 +149,25 @@ public class Elevator extends SubsystemBase {
         // height 0.59 L2 1 drive speed and rotation speed
         // height 0.99 L3 0.48 drive speed and 0.68 rotation speed
         // height 1.59 L4 0.2 drive speed and 0.4 rotation speed
-        if(limiter == true){
-            if (!driveBase.slowModeEnabled) {
-            driveBase.speedLimiter = Math.pow(2, -(3.1 * this.getElevatorHeight() - 0.65));
-            driveBase.rotSpeedLimiter = Math.pow(2, -(3.1 * this.getElevatorHeight() - 0.65)) + 0.2;
-            if (driveBase.speedLimiter > 1) {
-                driveBase.speedLimiter = 1;
-            }
-            if (driveBase.rotSpeedLimiter > 1) {
-                driveBase.rotSpeedLimiter = 1;
-            }
-            if (driveBase.speedLimiter < 0.2) {
-                driveBase.speedLimiter = 0.2;
-            }
-            if (driveBase.rotSpeedLimiter < 0.4) {
-                driveBase.rotSpeedLimiter = 0.4;
-            }
-            Util.consoleLog("%.2f %.2f", driveBase.speedLimiter, driveBase.rotSpeedLimiter);
-        }
-    }
+    //     if(limiter == true){
+    //         if (!driveBase.slowModeEnabled) {
+    //         driveBase.speedLimiter = Math.pow(2, -(3.1 * this.getElevatorHeight() - 0.65));
+    //         driveBase.rotSpeedLimiter = Math.pow(2, -(3.1 * this.getElevatorHeight() - 0.65)) + 0.2;
+    //         if (driveBase.speedLimiter > 1) {
+    //             driveBase.speedLimiter = 1;
+    //         }
+    //         if (driveBase.rotSpeedLimiter > 1) {
+    //             driveBase.rotSpeedLimiter = 1;
+    //         }
+    //         if (driveBase.speedLimiter < 0.2) {
+    //             driveBase.speedLimiter = 0.2;
+    //         }
+    //         if (driveBase.rotSpeedLimiter < 0.4) {
+    //             driveBase.rotSpeedLimiter = 0.4;
+    //         }
+    //         Util.consoleLog("%.2f %.2f", driveBase.speedLimiter, driveBase.rotSpeedLimiter);
+    //     }
+    // }
     }
 
     /**
