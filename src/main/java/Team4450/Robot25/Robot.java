@@ -287,6 +287,10 @@ public class Robot extends TimedRobot
   public void teleopPeriodic() 
   {
     if (tracing) FunctionTracer.INSTANCE.printFunctions(Util.logPrintStream);
+    if (SmartDashboard.getBoolean("CompressorEnabled", true)) 
+        robotContainer.pcm.enableDigital();
+    else
+        robotContainer.pcm.disable();
   }
 
   @Override
